@@ -125,7 +125,7 @@ function toolTip(msg, fg, bg)
 	  else // show
 	  {
 		if(!fg) fg = "#777777";
-		if(!bg) bg = "#eeeeee";
+		if(!bg) bg = "#000000";
 		var content =
 		'<table id="msg1" name="msg1" border="0" cellspacing="0" cellpadding="1" bgcolor="' + fg + '" class="trans_msg"><td>' +
 		'<table border="1" cellspacing="2" cellpadding="3" bgcolor="' + bg + 
@@ -181,7 +181,7 @@ function moveToMouseLoc(e)
   }
   
   if ((y+document.getElementById("toolTipLayer").offsetHeight+offsetY)>getViewportHeight()) {
-	y = getViewportHeight()-document.getElementById("toolTipLayer").offsetHeight-offsetY;
+	y = getViewportHeight()-document.getElementById("toolTipLayer").offsetHeight-offsetY-50;
   }
   toolTipSTYLE.left = (x + offsetX)+'px';
   toolTipSTYLE.top = (y + offsetY + scrollTop)+'px';
