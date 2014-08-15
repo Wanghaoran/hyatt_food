@@ -1,0 +1,117 @@
+*{word-wrap:break-word;}
+body,input,button,select,textarea{font:12px/1.5 'Microsoft Yahei','Simsun';color:#444;}
+textarea{resize:none;}
+body,ul,ol,li,dl,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset,.pr,.pc{margin:0;padding:0;}
+table{empty-cells:show;border-collapse:collapse;}caption,th{text-align:left;font-weight:400;}
+dl,ul li,.xl li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:1em;}
+em,cite,i{font-style:normal;}
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+table{border-collapse:collapse;border-spacing:0;}
+input{outline: none;}/* 屏蔽文本框高亮 */
+textarea {outline: none;} 
+/* 清理浮动 */
+.clear:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clear {zoom:1; /* for IE6 IE7 */}
+.clear5{ clear:both; height:5px;}
+.clear10{ clear:both; height:10px;}
+.clear20{ clear:both; height:20px;}
+/*去掉超链接虚线框*/
+a{outline:none;}
+a:active{noOutline:expression(this.onFocus=this.blur());}
+:focus{outline:0;}
+
+.fl{ float:left;}
+.fr{ float:right;}
+
+.contain{ width:940px; margin:0 auto;}
+.header{ width:940px; height:129px; background:url(../images/top.jpg) no-repeat;}
+	.header a{ display:inline-block; cursor:pointer;}
+	.header a:hover{opacity:0.7;filter:alpha(opacity=70);}
+.hd_left{ float:left; width:387px;}
+	.hd_left a{ margin:77px 0 0 152px; width:140px; height:15px;}
+	
+.hd_logo{ float:left; width:164px;}
+	.hd_logo a{ width:164px; height:129px;}
+	
+.hd_right{ float:left; width:389px;}
+	.hd_right a{ margin:77px 0 0 86px; width:138px; height:15px;}
+	
+.banner{ width:940px; height:287px; background:url(../images/banner.jpg) no-repeat;}
+.product{ width:845px; height:200px; background:url(../images/product.jpg) no-repeat; padding:15px 45px 0 50px;}
+	.pro_num{ float:right; height:12px; line-height:12px; color:#6f3e15; font-size:12px;}
+	
+		.Div1_title span{float:right;display:block;height: 20px;}
+		.Div1_title span b , .Div1_title span a{display:block;float:left;}
+		.Div1_title span b , .Div1_title span b img{width:11px;height:11px;}
+		.Div1_title span b img{cursor:pointer;}
+		.Div1_prev{padding:2px 10px 0 0;}
+		.Div1_next{padding:2px 0 0 0px;}
+		.Div1_title span a{font-size:12px;margin-right:10px; color:#6f3e15;}
+		.Div1_title span a:hover{color:#f34d01;}
+		.Div1_title span a.Div1_title_a1{color:#f34d01;}
+		
+	.pro_box{ width:750px; height:146px;overflow:hidden;position:relative; float:left;}
+		.Div1_main{height:146px;width:10000px;overflow:hidden;position:relative;}
+		.Div1_main div{width:750px;height:146px;float:left;}
+		.Div1_main div span{width:250px;height:146px;display:block;float:left;}
+	
+		.Div1_main_a1{ float:left; display:inline-block; margin-right:10px;}
+		.Div1_main_a1 , .Div1_main_a1 img{width:109px;height:140px;}
+		.Div1_main div span b{display:block;padding-left:10px;color:#6f3e15; font-weight:normal; font-size:14px;}
+		.Div1_main div span p{line-height:30px;color:#6f3e15;}
+		.Div1_main div span a.Div1_main_a2{background:url(../images/btn_toupiao.png) no-repeat;width:80px;height:24px; display:inline-block; margin:50px 0 0 0;}
+		.Div1_main div span a.Div1_main_a2:hover{opacity:0.7;filter:alpha(opacity=70);}
+		
+		
+		
+		.Div1_prev1 ,.Div1_next1{display:block;width:28px;height:44px;cursor:pointer;}
+		.Div1_prev1 img ,.Div1_next1 img{width:28px;height:44px;}
+		.Div1_prev1:hover ,.Div1_next1:hover{opacity:0.7;.filter:alpha(opacity=70)}
+		.Div1_prev1{ float:left; margin:50px 0 0 0;}
+		.Div1_next1{ float:left; margin:50px 0 0 25px;}
+	
+	.pro_all{ float:right; width:133px; height:14px;}
+	.pro_all a{ display:inline-block; width:133px; height:14px; background:url(../images/btn_all.png) no-repeat;}
+	.pro_all a:hover{opacity:0.7;filter:alpha(opacity=70);}
+	
+.hdsm{ width:940px; height:223px; background:url(../images/hdsm.jpg) no-repeat;}
+.phb{ width:940px; height:718px; background:url(../images/phb.jpg) no-repeat;}
+	.phb_left{ float:left; width:450px;}
+		ul.ul_phb{ padding:107px 0 0 29px;}
+		ul.ul_phb li{ width:396px; height:194px;}
+		ul.ul_phb li div.divimg{ float:left; padding:1px; border:#b09375 1px solid; width:140px; height:182px;}
+		ul.ul_phb li div.divimg img{ width:140px; height:182px;}
+		ul.ul_phb li div.divimg a img{ border:0;}
+		ul.ul_phb li div.divinfo{ float:left; width:215px; padding-left:31px;}
+		ul.ul_phb li div.divinfo h2{ color:#6f3e15; font-size:18px; font-weight:normal; padding-left:35px; height:20px; line-height:20px; margin:20px 0 0 0;}
+		ul.ul_phb li.one div.divinfo h2{ background:url(../images/icon_one.png) left center no-repeat;}
+		ul.ul_phb li.two div.divinfo h2{ background:url(../images/icon_two.png) left center no-repeat;}
+		ul.ul_phb li.three div.divinfo h2{ background:url(../images/icon_three.png) left center no-repeat;}
+		ul.ul_phb li div.divinfo .btn_djtp{ width:105px; height:29px; margin:30px 0 10px 0;}
+		ul.ul_phb li div.divinfo .btn_djtp a{width:105px; height:29px; display:inline-block; background:url(../images/btn_djtp.png) no-repeat;}
+		ul.ul_phb li div.divinfo .btn_djtp a:hover{opacity:0.7;filter:alpha(opacity=70);}
+		ul.ul_phb li div.divinfo .num_tp{ color:#391b0f; font-size:14px;}
+		
+		.btn_more{ float:right; width:77px; height:17px;}
+			.btn_more a{ display:inline-block; width:77px; height:17px; background:url(../images/btn_more.png) no-repeat;}
+			.btn_more a:hover{opacity:0.7;filter:alpha(opacity=70);}
+		
+	.phb_right{ float:left; width:490px;}
+		.btn_join{ padding:391px 0 0 150px; width:220px; height:49px;}
+			.btn_join a{ display:inline-block; width:220px; height:49px; background:url(../images/btn_join.png) no-repeat;}
+			.btn_join a:hover{opacity:0.7;filter:alpha(opacity=70);}
+		.btn_num{ width:189px; height:64px; padding:40px 0 0 180px; text-align:center; line-height:64px; font-size:50px; font-weight:800; color:#000;}
+		.btn_img{ padding:45px 0 0 45px;}
+.wbry{ width:940px; height:410px; background:url(../images/wbry.jpg) no-repeat; padding:138px 0 0 0;}
+	.wbry_left{ float:left; width:470px;}
+	.wblist{ width:390px; text-align:left;}
+		.wblist li{ float:left;}
+		.wblist li.liimg{ width:50px; height:50px; margin-right:10px;}
+		.wblist li.liimg img{ width:50px; height:50px;}
+		.wblist li.lidiv{ float:left; width:310px; padding:10px; min-height:100px; background:#fff;}
+	.wbry_right{ float:left; width:470px;}
+	
+

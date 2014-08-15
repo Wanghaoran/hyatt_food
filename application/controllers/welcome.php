@@ -4,8 +4,9 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-        echo 'Welcome Hyatt';
-	}
+        $this -> load -> view('index');
+
+    }
 }
 
 /* End of file welcome.php */
