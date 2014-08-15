@@ -35,9 +35,12 @@ a:active{noOutline:expression(this.onFocus=this.blur());}
 	
 .hd_logo{ float:left; width:164px;}
 	.hd_logo a{ width:164px; height:129px;}
+
+.hd_first{ float:left; width:125px;}
+	.hd_first a{ margin:77px 0 0 38px; width:87px; height:15px;}
 	
-.hd_right{ float:left; width:389px;}
-	.hd_right a{ margin:77px 0 0 86px; width:138px; height:15px;}
+.hd_right{ float:left; width:264px;}
+	.hd_right a{ margin:77px 0 0 38px; width:138px; height:15px;}
 	
 .banner{ width:940px; height:287px; background:url(../images/banner.jpg) no-repeat;}
 .product{ width:845px; height:200px; background:url(../images/product.jpg) no-repeat; padding:15px 45px 0 50px;}
