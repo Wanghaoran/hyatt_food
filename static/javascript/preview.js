@@ -36,9 +36,9 @@ this.imagePreview=function(d,c){
 	$(c).mousemove(function(e){
 
 
-        var aaa = App.trigger('parentInfo', function(parentWin) {
-            return parentWin.win.width
-//            console.log(parentWin);
+        App.trigger('parentInfo', function(parentWin) {
+//            return parentWin.win.width
+            console.log(parentWin);
             // parentWin.iframe.width 获得iframe宽度
             // parentWin.iframe.height 获得iframe高度
             // parentWin.iframe.left 获得iframe距离父页面左端的距离
@@ -52,7 +52,7 @@ this.imagePreview=function(d,c){
             // parentWin.win.height 父页面窗口高度
         });
 
-        console.log(aaa);
+//        console.log(aaa);
 
 
 		var m=$("#preview").width();
