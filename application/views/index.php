@@ -11,8 +11,55 @@
     <script type="text/javascript" src="./static/javascript/MSClass.js"></script>
     <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
 
-    <script language="javascript">
-        function toolTip(str) {
+    <script>
+        // JavaScript Document
+        function getViewportHeightsssss() {
+            if (window.innerHeight!=window.undefined) return window.innerHeight;
+            if (document.compatMode=='CSS1Compat') return document.documentElement.clientHeight;
+            if (document.body) return document.body.clientHeight;
+
+            return window.undefined;
+        }
+        function getViewportWidth() {
+            if (window.innerWidth!=window.undefined) return window.innerWidth;
+            if (document.compatMode=='CSS1Compat') return document.documentElement.clientWidth;
+            if (document.body) return document.body.clientWidth;
+
+            return window.undefined;
+        }
+
+        /**
+         * Gets the real scroll top
+         */
+        function getScrollTop() {
+            if (self.pageYOffset) // all except Explorer
+            {
+                return self.pageYOffset;
+            }
+            else if (document.documentElement && document.documentElement.scrollTop)
+            // Explorer 6 Strict
+            {
+                return document.documentElement.scrollTop;
+            }
+            else if (document.body) // all other Explorers
+            {
+                return document.body.scrollTop;
+            }
+        }
+        function getScrollLeft() {
+            if (self.pageXOffset) // all except Explorer
+            {
+                return self.pageXOffset;
+            }
+            else if (document.documentElement && document.documentElement.scrollLeft)
+            // Explorer 6 Strict
+            {
+                return document.documentElement.scrollLeft;
+            }
+            else if (document.body) // all other Explorers
+            {
+                return document.body.scrollLeft;
+            }
         }
     </script>
 
