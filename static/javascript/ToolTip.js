@@ -18,9 +18,9 @@ function getViewportWidth() {
  * Gets the real scroll top
  */
 function getScrollTop() {
-	if (self.pageYOffset) // all except Explorer
+	if (parent.pageYOffset) // all except Explorer
 	{
-		return self.pageYOffset;
+		return parent.pageYOffset;
 	}
 	else if (document.documentElement && document.documentElement.scrollTop)
 		// Explorer 6 Strict
