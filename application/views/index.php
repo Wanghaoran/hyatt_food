@@ -7,25 +7,18 @@
     <link href="./static/css/style.css" rel="stylesheet" type="text/css" />
     <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="./static/javascript/jquery-1.3.2.min.js"></script>
-    <script type="text/javascript" src="./static/javascript/script.js"></script>
-    <script type="text/javascript" src="./static/javascript/MSClass.js"></script>
-    <script type="text/javascript" src="./static/javascript/jquery.lightbox.min.js"></script>
-
+    <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
 </head>
+
 <body>
 <div class="contain">
-<!--头部 start-->
 <div class="header">
     <div class="hd_left"><a href="#" title="最佳时令菜肴投票"></a></div>
     <div class="hd_logo"><a href="#" title="凯悦悦享家"></a></div>
     <div class="hd_first"><a href="#" title="第一季回顾"></a></div>
     <div class="hd_right"><a href="#" title="了解凯悦集团酒店"></a></div>
 </div>
-<!--头部 end-->
-<!--banner start-->
 <div class="banner"></div>
-<!--banner start-->
-<!--产品 start-->
 <div class="product">
     <div class="Div1_title">
             <span>
@@ -227,10 +220,7 @@
                     </tr>
                 </table>
             </div>
-            <script type="text/javascript">
-                /*********向上连续滚动及鼠标拖动***************/
-                new Marquee("MarqueeDiv",0,1,390,260,30,0,0)
-            </script>
+
         </div>
     </div>
     <div class="wbry_right">
@@ -240,7 +230,6 @@
 <!--微博热议 end-->
 
 </div>
-<script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
 
 </body>
 </html>
