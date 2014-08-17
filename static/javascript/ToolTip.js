@@ -1,6 +1,5 @@
 // JavaScript Document
 function getViewportHeightsssss() {
-    alert(22);
 	if (window.innerHeight!=window.undefined) return window.innerHeight;
 	if (document.compatMode=='CSS1Compat') return document.documentElement.clientHeight;
 	if (document.body) return document.body.clientHeight;
