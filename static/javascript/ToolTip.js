@@ -1,5 +1,5 @@
 // JavaScript Document
-function getViewportHeight() {
+function getViewportHeightsssss() {
 	if (window.innerHeight!=window.undefined) return window.innerHeight;
 	if (document.compatMode=='CSS1Compat') return document.documentElement.clientHeight;
 	if (document.body) return document.body.clientHeight; 
@@ -180,8 +180,8 @@ function moveToMouseLoc(e)
   	x = x - document.getElementById("toolTipLayer").offsetWidth - 2 * offsetX;
   }
   
-  if ((y+document.getElementById("toolTipLayer").offsetHeight+offsetY)>getViewportHeight()) {
-	y = getViewportHeight()-document.getElementById("toolTipLayer").offsetHeight-offsetY-50;
+  if ((y+document.getElementById("toolTipLayer").offsetHeight+offsetY)>getViewportHeightsssss()) {
+	y = getViewportHeightsssss()-document.getElementById("toolTipLayer").offsetHeight-offsetY;
   }
   toolTipSTYLE.left = (x + offsetX)+'px';
   toolTipSTYLE.top = (y + offsetY + scrollTop)+'px';
