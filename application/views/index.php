@@ -1,33 +1,45 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #ffffff;">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <html xmlns:wb="http://open.weibo.com/wb">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>凯悦悦享家</title>
     <link href="./static/css/style.css" rel="stylesheet" type="text/css" />
     <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="./static/javascript/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="./static/javascript/jquery.js"></script>
     <script type="text/javascript" src="./static/javascript/script.js"></script>
     <script type="text/javascript" src="./static/javascript/MSClass.js"></script>
-    <script type="text/javascript" src="./static/javascript/jquery.lightbox.min.js"></script>
+    <script type="text/javascript" src="./static/javascript/preview.js"></script>
     <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function(){
+            if($('a.preview').length){
+                var img = preloadIm();
+                imagePreview(img);
+            }
+        })
+    </script>
 </head>
-
 <body>
 <div class="contain">
+<!--头部 start-->
 <div class="header">
     <div class="hd_left"><a href="#" title="最佳时令菜肴投票"></a></div>
     <div class="hd_logo"><a href="#" title="凯悦悦享家"></a></div>
     <div class="hd_first"><a href="#" title="第一季回顾"></a></div>
     <div class="hd_right"><a href="#" title="了解凯悦集团酒店"></a></div>
 </div>
+<!--头部 end-->
+<!--banner start-->
 <div class="banner"></div>
+<!--banner start-->
+<!--产品 start-->
 <div class="product">
     <div class="Div1_title">
             <span>
                 <a href="javascript:void(0)" class="Div1_title_a1">1</a>
                 <a href="javascript:void(0)">2</a>
-                <a href="javascript:void(0)">3</a>
+                <a href="javascript:void(0)">3</a> 
             </span>
     </div>
     <div class="clear"></div>
@@ -38,43 +50,21 @@
         <div class="Div1_main">
             <div>
                         <span>
-                            <a href="./static/images/bigimg.jpg" class="Div1_main_a1" title="点击查看大图"><img src="./static/images/img_product1.jpg"/></a>
-
-                            <b>凯悦酒店1</b>
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <b>凯悦酒店1</b>  
+                            <a href="javascript:void(0)" class="Div1_main_a2" title="点击查看大图"></a>
                             <p>已有0000投票</p>
-
+                            
                         </span>
                         <span>
-                            <a href="./static/images/bigimg.jpg" class="Div1_main_a1" title="点击查看大图"><img src="./static/images/img_product1.jpg"/></a>
-                            <b>凯悦酒店1</b>
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
-                        <span>
-                            <a href="./static/images/bigimg.jpg" class="Div1_main_a1" title="点击查看大图"><img src="./static/images/img_product1.jpg"/></a>
-                            <b>凯悦酒店1</b>
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
-
-            </div>
-            <div>
-                        <span>
-                            <a href="./static/images/bigimg.jpg" class="Div1_main_a1" title="点击查看大图"><img src="./static/images/img_product1.jpg"/></a>
-                            <b>凯悦酒店2</b>
+                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview" ><img src="./static/images/img_product1.jpg"/></a>
+                            <b>凯悦酒店1</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a href="./static/images/bigimg.jpg" class="Div1_main_a1" title="点击查看大图"><img src="./static/images/img_product1.jpg"/></a>
-                            <b>凯悦酒店2</b>
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
-                        <span>
-                            <a href="./static/images/bigimg.jpg" class="Div1_main_a1" title="点击查看大图"><img src="./static/images/img_product1.jpg"/></a>
-                            <b>凯悦酒店2</b>
+                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <b>凯悦酒店1</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
@@ -82,31 +72,48 @@
             </div>
             <div>
                         <span>
-                            <a href="./static/images/bigimg.jpg" class="Div1_main_a1" title="点击查看大图"><img src="./static/images/img_product1.jpg"/></a>
-                            <b>凯悦酒店3</b>
+                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <b>凯悦酒店2</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a href="./static/images/bigimg.jpg" class="Div1_main_a1" title="点击查看大图"><img src="./static/images/img_product1.jpg"/></a>
-                            <b>凯悦酒店3</b>
+                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <b>凯悦酒店2</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a href="./static/images/bigimg.jpg" class="Div1_main_a1" title="点击查看大图"><img src="./static/images/img_product1.jpg"/></a>
-                            <b>凯悦酒店3</b>
+                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <b>凯悦酒店2</b>  
+                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <p>已有0000投票</p>
+                        </span>
+
+            </div>
+            <div>
+                        <span>
+                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <b>凯悦酒店3</b>  
+                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <p>已有0000投票</p>
+                        </span>
+                        <span>
+                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <b>凯悦酒店3</b>  
+                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <p>已有0000投票</p>
+                        </span>
+                        <span>
+                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <b>凯悦酒店3</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
 
             </div>
         </div>
-        <script type="text/javascript">
-            $(function(){
-                $(".Div1_main_a1").lightbox();
-            });
-        </script>
+
     </div>
     <!--右箭头-->
     <b class="Div1_next Div1_next1" ><img src="./static/images/icon_right.png"  title="下一页"/></b>
@@ -124,7 +131,7 @@
     <div class="phb_left">
         <ul class="ul_phb">
             <li class="one">
-                <div class="divimg"><a  href="./static/images/bigimg.jpg" title="点击查看大图"><img src="./static/images/img_product2.jpg"/></a></div>
+                <div class="divimg"><a target="_blank" href="#" path="./static/images/bigimg.jpg" class="preview"><img src="./static/images/img_product2.jpg"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="#"></a></div>
@@ -133,7 +140,7 @@
             </li>
             <div class="clear"></div>
             <li class="two">
-                <div class="divimg"><a  href="./static/images/bigimg.jpg" title="点击查看大图"><img src="./static/images/img_product2.jpg"/></a></div>
+                <div class="divimg"><a target="_blank" href="#" path="./static/images/bigimg.jpg" class="preview"><img src="./static/images/img_product2.jpg"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="#"></a></div>
@@ -142,7 +149,7 @@
             </li>
             <div class="clear"></div>
             <li class="three">
-                <div class="divimg"><a  href="./static/images/bigimg.jpg" title="点击查看大图"><img src="./static/images/img_product2.jpg"/></a></div>
+                <div class="divimg"><a target="_blank" href="#" path="./static/images/bigimg.jpg" class="preview"><img src="./static/images/img_product2.jpg"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="#"></a></div>
@@ -152,11 +159,7 @@
             <div class="clear"></div>
         </ul>
         <div class="btn_more"><a href="#" title="查看更多"></a></div>
-        <script type="text/javascript">
-            $(function(){
-                $(".divimg a").lightbox();
-            });
-        </script>
+
     </div>
     <!--排行版  右侧-->
     <div class="phb_right">
@@ -236,6 +239,5 @@
 <!--微博热议 end-->
 
 </div>
-
 </body>
 </html>
