@@ -5,6 +5,10 @@ this.preloadIm=function(){
 	});
 	return b
 };
+
+var a;
+var l;
+
 this.imagePreview=function(d,c){
 	offX=25;
 	offY=25;
@@ -17,8 +21,7 @@ this.imagePreview=function(d,c){
 		var p=$("#preview").height();
 
 
-        var a;
-        var l;
+
 
         App.trigger('parentInfo', function(parentWin) {
 
