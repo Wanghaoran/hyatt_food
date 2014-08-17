@@ -34,6 +34,27 @@ this.imagePreview=function(d,c){
 	});
 
 	$(c).mousemove(function(e){
+
+
+        var aaa = App.trigger('parentInfo', function(parentWin) {
+            return parentWin.win.width
+//            console.log(parentWin);
+            // parentWin.iframe.width 获得iframe宽度
+            // parentWin.iframe.height 获得iframe高度
+            // parentWin.iframe.left 获得iframe距离父页面左端的距离
+            // parentWin.iframe.top 获得iframe距离父页面顶端的距离
+            // parentWin.page.height 父页面高度
+            // parentWin.page.width 父页面宽度
+            // parentWin.page.scrollTop 父页面的滚动条scrollTop
+            // parentWin.page.scrollLeft 父页面的滚动条scrollLeft
+            // parentWin.page.url 父页面url
+            // parentWin.win.width 父页面窗口宽度
+            // parentWin.win.height 父页面窗口高度
+        });
+
+        console.log(aaa);
+
+
 		var m=$("#preview").width();
 		var n=$("#preview").height();
 		var a=$(window).width()+$(window).scrollLeft();
