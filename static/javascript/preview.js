@@ -59,10 +59,12 @@ this.imagePreview=function(d,c){
 			$("#preview").remove()
 	});
 
+    var a;
+    var k;
+
 	$(c).mousemove(function(e){
 
-        var a;
-        var k;
+
 
 
         App.trigger('parentInfo', function(parentWin) {
