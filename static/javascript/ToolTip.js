@@ -10,6 +10,7 @@ var check = false;
 function getViewportHeight() {
 
     App.trigger('parentInfo', function(parentWin) {
+        console.log(parentWin);
         if(parentWin){
             check == true;
         }
