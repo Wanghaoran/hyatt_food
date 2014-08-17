@@ -84,7 +84,7 @@ this.imagePreview=function(d,c){
             // parentWin.win.height 父页面窗口高度
         });
 
-//        console.log(aaa);
+        console.log(a + '---' + k);
 
 
 		var m=$("#preview").width();
@@ -103,7 +103,6 @@ this.imagePreview=function(d,c){
 			b=e.pageY+offY+"px"
 		}
 
-        console.log(b + '--' + l);
 		$("#preview").css("top",b).css("left",l)
 	})
 	
