@@ -4,29 +4,37 @@ var ViewportHeights;
 var ViewportWidths;
 var ScrollTops;
 var ScrollLefts;
+var check = false;
 
 
 function getViewportHeight() {
 
-    console.log(parentWin);
-
     App.trigger('parentInfo', function(parentWin) {
-        ViewportHeights = parentWin.win.height;
+        if(parentWin){
+            check == true;
+        }
+    });
+
+    if(check){
+        App.trigger('parentInfo', function(parentWin) {
+            ViewportHeights = parentWin.win.height;
 
 //        console.log(parentWin);
-        // parentWin.iframe.width 获得iframe宽度
-        // parentWin.iframe.height 获得iframe高度
-        // parentWin.iframe.left 获得iframe距离父页面左端的距离
-        // parentWin.iframe.top 获得iframe距离父页面顶端的距离
-        // parentWin.page.height 父页面高度
-        // parentWin.page.width 父页面宽度
-        // parentWin.page.scrollTop 父页面的滚动条scrollTop
-        // parentWin.page.scrollLeft 父页面的滚动条scrollLeft
-        // parentWin.page.url 父页面url
-        // parentWin.win.width 父页面窗口宽度
-        // parentWin.win.height 父页面窗口高度
-    });
-    return ViewportHeights;
+            // parentWin.iframe.width 获得iframe宽度
+            // parentWin.iframe.height 获得iframe高度
+            // parentWin.iframe.left 获得iframe距离父页面左端的距离
+            // parentWin.iframe.top 获得iframe距离父页面顶端的距离
+            // parentWin.page.height 父页面高度
+            // parentWin.page.width 父页面宽度
+            // parentWin.page.scrollTop 父页面的滚动条scrollTop
+            // parentWin.page.scrollLeft 父页面的滚动条scrollLeft
+            // parentWin.page.url 父页面url
+            // parentWin.win.width 父页面窗口宽度
+            // parentWin.win.height 父页面窗口高度
+        });
+        return ViewportHeights;
+    }
+
 
 	if (window.innerHeight!=window.undefined) return window.innerHeight;
 	if (document.compatMode=='CSS1Compat') return document.documentElement.clientHeight;
@@ -70,23 +78,33 @@ function getViewportWidth() {
 function getScrollTop() {
 
     App.trigger('parentInfo', function(parentWin) {
-        ScrollTops = parentWin.page.scrollTop;
-
-//        console.log(parentWin);
-        // parentWin.iframe.width 获得iframe宽度
-        // parentWin.iframe.height 获得iframe高度
-        // parentWin.iframe.left 获得iframe距离父页面左端的距离
-        // parentWin.iframe.top 获得iframe距离父页面顶端的距离
-        // parentWin.page.height 父页面高度
-        // parentWin.page.width 父页面宽度
-        // parentWin.page.scrollTop 父页面的滚动条scrollTop
-        // parentWin.page.scrollLeft 父页面的滚动条scrollLeft
-        // parentWin.page.url 父页面url
-        // parentWin.win.width 父页面窗口宽度
-        // parentWin.win.height 父页面窗口高度
+        if(parentWin){
+            check == true;
+        }
     });
 
-    return ScrollTops;
+    if(check){
+        App.trigger('parentInfo', function(parentWin) {
+            ScrollTops = parentWin.page.scrollTop;
+
+//        console.log(parentWin);
+            // parentWin.iframe.width 获得iframe宽度
+            // parentWin.iframe.height 获得iframe高度
+            // parentWin.iframe.left 获得iframe距离父页面左端的距离
+            // parentWin.iframe.top 获得iframe距离父页面顶端的距离
+            // parentWin.page.height 父页面高度
+            // parentWin.page.width 父页面宽度
+            // parentWin.page.scrollTop 父页面的滚动条scrollTop
+            // parentWin.page.scrollLeft 父页面的滚动条scrollLeft
+            // parentWin.page.url 父页面url
+            // parentWin.win.width 父页面窗口宽度
+            // parentWin.win.height 父页面窗口高度
+        });
+
+        return ScrollTops;
+    }
+
+
 
 
 
@@ -283,7 +301,11 @@ function moveToMouseLoc(e)
   }
 
   toolTipSTYLE.left = (x + offsetX)+'px';
-  toolTipSTYLE.top = (y + offsetY + scrollTop - 212)+'px';
+    if(check){
+        toolTipSTYLE.top = (y + offsetY + scrollTop - 212)+'px';
+    }else{
+        toolTipSTYLE.top = (y + offsetY + scrollTop)+'px';
+    }
   return true;
 }
 initToolTips();
