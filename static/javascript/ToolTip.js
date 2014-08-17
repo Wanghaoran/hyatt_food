@@ -281,7 +281,7 @@ function moveToMouseLoc(e)
   }
 
   toolTipSTYLE.left = (x + offsetX)+'px';
-  toolTipSTYLE.top = (y + offsetY + scrollTop - 100)+'px';
+  toolTipSTYLE.top = (y + offsetY + scrollTop - 150)+'px';
   return true;
 }
 initToolTips();
