@@ -116,7 +116,5 @@ a:active{noOutline:expression(this.onFocus=this.blur());}
 		.wblist li.liimg img{ width:50px; height:50px;}
 		.wblist li.lidiv{ float:left; width:310px; padding:10px; min-height:100px; background:#fff;}
 	.wbry_right{ float:left; width:470px;}
-/* previewShowWindow */
-.previewShowWindow{position:absolute;border:1px solid #dadade;background:#95959d;padding:5px;display:none;color:#fff;text-align:center;z-index:999;}
-#preview img{ width:400px;}
+	
 

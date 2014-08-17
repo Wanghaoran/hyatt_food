@@ -9,16 +9,12 @@
     <script type="text/javascript" src="./static/javascript/jquery.js"></script>
     <script type="text/javascript" src="./static/javascript/script.js"></script>
     <script type="text/javascript" src="./static/javascript/MSClass.js"></script>
-    <script type="text/javascript" src="./static/javascript/preview.js"></script>
-    <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
-    <script type="text/javascript">
-        $(function(){
-            if($('a.preview').length){
-                var img = preloadIm();
-                imagePreview(img);
-            }
-        })
+
+    <script language="javascript">
+        function toolTip(str) {
+        }
     </script>
+
 </head>
 <body>
 <div class="contain">
@@ -49,21 +45,22 @@
     <div class="pro_box">
         <div class="Div1_main">
             <div>
-                        <span>
-                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                        <span class="Div1_main_span1">
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg" onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a>
+                            
                             <b>凯悦酒店1</b>  
-                            <a href="javascript:void(0)" class="Div1_main_a2" title="点击查看大图"></a>
+                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                             
                         </span>
                         <span>
-                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview" ><img src="./static/images/img_product1.jpg"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店1</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店1</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
@@ -72,19 +69,19 @@
             </div>
             <div>
                         <span>
-                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店2</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店2</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店2</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
@@ -93,19 +90,19 @@
             </div>
             <div>
                         <span>
-                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店3</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店3</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a target="_blank" href="#" path="./static/images/bigimg.jpg" class="Div1_main_a1 preview"><img src="./static/images/img_product1.jpg"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店3</b>  
                             <a href="javascript:void(0)" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
@@ -131,7 +128,7 @@
     <div class="phb_left">
         <ul class="ul_phb">
             <li class="one">
-                <div class="divimg"><a target="_blank" href="#" path="./static/images/bigimg.jpg" class="preview"><img src="./static/images/img_product2.jpg"/></a></div>
+                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="#"></a></div>
@@ -140,7 +137,7 @@
             </li>
             <div class="clear"></div>
             <li class="two">
-                <div class="divimg"><a target="_blank" href="#" path="./static/images/bigimg.jpg" class="preview"><img src="./static/images/img_product2.jpg"/></a></div>
+                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="#"></a></div>
@@ -149,7 +146,7 @@
             </li>
             <div class="clear"></div>
             <li class="three">
-                <div class="divimg"><a target="_blank" href="#" path="./static/images/bigimg.jpg" class="preview"><img src="./static/images/img_product2.jpg"/></a></div>
+                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="#"></a></div>
@@ -159,7 +156,6 @@
             <div class="clear"></div>
         </ul>
         <div class="btn_more"><a href="#" title="查看更多"></a></div>
-
     </div>
     <!--排行版  右侧-->
     <div class="phb_right">
@@ -237,7 +233,7 @@
     </div>
 </div>
 <!--微博热议 end-->
-
 </div>
+<script language="javascript" src="./static/javascript/ToolTip.js"></script>
 </body>
 </html>
