@@ -10,7 +10,6 @@
     <script type="text/javascript" src="./static/javascript/script.js"></script>
     <script type="text/javascript" src="./static/javascript/MSClass.js"></script>
     <script type="text/javascript" src="./static/javascript/jquery.lightbox.min.js"></script>
-    <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
 
 </head>
 <body>
@@ -241,5 +240,7 @@
 <!--微博热议 end-->
 
 </div>
+<script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
+
 </body>
 </html>
