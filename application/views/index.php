@@ -7,6 +7,8 @@
     <link href="./static/css/style.css" rel="stylesheet" type="text/css" />
     <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" src="./static/javascript/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="./static/javascript/script.js"></script>
+    <script type="text/javascript" src="./static/javascript/MSClass.js"></script>
     <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
 </head>
 
@@ -220,7 +222,10 @@
                     </tr>
                 </table>
             </div>
-
+            <script type="text/javascript">
+                /*********向上连续滚动及鼠标拖动***************/
+                new Marquee("MarqueeDiv",0,1,390,260,30,0,0)
+            </script>
         </div>
     </div>
     <div class="wbry_right">
