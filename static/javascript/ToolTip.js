@@ -8,7 +8,8 @@ var ScrollLefts;
 
 function getViewportHeight() {
 
-    console.log(App);
+    console.log(parentWin);
+
     App.trigger('parentInfo', function(parentWin) {
         ViewportHeights = parentWin.win.height;
 
