@@ -10,12 +10,11 @@ var check = false;
 function getViewportHeight() {
 
     App.trigger('parentInfo', function(parentWin) {
-        if(parentWin.win.height){
-            check == true;
+        if(parentWin){
+            check = true;
         }
     });
 
-    console.log(check);
     if(check){
         App.trigger('parentInfo', function(parentWin) {
             ViewportHeights = parentWin.win.height;
@@ -80,7 +79,7 @@ function getScrollTop() {
 
     App.trigger('parentInfo', function(parentWin) {
         if(parentWin){
-            check == true;
+            check = true;
         }
     });
 
