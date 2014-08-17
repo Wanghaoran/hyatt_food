@@ -102,6 +102,8 @@ this.imagePreview=function(d,c){
 		}else{
 			b=e.pageY+offY+"px"
 		}
+
+        console.log(b + '--' + l);
 		$("#preview").css("top",b).css("left",l)
 	})
 	
