@@ -34,6 +34,7 @@ function getViewportHeight() {
 }
 function getViewportWidth() {
 
+    /*
     App.trigger('parentInfo', function(parentWin) {
         ViewportWidths = parentWin.win.width;
 
@@ -51,6 +52,8 @@ function getViewportWidth() {
         // parentWin.win.height 父页面窗口高度
     });
     return ViewportWidths;
+*/
+
 
 	if (window.innerWidth!=window.undefined) return window.innerWidth;
 	if (document.compatMode=='CSS1Compat') return document.documentElement.clientWidth;
@@ -104,6 +107,7 @@ function getScrollTop() {
 }
 function getScrollLeft() {
 
+    /*
 
     App.trigger('parentInfo', function(parentWin) {
         ScrollLefts = parentWin.page.scrollLeft;
@@ -123,6 +127,7 @@ function getScrollLeft() {
     });
 
     return ScrollLefts;
+    */
 
 	if (self.pageXOffset) // all except Explorer
 	{
@@ -274,10 +279,9 @@ function moveToMouseLoc(e)
   if ((y+document.getElementById("toolTipLayer").offsetHeight+offsetY)>getViewportHeight()) {
 	y = getViewportHeight()-document.getElementById("toolTipLayer").offsetHeight-offsetY;
   }
-    console.log(getViewportHeight());
 
   toolTipSTYLE.left = (x + offsetX)+'px';
-  toolTipSTYLE.top = (y + offsetY + scrollTop)+'px';
+  toolTipSTYLE.top = (y + offsetY + scrollTop - 100)+'px';
   return true;
 }
 initToolTips();
