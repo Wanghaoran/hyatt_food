@@ -186,6 +186,7 @@ function moveToMouseLoc(e)
 	y = getViewportHeightsssss()-document.getElementById("toolTipLayer").offsetHeight-offsetY;
   }
 
+    console.log(x + '---' + offsetX);
     console.log(y + '---' + offsetY + '---' +scrollTop);
 
   toolTipSTYLE.left = (x + offsetX)+'px';
