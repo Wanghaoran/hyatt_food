@@ -1,5 +1,31 @@
 // JavaScript Document
+
+var ViewportHeights;
+var ViewportWidths;
+var ScrollTops;
+var ScrollLefts;
+
+
 function getViewportHeight() {
+
+    App.trigger('parentInfo', function(parentWin) {
+        ViewportHeights = parentWin.win.height;
+
+//        console.log(parentWin);
+        // parentWin.iframe.width 获得iframe宽度
+        // parentWin.iframe.height 获得iframe高度
+        // parentWin.iframe.left 获得iframe距离父页面左端的距离
+        // parentWin.iframe.top 获得iframe距离父页面顶端的距离
+        // parentWin.page.height 父页面高度
+        // parentWin.page.width 父页面宽度
+        // parentWin.page.scrollTop 父页面的滚动条scrollTop
+        // parentWin.page.scrollLeft 父页面的滚动条scrollLeft
+        // parentWin.page.url 父页面url
+        // parentWin.win.width 父页面窗口宽度
+        // parentWin.win.height 父页面窗口高度
+    });
+    return ViewportHeights;
+
 	if (window.innerHeight!=window.undefined) return window.innerHeight;
 	if (document.compatMode=='CSS1Compat') return document.documentElement.clientHeight;
 	if (document.body) return document.body.clientHeight; 
@@ -7,6 +33,25 @@ function getViewportHeight() {
 	return window.undefined; 
 }
 function getViewportWidth() {
+
+    App.trigger('parentInfo', function(parentWin) {
+        ViewportWidths = parentWin.win.width;
+
+//        console.log(parentWin);
+        // parentWin.iframe.width 获得iframe宽度
+        // parentWin.iframe.height 获得iframe高度
+        // parentWin.iframe.left 获得iframe距离父页面左端的距离
+        // parentWin.iframe.top 获得iframe距离父页面顶端的距离
+        // parentWin.page.height 父页面高度
+        // parentWin.page.width 父页面宽度
+        // parentWin.page.scrollTop 父页面的滚动条scrollTop
+        // parentWin.page.scrollLeft 父页面的滚动条scrollLeft
+        // parentWin.page.url 父页面url
+        // parentWin.win.width 父页面窗口宽度
+        // parentWin.win.height 父页面窗口高度
+    });
+    return ViewportWidths;
+
 	if (window.innerWidth!=window.undefined) return window.innerWidth;
 	if (document.compatMode=='CSS1Compat') return document.documentElement.clientWidth;
 	if (document.body) return document.body.clientWidth; 
@@ -18,6 +63,28 @@ function getViewportWidth() {
  * Gets the real scroll top
  */
 function getScrollTop() {
+
+    App.trigger('parentInfo', function(parentWin) {
+        ScrollTops = parentWin.page.scrollTop;
+
+//        console.log(parentWin);
+        // parentWin.iframe.width 获得iframe宽度
+        // parentWin.iframe.height 获得iframe高度
+        // parentWin.iframe.left 获得iframe距离父页面左端的距离
+        // parentWin.iframe.top 获得iframe距离父页面顶端的距离
+        // parentWin.page.height 父页面高度
+        // parentWin.page.width 父页面宽度
+        // parentWin.page.scrollTop 父页面的滚动条scrollTop
+        // parentWin.page.scrollLeft 父页面的滚动条scrollLeft
+        // parentWin.page.url 父页面url
+        // parentWin.win.width 父页面窗口宽度
+        // parentWin.win.height 父页面窗口高度
+    });
+
+    return ScrollTops;
+
+
+
 	if (self.pageYOffset) // all except Explorer
 	{
 		return self.pageYOffset;
@@ -31,8 +98,32 @@ function getScrollTop() {
 	{
 		return document.body.scrollTop;
 	}
+
+
+
 }
 function getScrollLeft() {
+
+
+    App.trigger('parentInfo', function(parentWin) {
+        ScrollLefts = parentWin.page.scrollLeft;
+
+//        console.log(parentWin);
+        // parentWin.iframe.width 获得iframe宽度
+        // parentWin.iframe.height 获得iframe高度
+        // parentWin.iframe.left 获得iframe距离父页面左端的距离
+        // parentWin.iframe.top 获得iframe距离父页面顶端的距离
+        // parentWin.page.height 父页面高度
+        // parentWin.page.width 父页面宽度
+        // parentWin.page.scrollTop 父页面的滚动条scrollTop
+        // parentWin.page.scrollLeft 父页面的滚动条scrollLeft
+        // parentWin.page.url 父页面url
+        // parentWin.win.width 父页面窗口宽度
+        // parentWin.win.height 父页面窗口高度
+    });
+
+    return ScrollLefts;
+
 	if (self.pageXOffset) // all except Explorer
 	{
 		return self.pageXOffset;
