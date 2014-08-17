@@ -6,6 +6,7 @@
     <title>凯悦悦享家</title>
     <link href="./static/css/style.css" rel="stylesheet" type="text/css" />
     <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
     <script type="text/javascript" src="./static/javascript/jquery.js"></script>
     <script type="text/javascript" src="./static/javascript/script.js"></script>
     <script type="text/javascript" src="./static/javascript/MSClass.js"></script>
