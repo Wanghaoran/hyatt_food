@@ -8,6 +8,7 @@ var ScrollLefts;
 
 function getViewportHeight() {
 
+    console.log(App);
     App.trigger('parentInfo', function(parentWin) {
         ViewportHeights = parentWin.win.height;
 
@@ -281,7 +282,7 @@ function moveToMouseLoc(e)
   }
 
   toolTipSTYLE.left = (x + offsetX)+'px';
-  toolTipSTYLE.top = (y + offsetY + scrollTop - 211)+'px';
+  toolTipSTYLE.top = (y + offsetY + scrollTop - 212)+'px';
   return true;
 }
 initToolTips();
