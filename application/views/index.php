@@ -129,7 +129,7 @@
     <div class="phb_left">
         <ul class="ul_phb">
             <li class="one">
-                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a></div>
+                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="#"></a></div>
@@ -138,7 +138,7 @@
             </li>
             <div class="clear"></div>
             <li class="two">
-                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a></div>
+                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="#"></a></div>
@@ -147,7 +147,7 @@
             </li>
             <div class="clear"></div>
             <li class="three">
-                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=400>')" onMouseOut="toolTip()"/></a></div>
+                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="#"></a></div>
