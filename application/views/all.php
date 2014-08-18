@@ -6,7 +6,7 @@
     <link href="<?=$this->config->base_url()?>static/css/style.css" rel="stylesheet" type="text/css" />
     <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
 </head>
-<body>
+<body style="background: #FFFFFF;">
 <div class="contain">
     <!--头部 start-->
     <div class="header">

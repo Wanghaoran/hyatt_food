@@ -24,7 +24,7 @@
     </script>
 
 </head>
-<body>
+<body style="background: #FFFFFF;">
 <div class="contain">
 <!--头部 start-->
 <div class="header">
