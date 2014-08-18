@@ -5,7 +5,11 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
         $this -> load -> view('index');
+    }
 
+    public function all()
+    {
+        $this -> load -> view('all');
     }
 }
 

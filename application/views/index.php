@@ -4,12 +4,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>凯悦悦享家</title>
-    <link href="./static/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="<?=$this->config->base_url()?>static/css/style.css" rel="stylesheet" type="text/css" />
     <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
     <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./static/javascript/jquery.js"></script>
-    <script type="text/javascript" src="./static/javascript/script.js"></script>
-    <script type="text/javascript" src="./static/javascript/MSClass.js"></script>
+    <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.js"></script>
+    <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/script.js"></script>
+    <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/MSClass.js"></script>
 
     <script language="javascript">
         function toolTip(str) {
@@ -28,8 +28,8 @@
 <div class="contain">
 <!--头部 start-->
 <div class="header">
-    <div class="hd_left"><a href="#" title="最佳时令菜肴投票"></a></div>
-    <div class="hd_logo"><a href="#" title="凯悦悦享家"></a></div>
+    <div class="hd_left"><a href="<?=$this->config->base_url()?>all" title="最佳时令菜肴投票"></a></div>
+    <div class="hd_logo"><a href="<?=$this->config->base_url()?>" title="凯悦悦享家"></a></div>
     <div class="hd_first"><a href="#" title="第一季回顾"></a></div>
     <div class="hd_right"><a href="#" title="了解凯悦集团酒店"></a></div>
 </div>
@@ -48,13 +48,13 @@
     </div>
     <div class="clear"></div>
     <!--左箭头-->
-    <b class="Div1_prev Div1_prev1" ><img src="./static/images/icon_left.png" title="上一页" /></b>
+    <b class="Div1_prev Div1_prev1" ><img src="<?=$this->config->base_url()?>static/images/icon_left.png" title="上一页" /></b>
     <!--中间滚动-->
     <div class="pro_box">
         <div class="Div1_main">
             <div>
                         <span class="Div1_main_span1">
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg" onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             
                             <b>凯悦酒店1</b>  
                             <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
@@ -62,13 +62,13 @@
                             
                         </span>
                         <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店1</b>  
                             <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店1</b>  
                             <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
@@ -77,19 +77,19 @@
             </div>
             <div>
                         <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店2</b>  
                             <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店2</b>  
                             <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店2</b>  
                             <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
@@ -98,19 +98,19 @@
             </div>
             <div>
                         <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店3</b>  
                             <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店3</b>  
                             <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
+                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店3</b>  
                             <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
@@ -121,9 +121,9 @@
 
     </div>
     <!--右箭头-->
-    <b class="Div1_next Div1_next1" ><img src="./static/images/icon_right.png"  title="下一页"/></b>
+    <b class="Div1_next Div1_next1" ><img src="<?=$this->config->base_url()?>static/images/icon_right.png"  title="下一页"/></b>
     <div class="clear"></div>
-    <div class="pro_all"><a href="#" title="查看全部主厨美食卡"></a></div>
+    <div class="pro_all"><a href="<?=$this->config->base_url()?>all" title="查看全部主厨美食卡"></a></div>
     <div class="clear"></div>
 </div>
 <!--产品 end-->
@@ -136,7 +136,7 @@
     <div class="phb_left">
         <ul class="ul_phb">
             <li class="one">
-                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
+                <div class="divimg"><a href="#"><img src="<?=$this->config->base_url()?>static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
@@ -145,7 +145,7 @@
             </li>
             <div class="clear"></div>
             <li class="two">
-                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
+                <div class="divimg"><a href="#"><img src="<?=$this->config->base_url()?>static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
@@ -154,7 +154,7 @@
             </li>
             <div class="clear"></div>
             <li class="three">
-                <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
+                <div class="divimg"><a href="#"><img src="<?=$this->config->base_url()?>static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
                     <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
@@ -163,7 +163,7 @@
             </li>
             <div class="clear"></div>
         </ul>
-        <div class="btn_more"><a href="#" title="查看更多"></a></div>
+        <div class="btn_more"><a href="<?=$this->config->base_url()?>all" title="查看更多"></a></div>
     </div>
     <!--排行版  右侧-->
     <div class="phb_right">
@@ -183,10 +183,10 @@
                     <tr>
                         <td height="120" align="center" valign="middle">
                             <ul class="wblist">
-                                <li class="liimg"><img src="./static/images/logosmall.jpg"/></li>
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                                 <li class="lidiv">
                                     <p>#凯悦悦享家#今晚东道主</p>
-                                    <img src="./static/images/img_wb1.jpg"/>
+                                    <img src="<?=$this->config->base_url()?>static/images/img_wb1.jpg"/>
                                 </li>
                             </ul>
                             <div class="clear10"></div>
@@ -195,10 +195,10 @@
                     <tr>
                         <td height="120" align="center" valign="middle">
                             <ul class="wblist">
-                                <li class="liimg"><img src="./static/images/logosmall.jpg"/></li>
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                                 <li class="lidiv">
                                     <p>#凯悦悦享家#今晚东道主</p>
-                                    <img src="./static/images/img_wb1.jpg"/>
+                                    <img src="<?=$this->config->base_url()?>static/images/img_wb1.jpg"/>
                                 </li>
                             </ul>
                             <div class="clear10"></div>
@@ -207,10 +207,10 @@
                     <tr>
                         <td height="120" align="center" valign="middle">
                             <ul class="wblist">
-                                <li class="liimg"><img src="./static/images/logosmall.jpg"/></li>
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                                 <li class="lidiv">
                                     <p>#凯悦悦享家#今晚东道主</p>
-                                    <img src="./static/images/img_wb1.jpg"/>
+                                    <img src="<?=$this->config->base_url()?>static/images/img_wb1.jpg"/>
                                 </li>
                             </ul>
                             <div class="clear10"></div>
@@ -219,10 +219,10 @@
                     <tr>
                         <td height="120" align="center" valign="middle">
                             <ul class="wblist">
-                                <li class="liimg"><img src="./static/images/logosmall.jpg"/></li>
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                                 <li class="lidiv">
                                     <p>#凯悦悦享家#今晚东道主</p>
-                                    <img src="./static/images/img_wb1.jpg"/>
+                                    <img src="<?=$this->config->base_url()?>static/images/img_wb1.jpg"/>
                                 </li>
                             </ul>
                             <div class="clear10"></div>
@@ -242,6 +242,6 @@
 </div>
 <!--微博热议 end-->
 </div>
-<script language="javascript" src="./static/javascript/ToolTip.js"></script>
+<script language="javascript" src="<?=$this->config->base_url()?>static/javascript/ToolTip.js"></script>
 </body>
 </html>
