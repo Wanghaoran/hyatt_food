@@ -16,6 +16,13 @@
         }
     </script>
 
+    <script>
+        var sharebutton = function(){
+            var url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=%E8%BF%99%E6%98%AF%E9%A2%84%E5%88%B6%E6%96%87%E6%A1%88&source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
+            window.open (url, '分享到新浪微博', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')
+        }
+    </script>
+
 </head>
 <body>
 <div class="contain">
@@ -50,20 +57,20 @@
                             <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg" onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             
                             <b>凯悦酒店1</b>  
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                             
                         </span>
                         <span>
                             <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店1</b>  
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
                             <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店1</b>  
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
 
@@ -72,19 +79,19 @@
                         <span>
                             <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店2</b>  
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
                             <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店2</b>  
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
                             <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店2</b>  
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
 
@@ -93,19 +100,19 @@
                         <span>
                             <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店3</b>  
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
                             <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店3</b>  
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
                         <span>
                             <a href="javascript:void(0)" class="Div1_main_a1"><img src="./static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a>
                             <b>凯悦酒店3</b>  
-                            <a href="javascript:void(0)" class="Div1_main_a2"></a>
+                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                             <p>已有0000投票</p>
                         </span>
 
@@ -132,7 +139,7 @@
                 <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
-                    <div class="btn_djtp"><a href="#"></a></div>
+                    <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
                     <div class="num_tp">已有00000投票</div>
                 </div>
             </li>
@@ -141,7 +148,7 @@
                 <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
-                    <div class="btn_djtp"><a href="#"></a></div>
+                    <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
                     <div class="num_tp">已有00000投票</div>
                 </div>
             </li>
@@ -150,7 +157,7 @@
                 <div class="divimg"><a href="#"><img src="./static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=./static/images/bigimg.jpg width=500>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2>凯悦酒店</h2>
-                    <div class="btn_djtp"><a href="#"></a></div>
+                    <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
                     <div class="num_tp">已有00000投票</div>
                 </div>
             </li>
