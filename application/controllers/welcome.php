@@ -11,6 +11,11 @@ class Welcome extends CI_Controller {
     {
         $this -> load -> view('all');
     }
+
+    public function old()
+    {
+        $this -> load -> view('old');
+    }
 }
 
 /* End of file welcome.php */

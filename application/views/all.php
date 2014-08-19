@@ -18,7 +18,7 @@
     <div class="header">
         <div class="hd_left"><a href="#" title="最佳时令菜肴投票"></a></div>
         <div class="hd_logo"><a href="<?=$this->config->base_url()?>" title="凯悦悦享家"></a></div>
-        <div class="hd_first"><a href="#" title="第一季回顾"></a></div>
+        <div class="hd_first"><a href="<?=$this->config->base_url()?>old" title="第一季回顾"></a></div>
         <div class="hd_right"><a href="#" title="了解凯悦集团酒店"></a></div>
     </div>
     <!--头部 end-->
