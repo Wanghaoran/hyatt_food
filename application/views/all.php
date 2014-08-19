@@ -5,6 +5,12 @@
     <title>最佳时令菜肴投票-凯悦悦享家</title>
     <link href="<?=$this->config->base_url()?>static/css/style.css" rel="stylesheet" type="text/css" />
     <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
+    <script>
+        var sharebutton = function(){
+            var url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=%E8%BF%99%E6%98%AF%E9%A2%84%E5%88%B6%E6%96%87%E6%A1%88&source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
+            window.open (url, '分享到新浪微博', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')
+        }
+    </script>
 </head>
 <body style="background: #FFFFFF;">
 <div class="contain">
@@ -30,7 +36,7 @@
                             <dt>XXXXXX酒店</dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" class="btn_tp"></a><span>已有XXX人投票</span>
+                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
                             </dd>
                         </dl>
                     </li>
@@ -39,7 +45,7 @@
                             <dt>XXXXXX酒店</dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" class="btn_tp"></a><span>已有XXX人投票</span>
+                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
                             </dd>
                         </dl>
                     </li>
@@ -48,7 +54,7 @@
                             <dt>XXXXXX酒店</dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" class="btn_tp"></a><span>已有XXX人投票</span>
+                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
                             </dd>
                         </dl>
                     </li>
@@ -57,7 +63,7 @@
                             <dt>XXXXXX酒店</dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" class="btn_tp"></a><span>已有XXX人投票</span>
+                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
                             </dd>
                         </dl>
                     </li>
@@ -66,7 +72,7 @@
                             <dt>XXXXXX酒店</dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" class="btn_tp"></a><span>已有XXX人投票</span>
+                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
                             </dd>
                         </dl>
                     </li>
@@ -75,7 +81,7 @@
                             <dt>XXXXXX酒店</dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" class="btn_tp"></a><span>已有XXX人投票</span>
+                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
                             </dd>
                         </dl>
                     </li>
@@ -84,7 +90,7 @@
                             <dt>XXXXXX酒店</dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" class="btn_tp"></a><span>已有XXX人投票</span>
+                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
                             </dd>
                         </dl>
                     </li>
@@ -93,7 +99,7 @@
                             <dt>XXXXXX酒店</dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" class="btn_tp"></a><span>已有XXX人投票</span>
+                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
                             </dd>
                         </dl>
                     </li>
@@ -102,7 +108,7 @@
                             <dt>XXXXXX酒店</dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" class="btn_tp"></a><span>已有XXX人投票</span>
+                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
                             </dd>
                         </dl>
                     </li>
