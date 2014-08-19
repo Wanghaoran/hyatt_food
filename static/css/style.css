@@ -275,8 +275,8 @@ a:active{noOutline:expression(this.onFocus=this.blur());}
 .play em{font-style:normal;display:block;}
 .paused span{display:block;}
 .paused em{display:none;}
-.banner{width:260px;overflow:hidden;position:absolute;top:200px;color:#fff;right:0px;z-index:15;background:url(images/png.png) left top repeat;padding:0px;border-radius:10px 0 0 10px;-moz-border-radius:10px 0 0 10px;-webkit-border-radius:10px 0 0 10px;}
-.banner span{display:block;padding:20px;}
+.banner{width:260px;overflow:hidden;position:absolute;top:200px;color:#fff;right:0px;z-index:15;background:url(../images/png.png) left top repeat;padding:0px;border-radius:10px 0 0 10px;-moz-border-radius:10px 0 0 10px;-webkit-border-radius:10px 0 0 10px;}
+.banner span{display:none;}
 
 .progbar{
 	background:#000;
