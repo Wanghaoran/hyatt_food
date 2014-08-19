@@ -155,7 +155,7 @@ a:active{noOutline:expression(this.onFocus=this.blur());}
 	.ultime li.last{ margin-right:0}
 	
 .adbox{ width:940px;}
-	.adtitle{ width:940px; height:99px;background:url(../images/adtitle.jpg) center no-repeat;}
+	.adtitle{ width:940px; height:99px;background:url(../images/hahatitle.jpg) center no-repeat;}
 	.adcon{ width:832px; height:521px; background:url(../images/adcon.jpg) center no-repeat; padding:20px 0 0 108px;}
 	
 .sjbox{ width:940px;}
