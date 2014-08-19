@@ -240,11 +240,11 @@ function toolTip(msg, fg, bg)
 	  }
 	  else // show
 	  {
-		if(!fg) fg = "#777777";
-		if(!bg) bg = "#eeeeee";
+		if(!fg) fg = "#ffffff";
+		if(!bg) bg = "#ffffff";
 		var content =
 		'<table id="msg1" name="msg1" border="0" cellspacing="0" cellpadding="1" bgcolor="' + fg + '" class="trans_msg"><td>' +
-		'<table border="1" cellspacing="2" cellpadding="3" bgcolor="' + bg + 
+		'<table border="0" cellspacing="2" cellpadding="3" bgcolor="' + bg +
 		'"><td><font face="Arial" color="' + fg +
 		'" size="-2">' + msg +
 		'</font></td></table></td></table>';
