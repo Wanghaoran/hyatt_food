@@ -33,7 +33,7 @@
     </script>
 </head>
 <body>
-<div class="contain">
+<div class="contain" style="background: #FFFFFF;">
     <!--头部 start-->
     <div class="header">
         <div class="hd_left"><a href="<?=$this->config->base_url()?>all" title="最佳时令菜肴投票"></a></div>
