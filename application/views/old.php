@@ -15,15 +15,15 @@
             $('.gallery')._TMS({
                 show:0,
                 pauseOnHover:true,
-                prevBu:'.prev',
-                nextBu:'.next',
+//                prevBu:'.prev',
+//                nextBu:'.next',
 //                playBu:'.play',
                 duration:10000,
                 preset:'zoomer',
                 pagination:$('.img-pags').uCarousel({show:4,shift:0}),
                 pagNums:false,
                 slideshow:7000,
-                numStatus:true,
+                numStatus:false,
                 banners:'fromRight',// fromLeft, fromRight, fromTop, fromBottom
                 waitBannerAnimation:false,
                 progressBar:'<div class="progbar"></div>'
@@ -81,7 +81,7 @@
                         <li><img src="<?=$this->config->base_url()?>static/images/550x312_8.jpg" alt="" /><div class="banner"><span></span></div></li>
                     </ul>
                 </div>
-                <a href="#" class="prev">&lt;</a><a href="#" class="play"><em>stop</em><span>play</span></a> <a href="#" class="next">&gt;</a>
+                <!--<a href="#" class="prev">&lt;</a><a href="#" class="play"><em>stop</em><span>play</span></a> <a href="#" class="next">&gt;</a>-->
             </div><!-- slider end -->
             <div class="pag">
                 <div class="img-pags">
