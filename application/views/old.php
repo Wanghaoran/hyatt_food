@@ -32,8 +32,8 @@
         });
     </script>
 </head>
-<body>
-<div class="contain" style="background: #FFFFFF;">
+<body style="background: #FFFFFF;">
+<div class="contain">
     <!--头部 start-->
     <div class="header">
         <div class="hd_left"><a href="<?=$this->config->base_url()?>all" title="最佳时令菜肴投票"></a></div>
@@ -71,14 +71,23 @@
             <div id="slide">
                 <div class="gallery">
                     <ul class="items">
-                        <li><img src="<?=$this->config->base_url()?>static/images/550x312_1.jpg" alt="" /><div class="banner"><span></span></div></li>
-                        <li><img src="<?=$this->config->base_url()?>static/images/550x312_2.jpg" alt="" /><div class="banner"><span></span></div></li>
-                        <li><img src="<?=$this->config->base_url()?>static/images/550x312_3.jpg" alt="" /><div class="banner"><span></span></div></li>
-                        <li><img src="<?=$this->config->base_url()?>static/images/550x312_4.jpg" alt="" /><div class="banner"><span></span></div></li>
-                        <li><img src="<?=$this->config->base_url()?>static/images/550x312_5.jpg" alt="" /><div class="banner"><span></span></div></li>
-                        <li><img src="<?=$this->config->base_url()?>static/images/550x312_6.jpg" alt="" /><div class="banner"><span></span></div></li>
-                        <li><img src="<?=$this->config->base_url()?>static/images/550x312_7.jpg" alt="" /><div class="banner"><span></span></div></li>
-                        <li><img src="<?=$this->config->base_url()?>static/images/550x312_8.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/1_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/2_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/3_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/4_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/5_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/6_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/7_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/8_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/9_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/10_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/11_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/12_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/13_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/14_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/15_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/16_b.jpg" alt="" /><div class="banner"><span></span></div></li>
+                        <li><img src="<?=$this->config->base_url()?>static/images/17_b.jpg" alt="" /><div class="banner"><span></span></div></li>
                     </ul>
                 </div>
                 <!--<a href="#" class="prev">&lt;</a><a href="#" class="play"><em>stop</em><span>play</span></a> <a href="#" class="next">&gt;</a>-->
@@ -86,14 +95,23 @@
             <div class="pag">
                 <div class="img-pags">
                     <ul>
-                        <li><a href="#"><span><img src="<?=$this->config->base_url()?>static/images/132x82_1.jpg" alt="" /></span></a></li>
-                        <li><a href="#"><span><img src="<?=$this->config->base_url()?>static/images/132x82_2.jpg" alt="" /></span></a></li>
-                        <li><a href="#"><span><img src="<?=$this->config->base_url()?>static/images/132x82_3.jpg" alt="" /></span></a></li>
-                        <li><a href="#"><span><img src="<?=$this->config->base_url()?>static/images/132x82_4.jpg" alt="" /></span></a></li>
-                        <li><a href="#"><span><img src="<?=$this->config->base_url()?>static/images/132x82_5.jpg" alt="" /></span></a></li>
-                        <li><a href="#"><span><img src="<?=$this->config->base_url()?>static/images/132x82_6.jpg" alt="" /></span></a></li>
-                        <li><a href="#"><span><img src="<?=$this->config->base_url()?>static/images/132x82_7.jpg" alt="" /></span></a></li>
-                        <li><a href="#"><span><img src="<?=$this->config->base_url()?>static/images/132x82_8.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/1_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/2_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/3_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/4_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/5_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/6_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/7_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/8_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/9_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/10_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/11_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/12_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/13_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/14_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/15_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/16_s.jpg" alt="" /></span></a></li>
+                        <li><a><span><img src="<?=$this->config->base_url()?>static/images/17_s.jpg" alt="" /></span></a></li>
                     </ul>
                 </div>
                 <a href="#" class="button move_left" data-type="prevPage"></a>
