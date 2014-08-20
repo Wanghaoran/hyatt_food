@@ -52,71 +52,28 @@
     <!--中间滚动-->
     <div class="pro_box">
         <div class="Div1_main">
-            <div>
-                        <span class="Div1_main_span1">
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a>
-                            
-                            <b>凯悦酒店1</b>  
-                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                            
-                        </span>
-                        <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a>
-                            <b>凯悦酒店1</b>  
-                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
-                        <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a>
-                            <b>凯悦酒店1</b>  
-                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
 
-            </div>
-            <div>
-                        <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a>
-                            <b>凯悦酒店2</b>  
-                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
-                        <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a>
-                            <b>凯悦酒店2</b>  
-                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
-                        <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a>
-                            <b>凯悦酒店2</b>  
-                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
+            <?php for($i=1; $i<= 8; $i++):?>
 
-            </div>
+            <?php if($i%3 == 1):?>
             <div>
-                        <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a>
-                            <b>凯悦酒店3</b>  
-                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
-                        <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a>
-                            <b>凯悦酒店3</b>  
-                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
-                        <span>
-                            <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/images/img_product1.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a>
-                            <b>凯悦酒店3</b>  
-                            <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
-                            <p>已有0000投票</p>
-                        </span>
+            <?php endif;?>
+                <span class="Div1_main_span1">
+                    <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/cook/<?=$i?>_s.jpg" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$i?>_b.jpg width=375>')" onMouseOut="toolTip()"/></a>
+                    <b>凯悦酒店1</b>
+                    <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
+                    <p>已有0000投票</p>
+                </span>
 
-            </div>
+                <?php if($i%3 == 0):?>
+                </div>
+                <?php endif;?>
+                <?php if($i == 8):?>
+        </div>
+
+        <?php endif;?>
+            <?php endfor;?>
+
         </div>
 
     </div>

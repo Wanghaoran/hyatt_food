@@ -4,6 +4,9 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
+        $this -> load -> model('hotel_model');
+        $new_result = $this -> hotel_model -> getallhotel();
+        var_dump($new_result);
         $this -> load -> view('index');
     }
 
