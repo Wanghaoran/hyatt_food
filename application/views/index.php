@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>凯悦悦享家</title>
     <link href="<?=$this->config->base_url()?>static/css/style.css" rel="stylesheet" type="text/css" />
-    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=392409152" type="text/javascript" charset="utf-8"></script>
     <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.js"></script>
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/script.js"></script>
@@ -18,8 +18,9 @@
 
     <script>
         var sharebutton = function(){
-            var url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=%E8%BF%99%E6%98%AF%E9%A2%84%E5%88%B6%E6%96%87%E6%A1%88&source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
-            window.open (url, '分享到新浪微博', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')
+            alert('投票活动将于9月1日正式开始，敬请期待！');
+//            var url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=%E8%BF%99%E6%98%AF%E9%A2%84%E5%88%B6%E6%96%87%E6%A1%88&source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
+//            window.open (url, '分享到新浪微博', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')
         }
     </script>
 
@@ -53,26 +54,26 @@
     <div class="pro_box">
         <div class="Div1_main">
 
-            <?php for($i=1; $i<= 8; $i++):?>
+            <?php foreach($hotel_data as $key => $value):?>
 
-            <?php if($i%3 == 1):?>
+            <?php if($key%3 == 0):?>
             <div>
             <?php endif;?>
                 <span class="Div1_main_span1">
-                    <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/cook/<?=$i?>_s.jpg" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$i?>_b.jpg width=375>')" onMouseOut="toolTip()"/></a>
-                    <b>凯悦酒店1</b>
+                    <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['small_pic']?>" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip()"/></a>
+                    <b><?=$value['hotel_name']?></b>
                     <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
-                    <p>已有0000投票</p>
+                    <p>已有 <?=$value['num']?> 人投票</p>
                 </span>
 
-                <?php if($i%3 == 0):?>
+                <?php if($key%3 == 2):?>
                 </div>
                 <?php endif;?>
-                <?php if($i == 8):?>
+                <?php if($key == 7):?>
         </div>
 
         <?php endif;?>
-            <?php endfor;?>
+            <?php endforeach;?>
 
         </div>
 
@@ -92,40 +93,31 @@
     <!--排行版  左侧-->
     <div class="phb_left">
         <ul class="ul_phb">
+            <?php foreach($num_order as $key => $value):?>
+            <?php if($key == 0):?>
             <li class="one">
-                <div class="divimg"><a href="#"><img src="<?=$this->config->base_url()?>static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a></div>
-                <div class="divinfo">
-                    <h2>凯悦酒店</h2>
-                    <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
-                    <div class="num_tp">已有00000投票</div>
-                </div>
-            </li>
-            <div class="clear"></div>
+            <?php elseif($key == 1):?>
             <li class="two">
-                <div class="divimg"><a href="#"><img src="<?=$this->config->base_url()?>static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a></div>
-                <div class="divinfo">
-                    <h2>凯悦酒店</h2>
-                    <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
-                    <div class="num_tp">已有00000投票</div>
-                </div>
-            </li>
-            <div class="clear"></div>
+            <?php elseif($key == 2):?>
             <li class="three">
-                <div class="divimg"><a href="#"><img src="<?=$this->config->base_url()?>static/images/img_product2.jpg"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/images/bigimg.jpg width=375>')" onMouseOut="toolTip()"/></a></div>
+            <?php endif;?>
+                <div class="divimg"><a href="#"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['small_pic']?>"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
-                    <h2>凯悦酒店</h2>
+                    <h2><?=$value['hotel_name']?></h2>
                     <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
-                    <div class="num_tp">已有00000投票</div>
+                    <div class="num_tp">已有 <?=$value['num']?> 人投票</div>
                 </div>
             </li>
             <div class="clear"></div>
+            <?php endforeach;?>
+
         </ul>
         <div class="btn_more"><a href="<?=$this->config->base_url()?>all" title="查看更多"></a></div>
     </div>
     <!--排行版  右侧-->
     <div class="phb_right">
-        <div class="btn_join"><a href="#"></a></div>
-        <div class="btn_num">00000</div>
+        <div class="btn_join"><a href="javascript:void(0)" onclick="alert('活动将于9月1日正式上线，请您届时加入凯悦悦享家！');"></a></div>
+        <div class="btn_num">00013</div>
 
     </div>
 </div>
@@ -142,13 +134,13 @@
                             <ul class="wblist">
                                 <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                                 <li class="lidiv">
-                                    <p>#凯悦悦享家#今晚东道主</p>
-                                    <img src="<?=$this->config->base_url()?>static/images/img_wb1.jpg"/>
+                                    <p>#凯悦悦享家#活动将于9月1日正式开启！</p>
                                 </li>
                             </ul>
                             <div class="clear10"></div>
                         </td>
                     </tr>
+                    <!--
                     <tr>
                         <td height="120" align="center" valign="middle">
                             <ul class="wblist">
@@ -185,16 +177,17 @@
                             <div class="clear10"></div>
                         </td>
                     </tr>
+                    -->
                 </table>
             </div>
             <script type="text/javascript">
                 /*********向上连续滚动及鼠标拖动***************/
-                new Marquee("MarqueeDiv",0,1,390,260,30,0,0)
+//                new Marquee("MarqueeDiv",0,1,390,260,30,0,0)
             </script>
         </div>
     </div>
     <div class="wbry_right">
-        <wb:livestream skin="silver" titlebar="n" width="420" listid="485751195" uid="1052981072" height="300" ></wb:livestream>
+        <wb:livestream skin="silver" member="n" titlebar="n" width="420" appkey="392409152" height="300" topic="%E5%87%AF%E6%82%A6%E6%82%A6%E4%BA%AB%E5%AE%B6|%E5%87%AF%E6%82%A6%E6%82%A6%E4%BA%AB%E5%AE%B6"></wb:livestream>
     </div>
 </div>
 <!--微博热议 end-->

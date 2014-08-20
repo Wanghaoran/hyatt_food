@@ -6,8 +6,12 @@ class Welcome extends CI_Controller {
 	{
         $this -> load -> model('hotel_model');
         $new_result = $this -> hotel_model -> getallhotel();
-        var_dump($new_result);
-        $this -> load -> view('index');
+        $numorder_result = $this -> hotel_model -> gethotelbynum();
+        $data = array(
+            'hotel_data' => $new_result,
+            'num_order' => $numorder_result,
+        );
+        $this -> load -> view('index', $data);
     }
 
     public function all()
@@ -18,6 +22,8 @@ class Welcome extends CI_Controller {
     public function old()
     {
         $this -> load -> view('old');
+
+
     }
 }
 
