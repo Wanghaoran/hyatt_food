@@ -140,44 +140,7 @@
                             <div class="clear10"></div>
                         </td>
                     </tr>
-                    <!--
-                    <tr>
-                        <td height="120" align="center" valign="middle">
-                            <ul class="wblist">
-                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
-                                <li class="lidiv">
-                                    <p>#凯悦悦享家#今晚东道主</p>
-                                    <img src="<?=$this->config->base_url()?>static/images/img_wb1.jpg"/>
-                                </li>
-                            </ul>
-                            <div class="clear10"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="120" align="center" valign="middle">
-                            <ul class="wblist">
-                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
-                                <li class="lidiv">
-                                    <p>#凯悦悦享家#今晚东道主</p>
-                                    <img src="<?=$this->config->base_url()?>static/images/img_wb1.jpg"/>
-                                </li>
-                            </ul>
-                            <div class="clear10"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td height="120" align="center" valign="middle">
-                            <ul class="wblist">
-                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
-                                <li class="lidiv">
-                                    <p>#凯悦悦享家#今晚东道主</p>
-                                    <img src="<?=$this->config->base_url()?>static/images/img_wb1.jpg"/>
-                                </li>
-                            </ul>
-                            <div class="clear10"></div>
-                        </td>
-                    </tr>
-                    -->
+                    
                 </table>
             </div>
             <script type="text/javascript">
