@@ -14,9 +14,16 @@ class Welcome extends CI_Controller {
         $this -> load -> view('index', $data);
     }
 
-    public function all()
+    public function all($page = 1)
     {
-        $this -> load -> view('all');
+        $this -> load -> model('hotel_model');
+//        $new_result = $this -> hotel_model -> gethotelbylimit($page);
+        $new_result = $this -> hotel_model -> getallhotel();
+
+        $data = array(
+            'hotel_data' => $new_result,
+        );
+        $this -> load -> view('all', $data);
     }
 
     public function old()

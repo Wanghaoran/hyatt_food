@@ -7,8 +7,7 @@
     <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
     <script>
         var sharebutton = function(){
-            var url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=%E8%BF%99%E6%98%AF%E9%A2%84%E5%88%B6%E6%96%87%E6%A1%88&source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
-            window.open (url, '分享到新浪微博', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')
+            alert('投票活动将于9月1日正式开始，敬请期待！');
         }
     </script>
 </head>
@@ -31,91 +30,22 @@
         <div class="tp_con">
             <div class="tp_con_box">
                 <ul class="tplist">
+                    <?php foreach($hotel_data as $key => $value):?>
                     <li>
                         <dl>
-                            <dt>XXXXXX酒店</dt>
-                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
+                            <dt><?=$value['hotel_name']?></dt>
+                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?>" width="222" height="286"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
+                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有 <?=$value['num']?> 人投票</span>
                             </dd>
                         </dl>
                     </li>
-                    <li>
-                        <dl>
-                            <dt>XXXXXX酒店</dt>
-                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
-                            <dd class="ddinfo">
-                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>XXXXXX酒店</dt>
-                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
-                            <dd class="ddinfo">
-                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>XXXXXX酒店</dt>
-                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
-                            <dd class="ddinfo">
-                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>XXXXXX酒店</dt>
-                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
-                            <dd class="ddinfo">
-                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>XXXXXX酒店</dt>
-                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
-                            <dd class="ddinfo">
-                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>XXXXXX酒店</dt>
-                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
-                            <dd class="ddinfo">
-                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>XXXXXX酒店</dt>
-                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
-                            <dd class="ddinfo">
-                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <dl>
-                            <dt>XXXXXX酒店</dt>
-                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/images/tpimg.jpg"/></dd>
-                            <dd class="ddinfo">
-                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有XXX人投票</span>
-                            </dd>
-                        </dl>
-                    </li>
+                    <?php endforeach;?>
+
                 </ul>
                 <div class="clear10"></div>
                 <div class="page">
-                    <div class="meneame"><span class="disabled"> < </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2"> > </a></div>
+<!--                    <div class="meneame"><span class="disabled"> < </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2"> > </a></div>-->
                 </div>
                 <div class="clear"></div>
             </div>
