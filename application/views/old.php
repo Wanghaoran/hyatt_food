@@ -39,7 +39,7 @@
         <div class="hd_left"><a href="<?=$this->config->base_url()?>all" title="最佳时令菜肴投票"></a></div>
         <div class="hd_logo"><a href="<?=$this->config->base_url()?>" title="凯悦悦享家"></a></div>
         <div class="hd_first"><a href="#" title="第一季回顾"></a></div>
-        <div class="hd_right"><a href="http://www.hyatt.com" target="_blank" title="了解凯悦集团酒店"></a></div>
+        <div class="hd_right"><a href="http://www.hyatt.com/hyatt/?language=zh-Hans&src=hic_nplk_hyatt_sina_weibo_20140901" target="_blank" title="了解凯悦集团酒店"></a></div>
     </div>
     <!--头部 end-->
     <!--banner2 start-->
