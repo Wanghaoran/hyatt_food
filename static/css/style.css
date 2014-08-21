@@ -84,7 +84,7 @@ a:active{noOutline:expression(this.onFocus=this.blur());}
 	.pro_all a{ display:inline-block; width:133px; height:14px; background:url(../images/btn_all.png) no-repeat;}
 	.pro_all a:hover{opacity:0.7;filter:alpha(opacity=70);}
 	
-.hdsm{ width:940px; height:223px; background:url(../images/hdsm.jpg) no-repeat;}
+.hdsm{ width:940px; height:305px; background:url(../images/hdsm.jpg) no-repeat;}
 .phb{ width:940px; height:718px; background:url(../images/phb.jpg) no-repeat;}
 	.phb_left{ float:left; width:450px;}
 		ul.ul_phb{ padding:107px 0 0 29px;}
