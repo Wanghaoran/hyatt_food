@@ -61,7 +61,7 @@
             <div>
             <?php endif;?>
                 <span class="Div1_main_span1">
-                    <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['small_pic']?>" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=430>')" onMouseOut="toolTip()"/></a>
+                    <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['small_pic']?>" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip()"/></a>
                     <b><?=$value['hotel_name']?></b>
                     <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
                     <p>已有 <?=$value['num']?> 人投票</p>
@@ -102,7 +102,7 @@
             <?php elseif($key == 2):?>
             <li class="three">
             <?php endif;?>
-                <div class="divimg"><a href="#"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['small_pic']?>"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=430>')" onMouseOut="toolTip()"/></a></div>
+                <div class="divimg"><a href="#"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['small_pic']?>"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2><?=$value['hotel_name']?></h2>
                     <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
