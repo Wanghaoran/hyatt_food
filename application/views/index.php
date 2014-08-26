@@ -55,11 +55,12 @@
                 display: "block"
             });
 
-            console.log(getO(id).offsetWidth);
-            console.log(getO(id).offsetHeight);
             showDiv(id, "1");
             getO(id).style.left = (((parseInt(getWinSize()[0])) - parseInt(500)) / 2) + "px";
             getO(id).style.top = (((parseInt(getWinSize()[1])) - parseInt(266)) / 2) + "px";
+
+            console.log(getO(id).style.left);
+            console.log(getO(id).style.top);
         }
 
         /**
