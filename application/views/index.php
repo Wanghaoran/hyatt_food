@@ -89,6 +89,7 @@
         function getWinSize() {
             var width = parseInt(getViewportWidth());
             var height = parseInt(getViewportHeight());
+            console.log(width + '--' + height);
             return new Array(width, height);
         }
     </script>
