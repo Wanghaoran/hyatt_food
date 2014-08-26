@@ -57,10 +57,7 @@
 
             showDiv(id, "1");
             getO(id).style.left = (((parseInt(getWinSize()[0])) - parseInt(500)) / 2) + "px";
-            getO(id).style.top = (((parseInt(getWinSize()[1])) - parseInt(266)) / 2) + "px";
-
-            console.log(getO(id).style.left);
-            console.log(getO(id).style.top);
+            getO(id).style.top = (((parseInt(getWinSize()[1])) - parseInt(266)) / 2 + getScrollSize()) + "px";
         }
 
         /**
@@ -91,8 +88,12 @@
         function getWinSize() {
             var width = parseInt(getViewportWidth());
             var height = parseInt(getViewportHeight());
-            console.log(width + '--' + height);
             return new Array(width, height);
+        }
+
+        function getScrollSize(){
+            var height = parseInt(getScrollTop());
+            return height;
         }
     </script>
 
