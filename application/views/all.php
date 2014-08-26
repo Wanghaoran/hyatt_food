@@ -9,6 +9,9 @@
         var sharebutton = function(){
             alert('投票活动将于9月1日正式开始，敬请期待！');
         }
+
+        function toolTip(str) {
+        }
     </script>
 </head>
 <body style="background: #FFFFFF;">
@@ -35,9 +38,9 @@
                     <li>
                         <dl>
                             <dt><?=$value['hotel_name']?></dt>
-                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?>" width="222" height="286"/></dd>
+                            <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?>" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip();" width="222" height="286"/></dd>
                             <dd class="ddinfo">
-                                <a href="#" onclick="sharebutton();" class="btn_tp"></a><span>已有 <?=$value['num']?> 人投票</span>
+                                <a href="javascript:void(0);" onclick="sharebutton();" class="btn_tp"></a><span>已有 <?=$value['num']?> 人投票</span>
                             </dd>
                         </dl>
                     </li>
@@ -57,5 +60,7 @@
     <!--投票产品 end-->
 
 </div>
+<script language="javascript" src="<?=$this->config->base_url()?>static/javascript/ToolTip.js"></script>
+
 </body>
 </html>
