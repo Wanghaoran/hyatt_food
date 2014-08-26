@@ -10,6 +10,7 @@
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.js"></script>
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/script.js"></script>
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/MSClass.js"></script>
+    <script language="javascript" src="<?=$this->config->base_url()?>static/javascript/ToolTip.js"></script>
 
     <style>
         .hdsm a {
@@ -86,8 +87,8 @@
          * @return Array
          */
         function getWinSize() {
-            var width = parseInt(document.documentElement.clientWidth);
-            var height = parseInt(document.documentElement.clientHeight);
+            var width = parseInt(getViewportWidth());
+            var height = parseInt(getViewportHeight());
             return new Array(width, height);
         }
     </script>
@@ -244,6 +245,5 @@
 </div>
 <!--微博热议 end-->
 </div>
-<script language="javascript" src="<?=$this->config->base_url()?>static/javascript/ToolTip.js"></script>
 </body>
 </html>
