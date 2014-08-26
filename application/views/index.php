@@ -13,7 +13,7 @@
 
     <style>
         .hdsm a {
-            position:absolute;display:block;top:922px;left:1063px;width:100px;height: 18px;
+            position:relative;display:block;top:290px;left:816px;width:100px;height: 18px;
         }
     </style>
 
