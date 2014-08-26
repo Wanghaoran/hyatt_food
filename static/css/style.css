@@ -107,10 +107,12 @@ a:active{noOutline:expression(this.onFocus=this.blur());}
 			.btn_more a:hover{opacity:0.7;filter:alpha(opacity=70);}
 		
 	.phb_right{ float:left; width:490px;}
-		.btn_join{ padding:391px 0 0 150px; width:220px; height:49px;}
-			.btn_join a{ display:inline-block; width:220px; height:49px; background:url(../images/btn_join.png) no-repeat;}
+		.input_email{ width:253px; height:48px;padding:370px 0 0 130px;}
+			.input_email input{ width:200px; border:none; padding:10px 3px 10px 50px; height:28px; line-height:28px; font-size:18px; background:url(../images/searchbg1.png) no-repeat; color:#8b8b8b;}
+		.btn_join{ padding:10px 0 0 130px; width:251px; height:49px;}
+			.btn_join a{ display:inline-block; width:251px; height:49px; background:url(../images/btn_join.png) no-repeat;}
 			.btn_join a:hover{opacity:0.7;filter:alpha(opacity=70);}
-		.btn_num{ width:189px; height:64px; padding:40px 0 0 180px; text-align:center; line-height:64px; font-size:50px; font-weight:800; color:#000;}
+		.btn_num{ width:189px; height:64px; padding:32px 0 0 180px; text-align:center; line-height:64px; font-size:50px; font-weight:800; color:#000;}
 		.btn_img{ padding:45px 0 0 45px;}
 .wbry{ width:940px; height:410px; background:url(../images/wbry.jpg) no-repeat; padding:138px 0 0 0;}
 	.wbry_left{ float:left; width:470px;}
@@ -320,3 +322,15 @@ a:active{noOutline:expression(this.onFocus=this.blur());}
 	box-shadow:0 1px 2px rgba(0,0,0,0.25), inset 0 0 3px #fff;
 }
 /*-------- end slider -----------*/
+
+/*弹出层*/
+.mydiv { width:500px; height:266px; background:url(../images/popbg.png) no-repeat; z-index:99; left:50%; top: 50%; margin-left:-250px!important; margin-top:-133px!important;position:absolute;/*FF IE7*/position:fixed!important;}
+.hidebg { width:100%; height:100%; background: #000;   filter:alpha(opacity=50);/*IE*/    opacity:0.5;/*FF*/    z-index:1;  position:absolute;/*IE6*/ position:fixed; left:0; top:0; }  
+a.btn_del{ width:14px; height:15px; text-decoration:none; background:url(../images/icon_close.png) no-repeat; display:inline-block; right:10px; top:10px; position:
+absolute;}
+a.btn_del:hover{opacity:0.7;filter:alpha(opacity=70);}
+.popcon{ width:313px; height:280px; margin:0 auto; padding:120px 0 0 0 }
+	.pop_input input{width:260px; border:none; padding:10px 3px 10px 50px; height:28px; line-height:28px; font-size:18px; background:url(../images/searchbg2.png) no-repeat; color:#8b8b8b;}
+	.pop_join{ width:269px; height:35px; margin:22px auto 0;}
+	.pop_join a{ width:269px; height:35px; text-decoration:none; background:url(../images/btn_jiaru.png) no-repeat; display:inline-block; }
+	.pop_join a:hover{opacity:0.7;filter:alpha(opacity=70);}

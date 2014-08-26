@@ -18,14 +18,48 @@
 
     <script>
         var sharebutton = function(){
-            alert('投票活动将于9月1日正式开始，敬请期待！');
+            showBg();
+//            alert('投票活动将于9月1日正式开始，敬请期待！');
 //            var url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=%E8%BF%99%E6%98%AF%E9%A2%84%E5%88%B6%E6%96%87%E6%A1%88&source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
 //            window.open (url, '分享到新浪微博', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')
         }
     </script>
 
+    <script language="javascript">
+        function toolTip(str) {
+        }
+
+        //显示灰色 jQuery 遮罩层
+        function showBg() {
+
+            $("#hidebg").css({
+                display: "block"
+            });
+            $("#popDiv").show();
+        }
+        //关闭灰色 jQuery 遮罩
+        function closeBg() {
+            $("#hidebg,#popDiv").hide();
+        }
+    </script>
+
+
 </head>
 <body style="background: #FFFFFF;">
+
+<!--pop start-->
+<div id="popDiv" class="mydiv" style="display:none;">
+    <a href="javascript:closeBg()" class="btn_del" title="关闭"></a>
+    <div class="popcon">
+        <div class="pop_input"><input id="kw" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}">
+        </div>
+        <div class="clear20"></div>
+        <div class="pop_join"><a href="javascript:void(0);" onclick="alert('活动将于9月1日正式上线，请您届时加入凯悦悦享家！');" title="点击加入“凯悦悦享家”"></a></div>
+    </div>
+</div>
+<div id="hidebg" class="hidebg" style="display:none"></div>
+<!--pop end-->
+
 <div class="contain">
 <!--头部 start-->
 <div class="header">
@@ -116,11 +150,14 @@
         <div class="btn_more"><a href="<?=$this->config->base_url()?>all" title="查看更多"></a></div>
     </div>
     <!--排行版  右侧-->
+
     <div class="phb_right">
-        <div class="btn_join"><a href="javascript:void(0)" onclick="alert('活动将于9月1日正式上线，请您届时加入凯悦悦享家！');"></a></div>
-        <div class="btn_num">00013</div>
+        <div class="input_email"><input id="kw" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}"></div>
+        <div class="btn_join"><a  onclick="alert('活动将于9月1日正式上线，请您届时加入凯悦悦享家！');" href="javascript:void();" title="点击加入“凯悦悦享家”"></a></div>
+        <div class="btn_num">00051</div>
 
     </div>
+
 </div>
 <!--排行版 end-->
 <!--微博热议 start-->
