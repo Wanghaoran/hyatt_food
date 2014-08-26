@@ -10,7 +10,6 @@
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.js"></script>
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/script.js"></script>
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/MSClass.js"></script>
-    <script language="javascript" src="<?=$this->config->base_url()?>static/javascript/ToolTip.js"></script>
 
     <style>
         .hdsm a {
@@ -246,5 +245,6 @@
 </div>
 <!--微博热议 end-->
 </div>
+<script language="javascript" src="<?=$this->config->base_url()?>static/javascript/ToolTip.js"></script>
 </body>
 </html>
