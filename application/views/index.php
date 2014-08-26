@@ -17,14 +17,11 @@
         }
     </style>
 
-    <script language="javascript">
-        function toolTip(str) {
-        }
-    </script>
 
     <script>
         var sharebutton = function(){
-            showBg();
+            setDivCenter(11);
+//            showBg();
 //            alert('投票活动将于9月1日正式开始，敬请期待！');
 //            var url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=%E8%BF%99%E6%98%AF%E9%A2%84%E5%88%B6%E6%96%87%E6%A1%88&source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
 //            window.open (url, '分享到新浪微博', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')
@@ -36,26 +33,74 @@
         }
 
         //显示灰色 jQuery 遮罩层
-        function showBg() {
+        //function showBg() {
+        //
+        //	$("#hidebg").css({
+        //		display: "block"
+        //	});
+        //	$("#popDiv").show();
+        //
+        //}
+        //关闭灰色 jQuery 遮罩
+        function closeBg(id) {
+            $("#hidebg,#"+id+"").hide();
+        }
 
+        /**
+         * 把一个div放在屏幕的最中央
+         * @param id div的id
+         */
+        function setDivCenter(id) {
             $("#hidebg").css({
                 display: "block"
             });
-            $("#popDiv").show();
+            //alert(id);
+            showDiv(id, "1");
+            getO(id).style.left = (((parseInt(getWinSize()[0])) - parseInt(getO(id).offsetWidth)) / 2) + "px";
+            getO(id).style.top = (((parseInt(getWinSize()[1])) - parseInt(getO(id).offsetHeight)) / 2) + "px";
         }
-        //关闭灰色 jQuery 遮罩
-        function closeBg() {
-            $("#hidebg,#popDiv").hide();
+
+        /**
+         * 获得对象
+         * @param id 对象的id(表单元素和其他标签都可以)
+         * @return Object
+         */
+        function getO(id) {
+            return document.getElementById(id);
+        }
+
+        /**
+         * 设置div的显示或隐藏(其他元素也可以)
+         * @param id 层的id或其他元素的id
+         * @param type 1为显示0为隐藏
+         */
+        function showDiv(id, type) {
+            if (getO(id) != null) {
+                var status = ("1" == type) ? "block" : "none";
+                getO(id).style.display = status;
+            }
+        }
+
+        /**
+         * 获得当前窗体的大小(width,height)
+         * @return Array
+         */
+        function getWinSize() {
+            var width = parseInt(document.documentElement.clientWidth);
+            var height = parseInt(document.documentElement.clientHeight);
+            return new Array(width, height);
         }
     </script>
+
+
 
 
 </head>
 <body style="background: #FFFFFF;">
 
 <!--pop start-->
-<div id="popDiv" class="mydiv" style="display:none;">
-    <a href="javascript:closeBg()" class="btn_del" title="关闭"></a>
+<div id="11" class="mydiv" style="display:none;">
+    <a href="javascript:closeBg(11)" class="btn_del" title="关闭"></a>
     <div class="popcon">
         <div class="pop_input"><input id="kw" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}">
         </div>
