@@ -57,7 +57,7 @@
 
             showDiv(id, "1");
             getO(id).style.left = (((parseInt(getWinSize()[0])) - parseInt(500)) / 2) + "px";
-            getO(id).style.top = (((parseInt(getWinSize()[1])) - parseInt(266)) / 2 + getScrollSize()) + "px";
+            getO(id).style.top = (((parseInt(getWinSize()[1])) - parseInt(266)) / 2 + getScrollSize() - 200) + "px";
         }
 
         /**
