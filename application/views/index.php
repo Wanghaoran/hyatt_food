@@ -127,7 +127,7 @@
 </div>
 <!--产品 end-->
 <!--活动说明 start-->
-<div class="hdsm" style="height:316px;"><a href="<?=$this->config->base_url()?>terms"> </a></div>
+<div class="hdsm" style="height:316px;"><a href="<?=$this->config->base_url()?>terms">12345 </a></div>
 <!--活动说明 end-->
 <!--排行版 start-->
 <div class="phb">
