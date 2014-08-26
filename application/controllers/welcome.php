@@ -29,8 +29,11 @@ class Welcome extends CI_Controller {
     public function old()
     {
         $this -> load -> view('old');
+    }
 
-
+    public function terms()
+    {
+        $this -> load -> view('terms');
     }
 }
 

@@ -11,6 +11,12 @@
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/script.js"></script>
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/MSClass.js"></script>
 
+    <style>
+        .hdsm a {
+            position:absolute;display:block;top:922px;left:1063px;width:100px;height: 18px;
+        }
+    </style>
+
     <script language="javascript">
         function toolTip(str) {
         }
@@ -121,7 +127,7 @@
 </div>
 <!--产品 end-->
 <!--活动说明 start-->
-<div class="hdsm"></div>
+<div class="hdsm" style="height:316px;"><a href="<?=$this->config->base_url()?>terms"> </a></div>
 <!--活动说明 end-->
 <!--排行版 start-->
 <div class="phb">
