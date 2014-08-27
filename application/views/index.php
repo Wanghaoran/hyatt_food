@@ -51,7 +51,15 @@
                 'redirect_uri' : encodeURIComponent('http://apps.weibo.com/2259266354/Qp1a6Ji')
             });
             <?php else: ?>
-            alert('注册！');
+            var emailString = $('#emailString').val();
+            //验证
+            var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+            if(!reg.test(emailString)){
+                alert('邮件格式不正确，请您重新输入！');
+                return;
+            }
+            alert(emailString);
+
             <?php endif; ?>
         }
     </script>
@@ -136,7 +144,7 @@
 <div id="11" class="mydiv" style="display:none;">
     <a href="javascript:closeBg(11)" class="btn_del" title="关闭"></a>
     <div class="popcon">
-        <div class="pop_input"><input id="kw" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}">
+        <div class="pop_input"><input name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}">
         </div>
         <div class="clear20"></div>
         <div class="pop_join"><a href="javascript:void(0);" onclick="alert('活动将于9月1日正式上线，请您届时加入凯悦悦享家！');" title="点击加入“凯悦悦享家”"></a><a href="javascript:closeBg(11)" class="tiaoguo">跳过</a></div>
@@ -246,7 +254,7 @@
     <!--排行版  右侧-->
 
     <div class="phb_right">
-        <div class="input_email"><input id="kw" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}"></div>
+        <div class="input_email"><input id="emailString" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}"></div>
         <div class="btn_join"><a  onclick="joinhyatt();" href="javascript:void(0);" title="点击加入“凯悦悦享家”"></a></div>
         <div class="btn_num">00051</div>
 
