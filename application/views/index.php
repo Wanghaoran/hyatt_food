@@ -48,6 +48,8 @@
                         url = ress.url;
                         if(ress.isregister == 'no'){
                             setDivCenter(11);
+                        }else{
+                            openshare();
                         }
 
                     }
