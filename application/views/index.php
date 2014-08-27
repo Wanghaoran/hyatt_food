@@ -39,16 +39,19 @@
                 async : false,
                 dataType : 'json',
                 success : function(ress){
-                    /*
                     if(ress.status == 'error'){
-                        alert('注册失败！' + ress.data);
+                        alert('投票失败！' + ress.data);
                     }else{
-                        alert('注册成功！' + ress.data);
+                        //设置分享URL
+
+                        if(ress.isregister == 'no'){
+                            setDivCenter(11);
+                        }
+
+                        console.log('你是注册会员！');
                     }
-                    */
                 }
             });
-//            setDivCenter(11);
             <?php endif; ?>
 
         }
@@ -92,6 +95,46 @@
                         alert('注册失败！' + ress.data);
                     }else{
                         alert('注册成功！' + ress.data);
+                    }
+                }
+            });
+
+            <?php endif; ?>
+        }
+
+        //加入悦享受家-弹层
+        var joinhyatt2 = function(){
+            <?php if($uid == 'null'): ?>
+            App.trigger('login', {
+                // 请注意，redirect_uri 是登录成功后回调的 URL，必须传的是 *.weibo.com 下的 URL，不支持第三方的地址
+                'redirect_uri' : encodeURIComponent('http://apps.weibo.com/2259266354/Qp1a6Ji')
+            });
+            <?php else: ?>
+            var emailString = $('#emailString2').val();
+            //验证
+            if(emailString == '请输入您的邮箱'){
+                alert('请您输入电子邮件地址！');
+                $('#emailString').focus();
+                return;
+            }
+            var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+            if(!reg.test(emailString)){
+                alert('邮件格式不正确，请您重新输入！');
+                return;
+            }
+
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/enroll',
+                data : '&email=' + emailString,
+                async : false,
+                dataType : 'json',
+                success : function(ress){
+                    if(ress.status == 'error'){
+                        alert('注册失败！' + ress.data);
+                    }else{
+                        alert('注册成功！' + ress.data);
+                        closeBg(11);
                     }
                 }
             });
@@ -180,10 +223,10 @@
 <div id="11" class="mydiv" style="display:none;">
     <a href="javascript:closeBg(11)" class="btn_del" title="关闭"></a>
     <div class="popcon">
-        <div class="pop_input"><input name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}">
+        <div class="pop_input"><input id="emailString2" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}">
         </div>
         <div class="clear20"></div>
-        <div class="pop_join"><a href="javascript:void(0);" onclick="alert('活动将于9月1日正式上线，请您届时加入凯悦悦享家！');" title="点击加入“凯悦悦享家”"></a><a href="javascript:closeBg(11)" class="tiaoguo">跳过</a></div>
+        <div class="pop_join"><a href="javascript:void(0);" onclick="joinhyatt2();" title="点击加入“凯悦悦享家”"></a><a href="javascript:closeBg(11)" class="tiaoguo">跳过</a></div>
 
     </div>
 </div>

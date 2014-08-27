@@ -91,7 +91,13 @@ class Welcome extends CI_Controller {
         $this -> load -> model('hotel_model');
         if($this -> hotel_model -> addnum($cid)){
             $result['status'] = 'success';
-            $result['data'] = '恭喜您成功注册凯悦悦享家！';
+            //是否已注册
+            $this -> load -> model('user_model');
+            if($this -> user_model -> getUser($uid)){
+                $result['isregister'] = 'yes';
+            }else{
+                $result['isregister'] = 'no';
+            }
             echo json_encode($result);
             return;
         }else{
