@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
                 $uid = $weibo_post['user_id'];
             }
             $this->session->set_userdata('user_id', $uid);
-        }else if($_GET['form'] != 'weibo'){
+        }else if(!empty($_GET['form']) && $_GET['form'] != 'weibo'){
             //不是微博浏览，跳转到微博首页
             redirect('http://apps.weibo.com/2259266354/Qp1a6Ji');
         }else{
