@@ -22,7 +22,7 @@
 
 
         //点击投票
-        var sharebutton = function(){
+        var sharebutton = function(cid){
 
             <?php if($uid == 'null'): ?>
             App.trigger('login', {
@@ -31,6 +31,7 @@
         });
             <?php else: ?>
             //TODO:投票
+            console.log(cid);
             setDivCenter(11);
             <?php endif; ?>
 
@@ -260,7 +261,7 @@
                 <div class="divimg"><a href="#"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['small_pic']?>"  onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip()"/></a></div>
                 <div class="divinfo">
                     <h2><?=$value['hotel_name']?></h2>
-                    <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton();"></a></div>
+                    <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton('<?=$value['id']?>');"></a></div>
                     <div class="num_tp">已有 <?=$value['num']?> 人投票</div>
                 </div>
             </li>
