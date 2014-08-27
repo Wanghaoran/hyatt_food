@@ -48,7 +48,6 @@
                             setDivCenter(11);
                         }
 
-                        console.log('你是注册会员！');
                     }
                 }
             });

@@ -42,4 +42,10 @@ class Hotel_model extends CI_Model {
         $this -> db -> where('id', $cid);
         return $this -> db -> update('hotel', $data);
     }
+
+    public function get_hotel($id)
+    {
+        $query = $this -> db -> get_where('hotel', array('id' => $id), 1);
+        return $query -> row_array();
+    }
 }
