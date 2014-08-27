@@ -21,7 +21,7 @@ class Welcome extends CI_Controller {
             $uid = 'null';
         }
 
-        var_dump($uid);
+        var_dump($_COOKIE);
 
 
         $data = array(
