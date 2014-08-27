@@ -19,9 +19,6 @@ class Welcome extends CI_Controller {
             $uid = 'null';
         }
 
-        var_dump($uid);
-
-
 
         $data = array(
             'hotel_data' => $new_result,
