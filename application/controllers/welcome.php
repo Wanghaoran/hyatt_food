@@ -14,15 +14,14 @@ class Welcome extends CI_Controller {
         if(!empty($_POST['signed_request'])){
             $weibo_post = parseSignedRequest($_POST['signed_request']);
             $uid = $weibo_post['user_id'];
-            set_cookie('user_id', $uid);
         }else if(!empty($_COOKIE['user_id'])){
             $uid = get_cookie('user_id');
         }else{
             $uid = 'null';
         }
 
-        var_dump(get_cookie('user_id'));
-
+        $this->session->set_userdata('some_name', 'some_value');
+        var_dump($this->session->all_userdata());
 
         $data = array(
             'hotel_data' => $new_result,
