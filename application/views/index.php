@@ -133,9 +133,17 @@
 <div class="product">
     <div class="Div1_title">
             <span>
-                <a href="javascript:void(0)" class="Div1_title_a1">1</a>
-                <a href="javascript:void(0)">2</a>
-                <a href="javascript:void(0)">3</a> 
+                <?php foreach($hotel_data as $key => $value):?>
+
+                    <?php if($key%3 == 0):?>
+                        <?php if(intval($key/3) == 0):?>
+                            <a href="javascript:void(0)"><?php echo intval($key/3)+1;?></a>
+                        <?php else: ?>
+                            <a href="javascript:void(0)"><?php echo intval($key/3)+1;?></a>
+                        <?php endif; ?>
+                    <?php endif;?>
+
+                <?php endforeach;?>
             </span>
     </div>
     <div class="clear"></div>
