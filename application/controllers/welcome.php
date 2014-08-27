@@ -38,8 +38,15 @@ class Welcome extends CI_Controller {
 
     public function enroll()
     {
+        $result = array();
         $uid = $this -> session -> userdata('user_id');
         $email = $this -> input -> post('email');
+        if(!$uid || !$email){
+            $result['status'] = 'error';
+            $result['data'] = '数据错误！请稍后再试试';
+            echo json_encode($result);
+            return;
+        }
         var_dump($uid);
         var_dump($email);
     }

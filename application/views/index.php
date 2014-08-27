@@ -69,8 +69,11 @@
                 url : '<?=$this -> config -> base_url()?>welcome/enroll',
                 data : '&email=' + emailString,
                 async : false,
+                dataType : 'json',
                 success : function(ress){
-
+                    if(ress.status == 'error'){
+                        alert('注册失败！' + ress.data);
+                    }
                 }
             });
 
