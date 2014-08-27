@@ -12,7 +12,7 @@ class Welcome extends CI_Controller {
         //微博POST的数据
         $weibo_post = parseSignedRequest($_POST['signed_request']);
 
-//        var_dump($weibo_post);
+        var_dump($weibo_post);
 
         $data = array(
             'hotel_data' => $new_result,
