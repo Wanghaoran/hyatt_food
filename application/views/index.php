@@ -53,7 +53,7 @@
             <?php else: ?>
             var emailString = $('#emailString').val();
             //验证
-            if(!emailString){
+            if(emailString == '请输入您的邮箱'){
                 alert('请您输入电子邮件地址！');
                 $('#emailString').focus();
                 return;
