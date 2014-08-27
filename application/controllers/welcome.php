@@ -29,12 +29,11 @@ class Welcome extends CI_Controller {
             redirect('http://apps.weibo.com/2259266354/Qp1a6Ji');
         }
 
-        var_dump($uid);
-
         $data = array(
             'hotel_data' => $new_result,
             'num_order' => $numorder_result,
             'count_data' => count($new_result),
+            'uid' => $uid,
         );
         $this -> load -> view('index', $data);
     }

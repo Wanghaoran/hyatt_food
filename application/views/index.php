@@ -19,11 +19,22 @@
 
 
     <script>
+
+        <?php if($uid == 'null'): ?>
+
+        var sharebutton = function(){
+            App.trigger('login', {
+                // 请注意，redirect_uri 是登录成功后回调的 URL，必须传的是 *.weibo.com 下的 URL，不支持第三方的地址
+                'redirect_uri' : encodeURIComponent('http://apps.weibo.com/2259266354/Qp1a6Ji');
+            });
+        }
+
+        <?php else: ?>
         var sharebutton = function(){
             setDivCenter(11);
-//            showBg();
-//            alert('投票活动将于9月1日正式开始，敬请期待！');
         }
+        <?php endif; ?>
+
 
         var openshare = function(){
             var url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=%23%E5%87%AF%E6%82%A6%E6%82%A6%E4%BA%AB%E5%AE%B6%23%E6%88%91%E5%9C%A8%E8%AF%84%E9%80%89%E2%80%9C%E6%9C%80%E4%BD%B3%E6%97%B6%E4%BB%A4%E8%8F%9C%E8%82%B4%E2%80%9D%E6%B4%BB%E5%8A%A8%E4%B8%AD%EF%BC%8C%E6%8A%8A%E7%A5%A8%E6%8A%95%E7%BB%99%E4%BA%86xxxxx%E9%85%92%E5%BA%97%E7%9A%84%E3%80%90xxxxx%E8%8F%9C%E5%90%8D%E3%80%91%E3%80%82%E5%BF%AB%E6%9D%A5%E5%92%8C%E6%88%91%E4%B8%80%E8%B5%B7%E4%B8%BA%E5%96%9C%E7%88%B1%E7%9A%84%E8%8F%9C%E8%82%B4%E6%8A%95%E7%A5%A8%EF%BC%8C%E5%B0%B1%E6%9C%89%E6%9C%BA%E4%BC%9A%E8%B5%A2%E5%8F%96%E5%8F%8C%E4%BA%BA%E5%85%8D%E8%B4%B9%E9%85%92%E5%BA%97%E9%A4%90%E5%88%B8%21&source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=123';
