@@ -47,8 +47,27 @@ class Welcome extends CI_Controller {
             echo json_encode($result);
             return;
         }
-        var_dump($uid);
-        var_dump($email);
+
+        $this -> load -> model('user_model');
+        if($this -> user_model -> getUser($uid)){
+            $result['status'] = 'error';
+            $result['data'] = '此邮箱已注册，请您尝试其他邮箱！';
+            echo json_encode($result);
+            return;
+        }
+
+        if($this -> user_model -> insertUser($uid, $email)){
+            $result['status'] = 'success';
+            $result['data'] = '恭喜您成功注册凯悦悦享家！';
+            echo json_encode($result);
+            return;
+        }else{
+            $result['status'] = 'error';
+            $result['data'] = '数据传输错误！请稍后再试试';
+            echo json_encode($result);
+            return;
+        }
+
     }
 
     public function all($page = 1)

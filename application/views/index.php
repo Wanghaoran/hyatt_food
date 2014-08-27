@@ -73,6 +73,8 @@
                 success : function(ress){
                     if(ress.status == 'error'){
                         alert('注册失败！' + ress.data);
+                    }else{
+                        alert('注册成功！' + ress.data);
                     }
                 }
             });
