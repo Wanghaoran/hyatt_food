@@ -10,6 +10,7 @@ class Welcome extends CI_Controller {
         $data = array(
             'hotel_data' => $new_result,
             'num_order' => $numorder_result,
+            'count_data' => count($new_result),
         );
         $this -> load -> view('index', $data);
     }

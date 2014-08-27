@@ -160,7 +160,7 @@
                 <?php if($key%3 == 2):?>
                 </div>
                 <?php endif;?>
-                <?php if($key == 7):?>
+                <?php if($count_data - $key == 1 && $key%3 != 2):?>
         </div>
 
         <?php endif;?>
