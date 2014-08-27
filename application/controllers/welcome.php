@@ -10,10 +10,14 @@ class Welcome extends CI_Controller {
 
         $this->load->helper('weibo');
         //微博POST的数据
-        $weibo_post = parseSignedRequest($_POST['signed_request']);
-        $uid = $weibo_post['user_id'];
+        if(!empty($_POST['signed_request'])){
+            $weibo_post = parseSignedRequest($_POST['signed_request']);
+            $uid = $weibo_post['user_id'];
+            var_dump($uid);
 
-        var_dump($uid);
+        }
+
+
 
         $data = array(
             'hotel_data' => $new_result,
