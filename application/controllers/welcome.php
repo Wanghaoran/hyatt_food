@@ -36,6 +36,14 @@ class Welcome extends CI_Controller {
         $this -> load -> view('index', $data);
     }
 
+    public function enroll()
+    {
+        $uid = $this -> session -> userdata('user_id');
+        $email = $this -> input -> post('email');
+        var_dump($uid);
+        var_dump($email);
+    }
+
     public function all($page = 1)
     {
         $this -> load -> model('hotel_model');

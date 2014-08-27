@@ -63,7 +63,16 @@
                 alert('邮件格式不正确，请您重新输入！');
                 return;
             }
-            alert(emailString);
+
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/enroll',
+                data : '&email=' + emailString,
+                async : false,
+                success : function(ress){
+
+                }
+            });
 
             <?php endif; ?>
         }
