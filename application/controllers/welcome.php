@@ -9,19 +9,19 @@ class Welcome extends CI_Controller {
         $numorder_result = $this -> hotel_model -> gethotelbynum();
 
         $this->load->helper('weibo');
-        $this->load->helper('cookie');
         //微博POST的数据
         if(!empty($_POST['signed_request'])){
             $weibo_post = parseSignedRequest($_POST['signed_request']);
             $uid = $weibo_post['user_id'];
-        }else if(!empty($_COOKIE['user_id'])){
-            $uid = get_cookie('user_id');
+            $this->session->set_userdata('user_id', $uid);
+        }else if($this -> session -> userdata('user_id')){
+            $uid = $this -> session -> userdata('user_id');
         }else{
-            $uid = 'null';
+            //TODO:不是微博浏览，跳转到微博首页
+            exit('请在微博打开页面！');
         }
 
-        $this->session->set_userdata('some_name', 'some_value');
-        var_dump($this->session->all_userdata());
+        var_dump($uid);
 
         $data = array(
             'hotel_data' => $new_result,
