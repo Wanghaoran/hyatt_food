@@ -22,6 +22,7 @@ class Welcome extends CI_Controller {
             $this->session->set_userdata('user_id', $uid);
         }else if(empty($_GET['form'])){
             //不是微博浏览，跳转到微博首页
+            $this->load->helper('url');
             redirect('http://apps.weibo.com/2259266354/Qp1a6Ji');
         }else{
             $uid = $this -> session -> userdata('user_id');
