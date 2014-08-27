@@ -70,6 +70,11 @@ class Welcome extends CI_Controller {
 
     }
 
+    public function vote(){
+        $cid = $this -> input -> post('cid');
+        var_dump($cid);
+    }
+
     public function all($page = 1)
     {
         $this -> load -> model('hotel_model');

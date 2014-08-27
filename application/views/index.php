@@ -31,7 +31,23 @@
         });
             <?php else: ?>
             //TODO:投票
-            console.log(cid);
+
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/vote',
+                data : '&cid=' + cid,
+                async : false,
+                dataType : 'json',
+                success : function(ress){
+                    /*
+                    if(ress.status == 'error'){
+                        alert('注册失败！' + ress.data);
+                    }else{
+                        alert('注册成功！' + ress.data);
+                    }
+                    */
+                }
+            });
 //            setDivCenter(11);
             <?php endif; ?>
 
