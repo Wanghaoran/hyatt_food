@@ -53,6 +53,11 @@
             <?php else: ?>
             var emailString = $('#emailString').val();
             //验证
+            if(!emailString){
+                alert('请您输入电子邮件地址！');
+                $('#emailString').focus();
+                return;
+            }
             var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
             if(!reg.test(emailString)){
                 alert('邮件格式不正确，请您重新输入！');
