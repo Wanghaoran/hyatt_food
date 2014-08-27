@@ -13,9 +13,13 @@ class Welcome extends CI_Controller {
         if(!empty($_POST['signed_request'])){
             $weibo_post = parseSignedRequest($_POST['signed_request']);
             $uid = $weibo_post['user_id'];
-            var_dump($uid);
-
+        }else if(!empty($_GET['user_id'])){
+            $uid = $_GET['user_id'];
+        }else{
+            $uid = 'null';
         }
+
+        var_dump($uid);
 
 
 
