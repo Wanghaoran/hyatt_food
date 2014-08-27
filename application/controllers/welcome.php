@@ -9,6 +9,7 @@ class Welcome extends CI_Controller {
         $numorder_result = $this -> hotel_model -> gethotelbynum();
 
         $this->load->helper('weibo');
+        
         //微博POST的数据
         if(!empty($_POST['signed_request'])){
             $weibo_post = parseSignedRequest($_POST['signed_request']);
@@ -17,11 +18,11 @@ class Welcome extends CI_Controller {
         }else if($this -> session -> userdata('user_id')){
             $uid = $this -> session -> userdata('user_id');
         }else{
-            //TODO:不是微博浏览，跳转到微博首页
-            exit('请在微博打开页面！');
+            //不是微博浏览，跳转到微博首页
+            //http://apps.weibo.com/2259266354/Qp1a6Ji
+            $this -> load -> helper('url');
+            redirect('http://apps.weibo.com/2259266354/Qp1a6Ji');
         }
-
-        var_dump($uid);
 
         $data = array(
             'hotel_data' => $new_result,
