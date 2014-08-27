@@ -20,15 +20,12 @@ class Welcome extends CI_Controller {
                 $uid = $weibo_post['user_id'];
             }
             $this->session->set_userdata('user_id', $uid);
-        }else if($this -> session -> userdata('user_id')){
-            $uid = $this -> session -> userdata('user_id');
-        }else{
+        }else if($_GET['form'] != 'weibo'){
             //不是微博浏览，跳转到微博首页
-            //http://apps.weibo.com/2259266354/Qp1a6Ji
-            $this -> load -> helper('url');
             redirect('http://apps.weibo.com/2259266354/Qp1a6Ji');
+        }else{
+            $uid = $this -> session -> userdata('user_id');
         }
-
         $data = array(
             'hotel_data' => $new_result,
             'num_order' => $numorder_result,
