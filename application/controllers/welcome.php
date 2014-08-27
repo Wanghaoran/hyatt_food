@@ -51,7 +51,7 @@ class Welcome extends CI_Controller {
         $this -> load -> model('user_model');
         if($this -> user_model -> getUser($uid)){
             $result['status'] = 'error';
-            $result['data'] = '此邮箱已注册，请您尝试其他邮箱！';
+            $result['data'] = '您已注册成为凯悦悦享家，请勿重复申请！';
             echo json_encode($result);
             return;
         }
