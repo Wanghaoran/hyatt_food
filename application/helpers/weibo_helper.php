@@ -22,4 +22,13 @@ if ( ! function_exists('parseSignedRequest'))
         // 如果 sha256 加密后的结果和 $sig 是一致的，那么 $data 数据就没问题，直接返回给调用方；否则>表示数据校验出错，返回 -2
         return ($sig !== $expected_sig)? '-2' : $data;
     }
+
+
+    if ( ! function_exists('base64decode'))
+    {
+        function base64decode($str) {
+            // 将需要 base64 解码的字符串，按照字符串长度先补上相应的等号（补上等号后的字符串长度应该是4>的整数倍），然后将其中的 - 和 _ 分别替换成 + 和 /，然后对处理后的字符串执行 base64 解码
+            return base64_decode(strtr($str.str_repeat('=', (4 - strlen($str) % 4)), '-_', '+/'));
+        }
+    }
 }
