@@ -101,11 +101,10 @@ class Welcome extends CI_Controller {
             //获取酒店名称和菜品名称
             $this -> load -> model('hotel_model');
             $info = $this -> hotel_model -> get_hotel($cid);
-            $url_t = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=#凯悦悦享家#我在评选“最佳时令菜肴”活动中，把票投给了' . $info['hotel_name'] . '酒店的【' . $info['food_name'] . '】。快来和我一起为喜爱的菜肴投票，就有机会赢取双人免费酒店餐券!source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
+            $con_t = '#凯悦悦享家#我在评选“最佳时令菜肴”活动中，把票投给了' . $info['hotel_name'] . '酒店的【' . $info['food_name'] . '】。快来和我一起为喜爱的菜肴投票，就有机会赢取双人免费酒店餐券!';
+            $con = urlencode($con_t);
 
-            $url_t = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=#中把票投给了' . $info['hotel_name'] . '酒' . $info['food_name'] . '快来和我一source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
-
-            $url = urldecode($url_t);
+            $url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=' . $con . 'source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
             $result['url'] = $url;
 
             echo json_encode($result);
