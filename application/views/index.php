@@ -32,7 +32,7 @@
             <?php else: ?>
             //TODO:投票
             console.log(cid);
-            setDivCenter(11);
+//            setDivCenter(11);
             <?php endif; ?>
 
         }
@@ -219,7 +219,7 @@
                 <span class="Div1_main_span1">
                     <a href="javascript:void(0)" class="Div1_main_a1"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['small_pic']?>" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip()"/></a>
                     <b><?=$value['hotel_name']?></b>
-                    <a href="javascript:void(0)" onclick="sharebutton();" class="Div1_main_a2"></a>
+                    <a href="javascript:void(0)" onclick="sharebutton('<?=$value['id']?>');" class="Div1_main_a2"></a>
                     <p>已有 <?=$value['num']?> 人投票</p>
                 </span>
 
