@@ -137,8 +137,8 @@
 
                     <?php if($key%3 == 0):?>
                         <?php if(intval($key/3) == 0):?>
-                            <a href="javascript:void(0)"><?php echo intval($key/3)+1;?></a>
-                        <?php else: ?>
+                            <a href="javascript:void(0)" class="Div1_title_a1"><?php echo intval($key/3)+1;?></a>
+                        <?php else:?>
                             <a href="javascript:void(0)"><?php echo intval($key/3)+1;?></a>
                         <?php endif; ?>
                     <?php endif;?>
