@@ -15,7 +15,7 @@ $(function(){
 		
 		function NextPage()
 		{	
-			if(index>2)
+			if(index>3)
 			{
 				index = 0 ;
 			}
@@ -27,7 +27,7 @@ $(function(){
 		{	
 			if(index<0)
 			{
-				index = 2 ;
+				index = 3 ;
 			}
 			$(".Div1_title span a").removeClass("Div1_title_a1").eq(index).addClass("Div1_title_a1");
 			$(".Div1_main").stop(true, false).animate({left: -index*Swidth+"px"},600)		
