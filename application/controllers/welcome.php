@@ -71,8 +71,37 @@ class Welcome extends CI_Controller {
     }
 
     public function vote(){
+        //TODO:会员表增加投票总次数
+        //TODO:增加一个表记录所有投票，包含时间，UID，CID
+        //TODO:增加一个表，记录会员每天的投票量
+        //TODO:增加每个会员每天10票限制
+
+
         $cid = $this -> input -> post('cid');
-        var_dump($cid);
+        $uid = $this -> session -> userdata('user_id');
+
+        if(!$uid || !$cid){
+            $result['status'] = 'error';
+            $result['data'] = '数据错误！请稍后再试试';
+            echo json_encode($result);
+            return;
+        }
+
+        //更新酒店得票数
+        $this -> load -> model('hotel_model');
+        if($this -> hotel_model -> addnum($cid)){
+            $result['status'] = 'success';
+            $result['data'] = '恭喜您成功注册凯悦悦享家！';
+            echo json_encode($result);
+            return;
+        }else{
+            $result['status'] = 'error';
+            $result['data'] = '数据传输错误！请稍后再试试';
+            echo json_encode($result);
+            return;
+        }
+
+
     }
 
     public function all($page = 1)
