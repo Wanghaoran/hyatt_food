@@ -7,6 +7,13 @@ class Welcome extends CI_Controller {
         $this -> load -> model('hotel_model');
         $new_result = $this -> hotel_model -> getallhotel();
         $numorder_result = $this -> hotel_model -> gethotelbynum();
+
+        $this->load->helper('weibo');
+        //微博POST的数据
+        $weibo_post = parseSignedRequest($_POST['signed_request']);
+
+        var_dump($weibo_post);
+
         $data = array(
             'hotel_data' => $new_result,
             'num_order' => $numorder_result,
