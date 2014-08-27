@@ -20,21 +20,18 @@
 
     <script>
 
-        <?php if($uid == 'null'): ?>
-
         var sharebutton = function(){
-            alert(111);
+
+            <?php if($uid == 'null'): ?>
             App.trigger('login', {
                 // 请注意，redirect_uri 是登录成功后回调的 URL，必须传的是 *.weibo.com 下的 URL，不支持第三方的地址
                 'redirect_uri' : encodeURIComponent('http://apps.weibo.com/2259266354/Qp1a6Ji');
-            });
-        }
-
-        <?php else: ?>
-        var sharebutton = function(){
+        });
+            <?php else: ?>
             setDivCenter(11);
+            <?php endif; ?>
+
         }
-        <?php endif; ?>
 
 
         var openshare = function(){
