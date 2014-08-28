@@ -101,6 +101,11 @@ class Welcome extends CI_Controller {
             //获取会员当日已投票数
             $have_num = $this -> userdate_model -> gettodaynum($uid);
 
+            //会员总投票数+1
+            $this -> load -> model('usertotal_model');
+            $this -> usertotal_model -> addtotal($uid);
+
+
         }else{
             $result['status'] = 'error';
             $result['data'] = '您今日投票数已达上限，请您明日再来！';
