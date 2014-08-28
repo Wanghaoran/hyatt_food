@@ -11,6 +11,7 @@ class Hotel_model extends CI_Model {
     public function getallhotel()
     {
 
+        $this -> db -> where('show', 1);
         $query = $this -> db -> get('hotel');
         return $query -> result_array();
     }
