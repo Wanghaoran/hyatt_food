@@ -32,7 +32,6 @@
                 'redirect_uri' : encodeURIComponent('http://apps.weibo.com/2259266354/Qp1a6Ji')
         });
             <?php else: ?>
-            //TODO:投票
 
             $.ajax({
                 type : 'POST',
@@ -44,6 +43,7 @@
                     if(ress.status == 'error'){
                         alert('投票失败！' + ress.data);
                     }else{
+                        alert('投票成功！' + ress.data);
                         //设置分享URL
                         url = ress.url;
                         if(ress.isregister == 'no'){

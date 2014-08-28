@@ -73,8 +73,6 @@ class Welcome extends CI_Controller {
     public function vote(){
         //TODO:会员表增加投票总次数
         //TODO:增加一个表记录所有投票，包含时间，UID，CID
-        //TODO:增加一个表，记录会员每天的投票量
-        //TODO:增加每个会员每天10票限制
 
 
         $cid = $this -> input -> post('cid');
@@ -86,6 +84,30 @@ class Welcome extends CI_Controller {
             echo json_encode($result);
             return;
         }
+
+
+        //查询会员今日已投票数，是否超过每天10票
+        $this -> load -> model('userdate_model');
+        if($this -> userdate_model -> gettodaynum($uid) < 10){
+
+            //会员当日投票数＋1
+            if(!$this -> userdate_model -> addtodaynum($uid)){
+                $result['status'] = 'error';
+                $result['data'] = '投票数更新失败！请稍后再试';
+                echo json_encode($result);
+                return;
+            }
+
+            //获取会员当日已投票数
+            $have_num = $this -> userdate_model -> gettodaynum($uid);
+
+        }else{
+            $result['status'] = 'error';
+            $result['data'] = '您今日投票数已达上限，请您明日再来！';
+            echo json_encode($result);
+            return;
+        }
+
 
         //更新酒店得票数
         $this -> load -> model('hotel_model');
@@ -106,6 +128,7 @@ class Welcome extends CI_Controller {
 
             $url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=' . $con . '&source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=';
             $result['url'] = $url;
+            $result['data'] = '您今日已投' . $have_num . '票，还可以投' . (10 - $have_num) . '票';
 
             echo json_encode($result);
             return;
