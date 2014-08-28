@@ -71,8 +71,6 @@ class Welcome extends CI_Controller {
     }
 
     public function vote(){
-        //TODO:增加一个表记录所有投票，包含时间，UID，CID
-
 
         $cid = $this -> input -> post('cid');
         $uid = $this -> session -> userdata('user_id');
