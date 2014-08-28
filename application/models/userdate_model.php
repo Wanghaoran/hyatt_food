@@ -16,9 +16,8 @@ class Userdate_model extends CI_Model {
         );
         $query = $this -> db -> get_where('user_date_votes', $where, 1);
         $result = $query -> result_array();
-        var_dump($result);
         if($result){
-            $num = $result['sum'];
+            $num = $result[0]['sum'];
         }else{
             $num = 0;
         }
@@ -37,9 +36,9 @@ class Userdate_model extends CI_Model {
         if($result){
             //有数据更新
             $data = array(
-                'sum' => $result['sum'] + $step,
+                'sum' => $result[0]['sum'] + $step,
             );
-            $this -> db -> where('id', $result['id']);
+            $this -> db -> where('id', $result[0]['id']);
             return $this -> db -> update('user_date_votes', $data);
         }else{
             //无数据创建
