@@ -71,7 +71,6 @@ class Welcome extends CI_Controller {
     }
 
     public function vote(){
-        //TODO:会员表增加投票总次数
         //TODO:增加一个表记录所有投票，包含时间，UID，CID
 
 
@@ -104,6 +103,10 @@ class Welcome extends CI_Controller {
             //会员总投票数+1
             $this -> load -> model('usertotal_model');
             $this -> usertotal_model -> addtotal($uid);
+
+            //记录投票明细
+            $this -> load -> model('userdetails_model');
+            $this -> userdetails_model -> adddetails($uid, $cid);
 
 
         }else{
