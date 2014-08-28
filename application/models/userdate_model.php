@@ -17,7 +17,7 @@ class Userdate_model extends CI_Model {
         $query = $this -> db -> get_where('user_date_votes', $where, 1);
         $result = $query -> result_array();
         if($result){
-            $num = $result['num'];
+            $num = $result['sum'];
         }else{
             $num = 0;
         }
