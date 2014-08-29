@@ -144,6 +144,7 @@
                 <div class="clear10"></div>
                 <div class="page">
 <!--                    <div class="meneame"><span class="disabled"> < </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2"> > </a></div>-->
+                    <?=$pageshow?>
                 </div>
                 <div class="clear"></div>
             </div>

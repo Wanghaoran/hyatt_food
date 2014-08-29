@@ -27,10 +27,9 @@ class Hotel_model extends CI_Model {
 
     public function gethotelbylimit($page)
     {
-        $start = $page * 6 - 6;
-        $this->db->limit(6, $start);
+        $start = $page * 9 - 9;
+        $this->db->limit(9, $start);
         $query = $this -> db -> get('hotel');
-        echo $this->db->last_query();
         return $query -> result_array();
     }
 
