@@ -41,7 +41,7 @@
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 $route['all'] = 'welcome/all';
-//$route['all/(:num)'] = 'welcome/all/$1';
+$route['all/(:num)'] = 'welcome/all/$1';
 $route['old'] = 'welcome/old';
 $route['terms'] = 'welcome/terms';
 
