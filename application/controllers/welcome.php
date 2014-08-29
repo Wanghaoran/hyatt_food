@@ -207,9 +207,9 @@ class Welcome extends CI_Controller {
         $config['full_tag_close'] = '</div>';
 
 
-        $pageshow = $this->pagination->initialize($config);
+        $this->pagination->initialize($config);
 
-        echo $this->pagination->create_links();
+        $pageshow = $this->pagination->create_links();
 
         $new_result = $this -> hotel_model -> gethotelbylimit($page);
 
