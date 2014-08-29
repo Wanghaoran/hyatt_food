@@ -394,11 +394,41 @@
                         </td>
                     </tr>
 
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
+                                        #凯悦悦享家#所谓 “不时，不食”，吃时令菜，享健康美味正是今年 “凯悦悦享家之美馔第二季”将为大家传递的饮食理念。在这个季节，凯悦集团将为您呈奉养生佳肴，您又钟爱哪道秋季时令菜，快来分享~
+                                    </p>
+                                    <img alt="" src="http://ww1.sinaimg.cn/thumbnail/86a9ab32jw1ejqztgvozsj20ip0oydj4.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
+                                        #凯悦悦享家#对@北京柏悦酒店 行政总厨欧阳庆龙师傅来说，入行二十五年，他始终坚持对美食的执着与创新，将煎、煮、炒、炸的烹饪技巧加以独具匠心的构思和创作，精彩演绎着每一道菜肴，为食客带去无限惊喜。用心、执着、创新，是他对待美食的态度，你对美食的态度是？
+                                    </p>
+                                    <img alt="" src="http://ww2.sinaimg.cn/thumbnail/86a9ab32jw1ejowxxufz5j20jg0r5q7b.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
                 </table>
             </div>
             <script type="text/javascript">
                 /*********向上连续滚动及鼠标拖动***************/
-//                new Marquee("MarqueeDiv",0,1,390,260,30,0,0)
+                new Marquee("MarqueeDiv",0,1,390,260,30,0,0)
             </script>
         </div>
     </div>
