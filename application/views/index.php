@@ -391,5 +391,8 @@
 <!--微博热议 end-->
 </div>
 <script language="javascript" src="<?=$this->config->base_url()?>static/javascript/ToolTip.js"></script>
+<div style="display: none;">
+    <script src="http://s95.cnzz.com/stat.php?id=1253168334&web_id=1253168334" language="JavaScript"></script>
+</div>
 </body>
 </html>
