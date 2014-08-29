@@ -167,6 +167,45 @@ class Welcome extends CI_Controller {
         echo $show_num;
     }
 
+    public function sendenrollemail(){
+
+
+        /*
+
+        $this -> load -> library('email');
+        //设置参数
+        $config['useragent'] = 'uniquead';
+        $config['protocol'] = 'smtp';
+        $config['smtp_host'] = 'smtp.exmail.qq.com';
+        $config['smtp_user'] = 'yuexiangjia.hyatt@uniquead.cn';
+        $config['smtp_pass'] = 'cxwj9876';
+        $config['smtp_port'] = '465';
+        $config['mailtype'] = 'html';
+        $config['priority'] = '1';
+        $this->email->initialize($config);
+
+        //设置发件人email地址和名称:
+        $this -> email -> from('yuexiangjia.hyatt@uniquead.cn', '凯悦悦享家');
+        //设置收件人地址
+        $this -> email -> to('1029858078@qq.com');
+        //邮件标题
+        $this -> email -> subject('欢迎加入凯悦悦享家');
+        //邮件正文
+        $this -> email -> message('This is my message');
+
+        //发送
+        var_dump($this -> email -> send());
+
+        */
+        $this->load->library('sendemail');
+        $this -> sendemail -> setServer("smtp.exmail.qq.com", "yuexiangjia.hyatt@uniquead.cn", "cxwj9876", 465, true); //设置smtp服务器，到服务器的SSL连接
+        $this -> sendemail -> setFrom("yuexiangjia.hyatt@uniquead.cn"); //设置发件人
+        $this -> sendemail -> setReceiver("1029858078@qq.com"); //设置收件人，多个收件人，调用多次
+        $this -> sendemail -> setMail("欢迎加入凯悦悦享家", "<b>test</b>"); //设置邮件主题、内容
+        var_dump($this -> sendemail -> sendMail()); //发送
+
+    }
+
     public function all($page = 1)
     {
         $this -> load -> model('hotel_model');
@@ -192,3 +231,4 @@ class Welcome extends CI_Controller {
 
 /* End of file welcome.php */
 /* Location: ./application/controllers/welcome.php */
+
