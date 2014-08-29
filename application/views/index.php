@@ -9,7 +9,7 @@
     <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.js"></script>
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/script.js"></script>
-    <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/MSClass.js"></script>
+    <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/MSClass1.65.js"></script>
 
     <style>
         .hdsm a {
