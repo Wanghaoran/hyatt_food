@@ -153,7 +153,7 @@
                 url : '<?=$this -> config -> base_url()?>welcome/ajaxgetusernum',
                 async : false,
                 success : function(ress){
-                    $('#user_num_total').val(ress);
+                    $('#user_num_total').html(ress);
                 }
             });
         }
