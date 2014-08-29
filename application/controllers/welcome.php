@@ -16,7 +16,9 @@ class Welcome extends CI_Controller {
         //已加入人数
         $this -> load -> model('user_model');
         $all_num = $this -> user_model -> getsum();
-        var_dump($all_num);
+        $show_num = str_pad($all_num, 5, 0, STR_PAD_LEFT);
+        var_dump($show_num);
+
 
 
         $this->load->helper('weibo');
