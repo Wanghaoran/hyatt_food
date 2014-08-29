@@ -213,11 +213,12 @@ class Welcome extends CI_Controller {
 
         $new_result = $this -> hotel_model -> gethotelbylimit($page);
 
-//        $new_result = $this -> hotel_model -> getallhotel();
+        $uid = $this -> session -> userdata('user_id');
 
         $data = array(
             'hotel_data' => $new_result,
             'pageshow' => $pageshow,
+            'uid' => $uid,
         );
         $this -> load -> view('all', $data);
     }

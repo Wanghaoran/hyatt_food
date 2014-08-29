@@ -11,16 +11,104 @@
 
 
     <script>
-        var sharebutton = function(){
-            setDivCenter(11);
-//            showBg();
-//            alert('投票活动将于9月1日正式开始，敬请期待！');
+
+
+        var url = '';
+
+        //点击投票
+        var sharebutton = function(cid){
+
+            <?php if($uid == 'null'): ?>
+            App.trigger('login', {
+                // 请注意，redirect_uri 是登录成功后回调的 URL，必须传的是 *.weibo.com 下的 URL，不支持第三方的地址
+                'redirect_uri' : encodeURIComponent('http://apps.weibo.com/2259266354/Qp1a6Ji')
+            });
+            <?php else: ?>
+
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/vote',
+                data : '&cid=' + cid,
+                async : false,
+                dataType : 'json',
+                success : function(ress){
+                    if(ress.status == 'error'){
+                        alert('投票失败！' + ress.data);
+                    }else{
+                        alert('投票成功！' + ress.data);
+                        //设置分享URL
+                        url = ress.url;
+                        if(ress.isregister == 'no'){
+                            setDivCenter(11);
+                        }else{
+                            openshare();
+                        }
+
+                    }
+                }
+            });
+            <?php endif; ?>
+
         }
 
         var openshare = function(){
-            var url = 'http://service.weibo.com/share/share.php?url=http%3A%2F%2Fopen.weibo.com%2Fsharebutton&appkey=2131282401&language=zh_cn&title=%23%E5%87%AF%E6%82%A6%E6%82%A6%E4%BA%AB%E5%AE%B6%23%E6%88%91%E5%9C%A8%E8%AF%84%E9%80%89%E2%80%9C%E6%9C%80%E4%BD%B3%E6%97%B6%E4%BB%A4%E8%8F%9C%E8%82%B4%E2%80%9D%E6%B4%BB%E5%8A%A8%E4%B8%AD%EF%BC%8C%E6%8A%8A%E7%A5%A8%E6%8A%95%E7%BB%99%E4%BA%86xxxxx%E9%85%92%E5%BA%97%E7%9A%84%E3%80%90xxxxx%E8%8F%9C%E5%90%8D%E3%80%91%E3%80%82%E5%BF%AB%E6%9D%A5%E5%92%8C%E6%88%91%E4%B8%80%E8%B5%B7%E4%B8%BA%E5%96%9C%E7%88%B1%E7%9A%84%E8%8F%9C%E8%82%B4%E6%8A%95%E7%A5%A8%EF%BC%8C%E5%B0%B1%E6%9C%89%E6%9C%BA%E4%BC%9A%E8%B5%A2%E5%8F%96%E5%8F%8C%E4%BA%BA%E5%85%8D%E8%B4%B9%E9%85%92%E5%BA%97%E9%A4%90%E5%88%B8%21&source=&sourceUrl=&ralateUid=2259266354&message=&uids=&pic=&searchPic=false&content=123';
             window.open (url, '分享到新浪微博', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no');
         }
+
+        //加入悦享受家-弹层
+        var joinhyatt2 = function(){
+            <?php if($uid == 'null'): ?>
+            App.trigger('login', {
+                // 请注意，redirect_uri 是登录成功后回调的 URL，必须传的是 *.weibo.com 下的 URL，不支持第三方的地址
+                'redirect_uri' : encodeURIComponent('http://apps.weibo.com/2259266354/Qp1a6Ji')
+            });
+            <?php else: ?>
+            var emailString = $('#emailString2').val();
+            //验证
+            if(emailString == '请输入您的邮箱'){
+                alert('请您输入电子邮件地址！');
+                $('#emailString').focus();
+                return;
+            }
+            var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+            if(!reg.test(emailString)){
+                alert('邮件格式不正确，请您重新输入！');
+                return;
+            }
+
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/enroll',
+                data : '&email=' + emailString,
+                async : false,
+                dataType : 'json',
+                success : function(ress){
+                    if(ress.status == 'error'){
+                        alert('注册失败！' + ress.data);
+                    }else{
+                        alert('注册成功！' + ress.data);
+                        closeBg(11);
+                        tosendemail();
+
+                    }
+                }
+            });
+
+            <?php endif; ?>
+        }
+
+        //sendemail
+        var tosendemail = function(){
+            $.ajax({
+                type : 'GET',
+                url : '<?=$this -> config -> base_url()?>welcome/sendenrollemail',
+                async : false,
+                success : function(){
+                    return;
+                }
+            });
+        }
+
     </script>
 
     <script language="javascript">
@@ -99,10 +187,10 @@
 <div id="11" class="mydiv" style="display:none;">
     <a href="javascript:closeBg(11)" class="btn_del" title="关闭"></a>
     <div class="popcon">
-        <div class="pop_input"><input id="kw" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}">
+        <div class="pop_input"><input id="emailString2" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}">
         </div>
         <div class="clear20"></div>
-        <div class="pop_join"><a href="javascript:void(0);" onclick="alert('活动将于9月1日正式上线，请您届时加入凯悦悦享家！');" title="点击加入“凯悦悦享家”"></a><a href="javascript:closeBg(11)" class="tiaoguo">跳过</a></div>
+        <div class="pop_join"><a href="javascript:void(0);" onclick="joinhyatt2();" title="点击加入“凯悦悦享家”"></a><a href="javascript:closeBg(11)" class="tiaoguo">跳过</a></div>
 
     </div>
 </div>
@@ -134,7 +222,7 @@
                             <dt><?=$value['hotel_name']?></dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?>" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip();" width="222" height="286"/></dd>
                             <dd class="ddinfo">
-                                <a href="javascript:void(0);" onclick="sharebutton();" class="btn_tp"></a><span>已有 <?=$value['num']?> 人投票</span>
+                                <a href="javascript:void(0);" onclick="sharebutton(<?=$value['id']?>);" class="btn_tp"></a><span>已有 <?=$value['num']?> 人投票</span>
                             </dd>
                         </dl>
                     </li>
