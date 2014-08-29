@@ -337,7 +337,7 @@
     <div class="phb_right">
         <div class="input_email"><input id="emailString" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}"></div>
         <div class="btn_join"><a  onclick="joinhyatt();" href="javascript:void(0);" title="点击加入“凯悦悦享家”"></a></div>
-        <div class="btn_num">00051</div>
+        <div class="btn_num"><?=$show_num?></div>
 
     </div>
 

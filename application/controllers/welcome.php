@@ -17,9 +17,6 @@ class Welcome extends CI_Controller {
         $this -> load -> model('user_model');
         $all_num = $this -> user_model -> getsum();
         $show_num = str_pad($all_num, 5, 0, STR_PAD_LEFT);
-        var_dump($show_num);
-
-
 
         $this->load->helper('weibo');
 
@@ -45,6 +42,7 @@ class Welcome extends CI_Controller {
             'num_order' => $numorder_result,
             'count_data' => count($new_result),
             'uid' => $uid,
+            'show_num' => $show_num,
         );
         $this -> load -> view('index', $data);
     }
