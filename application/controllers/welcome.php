@@ -190,6 +190,8 @@ class Welcome extends CI_Controller {
     public function all($page = 1)
     {
 
+        $this -> load -> model('hotel_model');
+
         $this->load->library('pagination');
 
         $config['base_url'] = 'http://hyatt.cnhtk.cn/all';
@@ -201,7 +203,6 @@ class Welcome extends CI_Controller {
         echo $this->pagination->create_links();
 
 
-        $this -> load -> model('hotel_model');
 //        $new_result = $this -> hotel_model -> gethotelbylimit($page);
 
         $new_result = $this -> hotel_model -> getallhotel();
