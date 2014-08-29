@@ -424,6 +424,35 @@
                         </td>
                     </tr>
 
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
+                                        2013年#凯悦悦享家#之美馔活动过去一年了，每每回想起那一道道精心选材、用心烹制的美味佳肴，是否早已勾起你心底的味觉记忆？今年， “凯悦悦享家之美馔第二季”即将倾情呈献。2014年9月，@凯悦酒店集团HYATT 和我们一起，倾听美食的故事。
+                                    </p>
+                                    <img suda-uatrack="key=tblog_newimage_feed&amp;value=image_feed_unfold" action-type="fl_pics" action-data="pic_id=86a9ab32jw1ejla2r9uwij20m80er79q" src="http://ww3.sinaimg.cn/square/86a9ab32jw1ejla2r9uwij20m80er79q.jpg" class="bigcursor">
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
+                                        #凯悦悦享家#“民以食为天”，美食的真谛不仅是味道的醇美，更是佳肴背后的那份温暖。带您体验家的味道，领您享受爱的新意。用执着、热情和体贴烹饪的美食在这里，在凯悦。
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
                 </table>
             </div>
             <script type="text/javascript">
