@@ -377,7 +377,7 @@
     <div class="wbry_left">
         <div class="mingdan">
             <div class="md_title"></div>
-            <div id="MarqueeDiv" style="width:390px; height:260px;overflow:hidden; margin:20px 0 0 40px;">
+            <div id="MarqueeDiv123" style="width:390px; height:260px;overflow:hidden; margin:20px 0 0 40px;">
                 <table width="420" border="0" cellspacing="0" cellpadding="0" align="center">
                     <tr>
                         <td height="120" align="center" valign="middle">
@@ -428,7 +428,7 @@
             </div>
             <script type="text/javascript">
                 /*********向上连续滚动及鼠标拖动***************/
-                new Marquee("MarqueeDiv",0,1,390,260,30,0,0)
+                new Marquee("MarqueeDiv123",0,1,390,260,30,0,0)
             </script>
         </div>
     </div>
