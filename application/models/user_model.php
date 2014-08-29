@@ -26,7 +26,10 @@ class User_model extends CI_Model {
 
     //获取人数
     public function getsum(){
-        return $this->db->count_all_results('user');
+        $now = $this->db->count_all_results('user');
+        $old = 10732;
+        $total = $now + $old;
+        return $total;
     }
 
 
