@@ -125,7 +125,6 @@ class Welcome extends CI_Controller {
             return;
         }
 
-
         //更新酒店得票数
         $this -> load -> model('hotel_model');
         if($this -> hotel_model -> addnum($cid)){
@@ -156,7 +155,16 @@ class Welcome extends CI_Controller {
             return;
         }
 
+    }
 
+
+    //ajax获取总人数
+    public function ajaxgetusernum(){
+        //已加入人数
+        $this -> load -> model('user_model');
+        $all_num = $this -> user_model -> getsum();
+        $show_num = str_pad($all_num, 5, 0, STR_PAD_LEFT);
+        echo $show_num;
     }
 
     public function all($page = 1)

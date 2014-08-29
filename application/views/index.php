@@ -96,6 +96,7 @@
                     if(ress.status == 'error'){
                         alert('注册失败！' + ress.data);
                     }else{
+                        getnum();
                         alert('注册成功！' + ress.data);
                     }
                 }
@@ -135,6 +136,7 @@
                     if(ress.status == 'error'){
                         alert('注册失败！' + ress.data);
                     }else{
+                        getnum();
                         alert('注册成功！' + ress.data);
                         closeBg(11);
                     }
@@ -142,6 +144,18 @@
             });
 
             <?php endif; ?>
+        }
+
+        //获取总人数
+        var getnum = function(){
+            $.ajax({
+                type : 'GET',
+                url : '<?=$this -> config -> base_url()?>welcome/ajaxgetusernum',
+                async : false,
+                success : function(ress){
+                    $('#user_num_total').val(ress);
+                }
+            });
         }
     </script>
 
@@ -337,7 +351,7 @@
     <div class="phb_right">
         <div class="input_email"><input id="emailString" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}"></div>
         <div class="btn_join"><a  onclick="joinhyatt();" href="javascript:void(0);" title="点击加入“凯悦悦享家”"></a></div>
-        <div class="btn_num"><?=$show_num?></div>
+        <div class="btn_num" id="user_num_total"><?=$show_num?></div>
 
     </div>
 
