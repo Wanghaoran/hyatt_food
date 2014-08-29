@@ -97,8 +97,8 @@
                         alert('注册失败！' + ress.data);
                     }else{
                         getnum();
-                        tosendemail();
                         alert('注册成功！' + ress.data);
+                        tosendemail();
                     }
                 }
             });
@@ -138,9 +138,9 @@
                         alert('注册失败！' + ress.data);
                     }else{
                         getnum();
-                        tosendemail();
                         alert('注册成功！' + ress.data);
                         closeBg(11);
+                        tosendemail();
 
                     }
                 }
