@@ -5,7 +5,10 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
         $this -> load -> model('hotel_model');
+
         $new_result = $this -> hotel_model -> getallhotel();
+        shuffle($new_result);
+
         $numorder_result = $this -> hotel_model -> gethotelbynum();
 
         $this->load->helper('weibo');
