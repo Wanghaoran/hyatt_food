@@ -197,6 +197,7 @@ class Welcome extends CI_Controller {
         $config['base_url'] = 'http://hyatt.cnhtk.cn/all';
         $config['total_rows'] = $this -> hotel_model -> gettotalnum();
         $config['per_page'] = 6;
+        $config['use_page_numbers'] = TRUE;
 
         $this->pagination->initialize($config);
 
