@@ -204,12 +204,9 @@ class Welcome extends CI_Controller {
 
         echo $this->pagination->create_links();
 
-        var_dump($page);
+        $new_result = $this -> hotel_model -> gethotelbylimit($page);
 
-
-//        $new_result = $this -> hotel_model -> gethotelbylimit($page);
-
-        $new_result = $this -> hotel_model -> getallhotel();
+//        $new_result = $this -> hotel_model -> getallhotel();
 
         $data = array(
             'hotel_data' => $new_result,
