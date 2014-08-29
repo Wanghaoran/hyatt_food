@@ -384,7 +384,10 @@
                             <ul class="wblist">
                                 <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                                 <li class="lidiv">
-                                    <p>#凯悦悦享家#活动将于9月1日正式开启！</p>
+                                    <p>
+                                        #凯悦悦享家# 健康的饮食，是在营养与美味之间取得平衡。“凯悦悦享家之美馔第二季”将为您带来以新鲜时令食材炮制的秋季养生美馔，与您分享如何既能保留食物营养价值，又能打造让人念念不忘的经典风味。热爱美食的你，觉得哪些食材是秋季时令菜中必不可少的呢？
+                                    </p>
+                                    <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ejtcegyqypj20m80etdki.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
                                 </li>
                             </ul>
                             <div class="clear10"></div>
