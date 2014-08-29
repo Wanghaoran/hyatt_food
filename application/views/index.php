@@ -139,6 +139,7 @@
                         getnum();
                         alert('注册成功！' + ress.data);
                         closeBg(11);
+                        tosendemail();
                     }
                 }
             });
@@ -154,6 +155,18 @@
                 async : false,
                 success : function(ress){
                     $('#user_num_total').html(ress);
+                }
+            });
+        }
+
+        //sendemail
+        var tosendemail = function(){
+            $.ajax({
+                type : 'GET',
+                url : '<?=$this -> config -> base_url()?>welcome/sendenrollemail',
+                async : false,
+                success : function(ress){
+                    return;
                 }
             });
         }
