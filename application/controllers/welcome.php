@@ -189,8 +189,21 @@ class Welcome extends CI_Controller {
 
     public function all($page = 1)
     {
+
+        $this->load->library('pagination');
+
+        $config['base_url'] = 'http://hyatt.cnhtk.cn/all';
+        $config['total_rows'] = $this -> hotel_model -> gettotalnum();
+        $config['per_page'] = 6;
+
+        $this->pagination->initialize($config);
+
+        echo $this->pagination->create_links();
+
+
         $this -> load -> model('hotel_model');
 //        $new_result = $this -> hotel_model -> gethotelbylimit($page);
+
         $new_result = $this -> hotel_model -> getallhotel();
 
         $data = array(

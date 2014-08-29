@@ -49,4 +49,10 @@ class Hotel_model extends CI_Model {
         $query = $this -> db -> get_where('hotel', array('id' => $id), 1);
         return $query -> row_array();
     }
+
+    //获得酒店数量
+    public function gettotalnum(){
+        $now = $this->db->count_all_results('hotel');
+        return $now;
+    }
 }
