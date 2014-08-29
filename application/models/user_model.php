@@ -24,5 +24,12 @@ class User_model extends CI_Model {
         return $query -> result_array();
     }
 
+    //获取人数
+    public function getsum(){
+        $this -> db -> select_sum('id');
+        $query = $this -> db -> get('user');
+        return $query -> result_array();
+    }
+
 
 }

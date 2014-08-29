@@ -6,10 +6,18 @@ class Welcome extends CI_Controller {
 	{
         $this -> load -> model('hotel_model');
 
+        //首页滚动数据
         $new_result = $this -> hotel_model -> getallhotel();
         shuffle($new_result);
 
+        //排行榜
         $numorder_result = $this -> hotel_model -> gethotelbynum();
+
+        //已加入人数
+        $this -> load -> model('user_model');
+        $all_num = $this -> user_model -> getsum();
+        var_dump($all_num);
+
 
         $this->load->helper('weibo');
 
