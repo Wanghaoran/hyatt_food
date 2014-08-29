@@ -198,6 +198,7 @@ class Welcome extends CI_Controller {
         $config['total_rows'] = $this -> hotel_model -> gettotalnum();
         $config['per_page'] = 6;
         $config['use_page_numbers'] = TRUE;
+        $config['uri_segment'] = 2;
 
         $this->pagination->initialize($config);
 
