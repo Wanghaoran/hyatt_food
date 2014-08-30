@@ -206,8 +206,10 @@ class Welcome extends CI_Controller {
 
     }
 
-    public function all($page = 1)
+    public function all()
     {
+
+        $page = !empty($_GET['per_page']) ? $_GET['per_page'] : 1;
 
         $uid = $this->input->get('key');
 
@@ -216,7 +218,7 @@ class Welcome extends CI_Controller {
 
         $this->load->library('pagination');
 
-        $config['base_url'] = 'http://hyatt.cnhtk.cn/welcomeall?key=' . $uid;
+        $config['base_url'] = 'http://hyatt.cnhtk.cn/welcome/all?key=' . $uid;
         $config['total_rows'] = $this -> hotel_model -> gettotalnum();
         $config['per_page'] = 9;
         $config['use_page_numbers'] = TRUE;
