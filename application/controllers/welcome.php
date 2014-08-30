@@ -5,6 +5,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
         $this -> load -> model('hotel_model');
+        $this->load->library('encrypt');
 
         //首页滚动数据
         $new_result = $this -> hotel_model -> getallhotel();
@@ -29,7 +30,7 @@ class Welcome extends CI_Controller {
             }else{
                 $uid = $weibo_post['user_id'];
             }
-            $this->session->set_userdata('user_id', $uid);
+            $uid_encrypy = $this -> encrypt -> encode($uid);
         }else if(empty($_GET['form'])){
             //不是微博浏览，跳转到微博首页
             $this->load->helper('url');
@@ -41,11 +42,11 @@ class Welcome extends CI_Controller {
             'hotel_data' => $new_result,
             'num_order' => $numorder_result,
             'count_data' => count($new_result),
-            'uid' => $uid,
+            'uid' => $uid_encrypy,
             'show_num' => $show_num,
         );
 
-        var_dump($this -> session -> userdata('user_id'));
+        var_dump($uid_encrypy);
 
         $this -> load -> view('index', $data);
     }
