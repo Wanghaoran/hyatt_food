@@ -31,12 +31,12 @@ class Welcome extends CI_Controller {
                 $uid = $weibo_post['user_id'];
             }
             $uid_encrypy = $this -> encrypt -> encode($uid);
-        }else if(empty($_GET['form'])){
+        }else if(empty($_GET['key'])){
             //不是微博浏览，跳转到微博首页
             $this->load->helper('url');
             redirect('http://apps.weibo.com/2259266354/Qp1a6Ji');
         }else{
-            $uid = $this -> session -> userdata('user_id');
+            $uid_encrypy = $this->input->get('key');
         }
         $data = array(
             'hotel_data' => $new_result,
@@ -192,7 +192,7 @@ class Welcome extends CI_Controller {
     public function all($page = 1)
     {
 
-        var_dump($this -> session -> userdata('user_id'));
+        $uid = $this->input->get('key');
 
 
         $this -> load -> model('hotel_model');
@@ -218,7 +218,6 @@ class Welcome extends CI_Controller {
 
         $new_result = $this -> hotel_model -> gethotelbylimit($page);
 
-        $uid = $this -> session -> userdata('user_id');
 
         $data = array(
             'hotel_data' => $new_result,
@@ -230,12 +229,20 @@ class Welcome extends CI_Controller {
 
     public function old()
     {
-        $this -> load -> view('old');
+        $uid = $this->input->get('key');
+        $data = array(
+            'uid' => $uid,
+        );
+        $this -> load -> view('old', $data);
     }
 
     public function terms()
     {
-        $this -> load -> view('terms');
+        $uid = $this->input->get('key');
+        $data = array(
+            'uid' => $uid,
+        );
+        $this -> load -> view('terms', $data);
     }
 }
 
