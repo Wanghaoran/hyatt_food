@@ -46,8 +46,6 @@ class Welcome extends CI_Controller {
             'show_num' => $show_num,
         );
 
-        var_dump($uid_encrypy);
-
         $this -> load -> view('index', $data);
     }
 
@@ -60,11 +58,6 @@ class Welcome extends CI_Controller {
         $posts = str_replace(' ','+',$post_str);
         $uid = $this->encrypt->decode($posts);
 
-        echo '<pre>';
-        var_dump($uid);
-        var_dump($posts);
-        var_dump($post_str);
-        echo '</pre>';
         $email = $this -> input -> post('email');
         if(!$uid || !$email){
             $result['status'] = 'error';
@@ -185,7 +178,10 @@ class Welcome extends CI_Controller {
 
         $this->load->library('encrypt');
 
-        $uid = $this->encrypt->decode($this -> input -> post('key'));
+
+        $post_str = $this -> input -> post('key');
+        $posts = str_replace(' ','+',$post_str);
+        $uid = $this->encrypt->decode($posts);
 
         $this -> load -> model('user_model');
         $result = $this -> user_model -> getUser($uid);
