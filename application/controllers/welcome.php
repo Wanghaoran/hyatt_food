@@ -56,7 +56,7 @@ class Welcome extends CI_Controller {
         $this->load->library('encrypt');
         $result = array();
 
-        $post_str = urldecode($this -> input -> post('key'));
+        $post_str = $this -> input -> post('key');
         $posts = str_replace('%2B','+',$post_str);
         $uid = $this->encrypt->decode($posts);
 
