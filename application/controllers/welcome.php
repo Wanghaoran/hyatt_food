@@ -193,6 +193,9 @@ class Welcome extends CI_Controller {
     public function all($page = 1)
     {
 
+        var_dump($this->session->all_userdata());
+
+
         $this -> load -> model('hotel_model');
 
         $this->load->library('pagination');
