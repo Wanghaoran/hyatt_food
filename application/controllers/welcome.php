@@ -216,11 +216,11 @@ class Welcome extends CI_Controller {
 
         $this->load->library('pagination');
 
-        $config['base_url'] = 'http://hyatt.cnhtk.cn/welcome/all?key=' . $uid;
+        $config['base_url'] = 'http://hyatt.cnhtk.cn/welcome/all/key/' . $uid;
         $config['total_rows'] = $this -> hotel_model -> gettotalnum();
         $config['per_page'] = 9;
         $config['use_page_numbers'] = TRUE;
-        $config['uri_segment'] = 2;
+        $config['uri_segment'] = 5;
         //当前页
         $config['cur_tag_open'] = '<span class="current">';
         $config['cur_tag_close'] = '</span>';
