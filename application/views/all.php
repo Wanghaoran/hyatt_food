@@ -28,7 +28,7 @@
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/vote',
-                data : '&cid=' + cid,
+                data : '&cid=' + cid + '&key=<?=$uid?>',
                 async : false,
                 dataType : 'json',
                 success : function(ress){
@@ -89,7 +89,7 @@
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/enroll',
-                data : '&email=' + emailString,
+                data : '&email=' + emailString + '&key=<?=$uid?>',
                 async : false,
                 dataType : 'json',
                 success : function(ress){
@@ -110,8 +110,9 @@
         //sendemail
         var tosendemail = function(){
             $.ajax({
-                type : 'GET',
+                type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/sendenrollemail',
+                data : '&key=<?=$uid?>',
                 async : false,
                 success : function(){
                     return;

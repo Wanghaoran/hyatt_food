@@ -91,7 +91,10 @@ class Welcome extends CI_Controller {
     public function vote(){
 
         $cid = $this -> input -> post('cid');
-        $uid = $this -> session -> userdata('user_id');
+
+        $post_str = $this -> input -> post('key');
+        $posts = str_replace(' ','+',$post_str);
+        $uid = $this->encrypt->decode($posts);
 
         if(!$uid || !$cid){
             $result['status'] = 'error';

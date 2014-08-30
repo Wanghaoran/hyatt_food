@@ -36,7 +36,7 @@
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/vote',
-                data : '&cid=' + cid,
+                data : '&cid=' + cid + '&key=<?=$uid?>',
                 async : false,
                 dataType : 'json',
                 success : function(ress){
