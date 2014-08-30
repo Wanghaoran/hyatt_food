@@ -46,8 +46,6 @@ class Welcome extends CI_Controller {
             'show_num' => $show_num,
         );
 
-        var_dump($uid_encrypy);
-
         $this -> load -> view('index', $data);
     }
 
