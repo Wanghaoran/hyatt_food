@@ -50,8 +50,15 @@
                         var top_num = $('#top_roll_' + cid).length;
                         var left_num = $('#left_rank_' + cid).length;
 
-                        console.log(top_num);
-                        console.log(left_num);
+                        if(top_num){
+                            console.log($('#top_roll_' + cid).html());
+                        }
+
+                        if(left_num){
+                            console.log($('#left_rank_' + cid).html());
+                        }
+
+
 
                         //设置分享URL
                         url = ress.url;
