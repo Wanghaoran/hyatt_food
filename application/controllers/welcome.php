@@ -90,6 +90,9 @@ class Welcome extends CI_Controller {
 
     public function vote(){
 
+        $this->load->library('encrypt');
+
+
         $cid = $this -> input -> post('cid');
 
         $post_str = $this -> input -> post('key');
