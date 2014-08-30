@@ -44,6 +44,8 @@ class Welcome extends CI_Controller {
             'uid' => $uid,
             'show_num' => $show_num,
         );
+        
+        var_dump($this -> session -> userdata('user_id'));
 
         $this -> load -> view('index', $data);
     }
@@ -86,8 +88,6 @@ class Welcome extends CI_Controller {
 
         $cid = $this -> input -> post('cid');
         $uid = $this -> session -> userdata('user_id');
-
-        var_dump($this->session->all_userdata());
 
         if(!$uid || !$cid){
             $result['status'] = 'error';
