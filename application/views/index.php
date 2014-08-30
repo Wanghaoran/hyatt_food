@@ -388,7 +388,7 @@
                                         #凯悦悦享家# 健康的饮食，是在营养与美味之间取得平衡。“凯悦悦享家之美馔第二季”将为您带来以新鲜时令食材炮制的秋季养生美馔，与您分享如何既能保留食物营养价值，又能打造让人念念不忘的经典风味。热爱美食的你，觉得哪些食材是秋季时令菜中必不可少的呢？
                                     </p>
                                     <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ejtcegyqypj20m80etdki.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
-                                    <div class="btn_wb"><a href="#">查看更多</a></div>
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/BkvdQosXP" target="_blank">查看详情</a></div>
                                 </li>
                             </ul>
                             <div class="clear10"></div>
@@ -404,7 +404,7 @@
                                         #凯悦悦享家#所谓 “不时，不食”，吃时令菜，享健康美味正是今年 “凯悦悦享家之美馔第二季”将为大家传递的饮食理念。在这个季节，凯悦集团将为您呈奉养生佳肴，您又钟爱哪道秋季时令菜，快来分享~
                                     </p>
                                     <img alt="" src="http://ww1.sinaimg.cn/thumbnail/86a9ab32jw1ejqztgvozsj20ip0oydj4.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
-                                    <div class="btn_wb"><a href="#">查看更多</a></div>
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/Bkc3XFnQL" target="_blank">查看详情</a></div>
                                 </li>
                             </ul>
                             <div class="clear10"></div>
@@ -420,7 +420,7 @@
                                         #凯悦悦享家#对@北京柏悦酒店 行政总厨欧阳庆龙师傅来说，入行二十五年，他始终坚持对美食的执着与创新，将煎、煮、炒、炸的烹饪技巧加以独具匠心的构思和创作，精彩演绎着每一道菜肴，为食客带去无限惊喜。用心、执着、创新，是他对待美食的态度，你对美食的态度是？
                                     </p>
                                     <img alt="" src="http://ww2.sinaimg.cn/thumbnail/86a9ab32jw1ejowxxufz5j20jg0r5q7b.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
-                                    <div class="btn_wb"><a href="#">查看更多</a></div>
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/BjV6wgF1r" target="_blank">查看详情</a></div>
                                 </li>
 
                             </ul>
@@ -437,7 +437,7 @@
                                         2013年#凯悦悦享家#之美馔活动过去一年了，每每回想起那一道道精心选材、用心烹制的美味佳肴，是否早已勾起你心底的味觉记忆？今年， “凯悦悦享家之美馔第二季”即将倾情呈献。2014年9月，@凯悦酒店集团HYATT 和我们一起，倾听美食的故事。
                                     </p>
                                     <img suda-uatrack="key=tblog_newimage_feed&amp;value=image_feed_unfold" action-type="fl_pics" action-data="pic_id=86a9ab32jw1ejla2r9uwij20m80er79q" src="http://ww3.sinaimg.cn/square/86a9ab32jw1ejla2r9uwij20m80er79q.jpg" class="bigcursor">
-                                    <div class="btn_wb"><a href="#">查看更多</a></div>
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/BjrtB8CWD" target="_blank">查看详情</a></div>
                                 </li>
                             </ul>
                             <div class="clear10"></div>
@@ -452,7 +452,7 @@
                                     <p>
                                         #凯悦悦享家#“民以食为天”，美食的真谛不仅是味道的醇美，更是佳肴背后的那份温暖。带您体验家的味道，领您享受爱的新意。用执着、热情和体贴烹饪的美食在这里，在凯悦。
                                     </p>
-                                    <div class="btn_wb"><a href="#">查看更多</a></div>
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/Bj9Y74TMM?mod=weibotime" target="_blank">查看详情</a></div>
                                 </li>
                             </ul>
                             <div class="clear10"></div>
