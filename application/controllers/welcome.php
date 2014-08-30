@@ -87,7 +87,7 @@ class Welcome extends CI_Controller {
         $cid = $this -> input -> post('cid');
         $uid = $this -> session -> userdata('user_id');
 
-        var_dump($uid);
+        var_dump($this->session->all_userdata());
 
         if(!$uid || !$cid){
             $result['status'] = 'error';
