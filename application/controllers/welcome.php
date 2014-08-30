@@ -57,7 +57,7 @@ class Welcome extends CI_Controller {
         $result = array();
 
         $post_str = $this -> input -> post('key');
-        $posts = str_replace('%20','+',$post_str);
+        $posts = str_replace('%2B','+',$post_str);
 
         $uid = $this->encrypt->decode($posts);
         var_dump($uid);
