@@ -106,7 +106,7 @@
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/enroll',
-                data : '&email=' + emailString,
+                data : '&email=' + emailString + '&key=' + <?=$uid?>,
                 async : false,
                 dataType : 'json',
                 success : function(ress){

@@ -51,8 +51,9 @@ class Welcome extends CI_Controller {
 
     public function enroll()
     {
+        $this->load->library('encrypt');
         $result = array();
-        $uid = $this -> session -> userdata('user_id');
+        $uid = $this->encrypt->decode($this -> input -> post('key'));
         $email = $this -> input -> post('email');
         if(!$uid || !$email){
             $result['status'] = 'error';
