@@ -118,9 +118,9 @@ a:active{noOutline:expression(this.onFocus=this.blur());}
 	.wbry_left{ float:left; width:470px;}
 	.wblist{ width:390px; text-align:left;}
 		.wblist li{ float:left;}
-		.wblist li.liimg{ width:50px; height:50px; margin-right:10px;}
+		.wblist li.liimg{ width:50px; height:50px; margin:0 10px 0 5px;}
 		.wblist li.liimg img{ width:50px; height:50px;}
-		.wblist li.lidiv{ float:left; width:310px; padding:10px; min-height:100px; background:#fff;}
+		.wblist li.lidiv{ float:left; width:290px; padding:10px; min-height:100px; background:#fff;}
 	.wbry_right{ float:left; width:470px;}
 
 /*2014-8-18*/
@@ -335,3 +335,7 @@ a.btn_del:hover{opacity:0.7;filter:alpha(opacity=70);}
 	.pop_join a{ float:left; width:269px; height:35px; text-decoration:none; background:url(../images/btn_jiaru.png) no-repeat; display:inline-block; }
 	.pop_join a:hover{opacity:0.7;filter:alpha(opacity=70);}
 	.pop_join a.tiaoguo{ color:#846c52; font-size:14px; width:40px; height:16px; line-height:16px; text-decoration:underline; padding:19px 0 0 15px; background:none;}
+	
+.btn_wb{ text-align:right; margin:10px 0 0 0;}
+	.btn_wb a{color:#03F}
+	.btn_wb a:hover{ text-decoration:underline; color:#03F}
