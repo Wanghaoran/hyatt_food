@@ -145,6 +145,7 @@ class CI_Session {
     */
 	function _sess_run()
 	{
+        session_set_cookie_params(0, '/', '.cnhtk.cn');
 		session_start();
 
 		$session_id_ttl = $this->object->config->item('sess_expiration');
