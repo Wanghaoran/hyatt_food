@@ -55,8 +55,10 @@ class Welcome extends CI_Controller {
     {
         $this->load->library('encrypt');
         $result = array();
-        $uid = $this->encrypt->decode($this -> input -> post('key'));
+        $uid = $this->encrypt->decode($_POST['key']);
         var_dump($uid);
+        var_dump($_POST['key']);
+        var_dump($this -> input -> post('key'));
         $email = $this -> input -> post('email');
         if(!$uid || !$email){
             $result['status'] = 'error';
