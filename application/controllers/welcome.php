@@ -193,7 +193,7 @@ class Welcome extends CI_Controller {
     public function all($page = 1)
     {
 
-        var_dump($this->session->all_userdata());
+        var_dump($this -> session -> userdata('user_id'));
 
 
         $this -> load -> model('hotel_model');
