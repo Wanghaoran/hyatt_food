@@ -47,8 +47,8 @@
 
 
                         //投票数加1
-                        var top_num = $('top_roll_' + cid).length;
-                        var left_num = $('left_rank_' + cid).length;
+                        var top_num = $('#top_roll_' + cid).length;
+                        var left_num = $('#left_rank_' + cid).length;
 
                         console.log(top_num);
                         console.log(left_num);
