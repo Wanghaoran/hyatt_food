@@ -172,7 +172,10 @@ class Welcome extends CI_Controller {
 
     public function sendenrollemail(){
 
-        $uid = $this -> session -> userdata('user_id');
+        $this->load->library('encrypt');
+
+        $uid = $this->encrypt->decode($this -> input -> post('key'));
+
         $this -> load -> model('user_model');
         $result = $this -> user_model -> getUser($uid);
         $toemail = $result[0]['email'];
