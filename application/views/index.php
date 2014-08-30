@@ -52,12 +52,12 @@
 
                         if(top_num){
                             var top_now_num = $('#top_roll_' + cid).html();
-                            $('#top_roll_' + cid).html(top_now_num + 1);
+                            $('#top_roll_' + cid).html(parseInt(top_now_num) + 1);
                         }
 
                         if(left_num){
                             var left_now_num = $('#left_rank_' + cid).html();
-                            $('#left_rank_' + cid).html(left_now_num + 1)
+                            $('#left_rank_' + cid).html(parseInt(left_now_num) + 1)
 
                         }
 
