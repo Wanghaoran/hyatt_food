@@ -60,9 +60,11 @@ class Welcome extends CI_Controller {
         $posts = str_replace('%2B','+',$post_str);
         $uid = $this->encrypt->decode($posts);
 
+        echo '<pre>';
         var_dump($uid);
         var_dump($posts);
         var_dump($post_str);
+        echo '</pre>';
         $email = $this -> input -> post('email');
         if(!$uid || !$email){
             $result['status'] = 'error';
