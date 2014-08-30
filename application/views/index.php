@@ -352,7 +352,7 @@
                 <div class="divinfo">
                     <h2><?=$value['hotel_name']?></h2>
                     <div class="btn_djtp"><a href="javascript:void(0)" onclick="sharebutton('<?=$value['id']?>');"></a></div>
-                    <div class="num_tp">已有 <?=$value['num']?> 人投票</div>
+                    <div class="num_tp">已有 <span id="left_rank_<?=$value['num']?>"><?=$value['num']?></span> 人投票</div>
                 </div>
             </li>
             <div class="clear"></div>
