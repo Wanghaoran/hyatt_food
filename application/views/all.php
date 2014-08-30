@@ -36,6 +36,16 @@
                         alert('投票失败！' + ress.data);
                     }else{
                         alert('投票成功！' + ress.data);
+
+                        //投票数加1
+                        var top_num = $('#top_num_' + cid).length;
+
+                        if(top_num){
+                            var top_now_num = $('#top_num_' + cid).html();
+                            $('#top_num_' + cid).html(parseInt(top_now_num) + 1);
+                        }
+
+
                         //设置分享URL
                         url = ress.url;
                         if(ress.isregister == 'no'){
@@ -222,7 +232,7 @@
                             <dt><?=$value['hotel_name']?></dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?>" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip();" width="222" height="286"/></dd>
                             <dd class="ddinfo">
-                                <a href="javascript:void(0);" onclick="sharebutton(<?=$value['id']?>);" class="btn_tp"></a><span>已有 <?=$value['num']?> 人投票</span>
+                                <a href="javascript:void(0);" onclick="sharebutton(<?=$value['id']?>);" class="btn_tp"></a><span>已有 <strong id="top_num_<?=$value['id']?>"><?=$value['num']?></strong> 人投票</span>
                             </dd>
                         </dl>
                     </li>

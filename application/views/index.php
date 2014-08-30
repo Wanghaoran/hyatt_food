@@ -61,7 +61,6 @@
 
                         }
 
-
                         //设置分享URL
                         url = ress.url;
                         if(ress.isregister == 'no'){
