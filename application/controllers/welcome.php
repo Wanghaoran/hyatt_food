@@ -88,7 +88,7 @@ class Welcome extends CI_Controller {
 
         if(!$uid || !$cid){
             $result['status'] = 'error';
-            $result['data'] = '数据错误！请稍后再试试';
+            $result['data'] = '数据错误！请稍后再试试' . $cid . '--' . $uid;
             echo json_encode($result);
             return;
         }
