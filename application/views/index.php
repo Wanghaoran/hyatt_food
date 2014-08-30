@@ -51,13 +51,15 @@
                         var left_num = $('#left_rank_' + cid).length;
 
                         if(top_num){
-                            console.log($('#top_roll_' + cid).html());
+                            var top_now_num = $('#top_roll_' + cid).html();
+                            $('#top_roll_' + cid).html(top_now_num + 1);
                         }
 
                         if(left_num){
-                            console.log($('#left_rank_' + cid).html());
-                        }
+                            var left_now_num = $('#left_rank_' + cid).html();
+                            $('#left_rank_' + cid).html(left_now_num + 1)
 
+                        }
 
 
                         //设置分享URL
