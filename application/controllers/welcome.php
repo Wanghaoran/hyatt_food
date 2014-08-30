@@ -44,6 +44,8 @@ class Welcome extends CI_Controller {
             'uid' => $uid,
             'show_num' => $show_num,
         );
+
+        var_dump($this->session->all_userdata());
         $this -> load -> view('index', $data);
     }
 
