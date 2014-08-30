@@ -62,6 +62,7 @@ class Welcome extends CI_Controller {
 
         var_dump($uid);
         var_dump($posts);
+        var_dump($post_str);
         $email = $this -> input -> post('email');
         if(!$uid || !$email){
             $result['status'] = 'error';
