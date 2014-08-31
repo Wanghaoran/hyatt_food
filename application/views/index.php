@@ -346,7 +346,7 @@
     <!--右箭头-->
     <b class="Div1_next Div1_next1" ><img src="<?=$this->config->base_url()?>static/images/icon_right.png"  title="下一页"/></b>
     <div class="clear"></div>
-    <div class="pro_all"><a href="<?=$this->config->base_url()?>all" title="查看全部主厨美食卡"></a></div>
+    <div class="pro_all"><a href="<?=$this->config->base_url()?>all?key=<?=$uid?>" title="查看全部主厨美食卡"></a></div>
     <div class="clear"></div>
 </div>
 <!--产品 end-->
@@ -377,7 +377,7 @@
             <?php endforeach;?>
 
         </ul>
-        <div class="btn_more"><a href="<?=$this->config->base_url()?>all" title="查看更多"></a></div>
+        <div class="btn_more"><a href="<?=$this->config->base_url()?>all?key=<?=$uid?>" title="查看更多"></a></div>
     </div>
     <!--排行版  右侧-->
 
