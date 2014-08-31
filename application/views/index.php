@@ -397,6 +397,23 @@
             <div class="md_title"></div>
             <div id="MarqueeDiv123" style="width:390px; height:260px;overflow:hidden; margin:20px 0 0 40px;">
                 <table width="420" border="0" cellspacing="0" cellpadding="0" align="center">
+
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
+                                        #凯悦悦享家#初秋养生，贵在滋阴润燥。今年，“凯悦悦享家之美馔第二季”主推应季时令菜肴，以独具匠心的创意搭配，为您带来温润滋养的秋日美味。秋季养生第一招即合理平衡膳食，饮食调养上应以防燥、润肺为主，宜食红枣、芝麻、蜂蜜、银耳、萝卜等食物。现在不妨和我们说说，您的秋季饮食会注意什么？
+                                    </p>
+                                    <img alt="" src="http://ww2.sinaimg.cn/thumbnail/86a9ab32jw1ejts3idccmj20hs0m8dmr.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/BkEH1AzLi?mod=weibotime" target="_blank">查看详情</a></div>
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
                     <tr>
                         <td height="120" align="center" valign="middle">
                             <ul class="wblist">
