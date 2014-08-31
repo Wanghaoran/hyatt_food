@@ -62,7 +62,7 @@
         }
 
         var openshare = function(){
-            window.open (url, '分享到新浪微博', 'height=100, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no');
+            window.open (url, '分享到新浪微博', 'height=150, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=yes, resizable=no,location=n o, status=no');
         }
 
         //加入悦享受家-弹层
