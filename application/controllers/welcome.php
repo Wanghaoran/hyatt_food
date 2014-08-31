@@ -26,11 +26,11 @@ class Welcome extends CI_Controller {
             $weibo_post = parseSignedRequest($_POST['signed_request']);
             //未登录
             if(empty($weibo_post['user_id'])){
-                $uid = 'null';
+                $uid_encrypy = 'null';
             }else{
                 $uid = $weibo_post['user_id'];
+                $uid_encrypy = $this -> encrypt -> encode($uid);
             }
-            $uid_encrypy = $this -> encrypt -> encode($uid);
         }else if(empty($_GET['key'])){
             //不是微博浏览，跳转到微博首页
             $this->load->helper('url');
