@@ -265,6 +265,7 @@ function toolTip(msg, fg, bg)
 		  document.all("toolTipLayer").innerHTML=content;
 		  toolTipSTYLE.display='block'
 		  //--图象过渡，淡入处理--
+          /*
 		  var cssopaction=document.all("msg1").filters[0].opacity
 		  document.all("msg1").filters[0].opacity=0;
 		  if (rT) document.all("msg1").filters[1].Apply();
@@ -272,6 +273,7 @@ function toolTip(msg, fg, bg)
 		  document.all("msg1").filters[0].opacity=cssopaction;
 		  if (rT) document.all("msg1").filters[1].Play();
 		  if (bT) document.all("msg1").filters[2].Play();
+		  */
 		  //----------------------
 		}
 	  }
