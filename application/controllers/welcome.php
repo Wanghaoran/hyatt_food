@@ -288,7 +288,7 @@ class Welcome extends CI_Controller {
         $data = array(
             'hotel_data' => $new_result,
             'pageshow' => $pageshow,
-            'uid' => $uid,
+            'uid' => urlencode($uid),
         );
         $this -> load -> view('all', $data);
     }
@@ -297,7 +297,7 @@ class Welcome extends CI_Controller {
     {
         $uid = $this->input->get('key');
         $data = array(
-            'uid' => $uid,
+            'uid' => urlencode($uid),
         );
         $this -> load -> view('old', $data);
     }
@@ -306,7 +306,7 @@ class Welcome extends CI_Controller {
     {
         $uid = $this->input->get('key');
         $data = array(
-            'uid' => $uid,
+            'uid' => urlencode($uid),
         );
         $this -> load -> view('terms', $data);
     }
