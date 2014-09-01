@@ -77,7 +77,7 @@ class Welcome extends CI_Controller {
 
         if(!is_numeric($uid)){
             $result['status'] = 'error';
-            $result['data'] = '数据错误！请稍后再试试';
+            $result['data'] = '验证失败，请您刷新页面再试';
             echo json_encode($result);
             return;
         }
@@ -125,7 +125,7 @@ class Welcome extends CI_Controller {
 
         if(!is_numeric($uid)){
             $result['status'] = 'error';
-            $result['data'] = '数据错误！请稍后再试试';
+            $result['data'] = '验证失败，请您刷新页面再试';
             echo json_encode($result);
             return;
         }
