@@ -49,6 +49,15 @@ class Welcome extends CI_Controller {
         $this -> load -> view('index', $data);
     }
 
+
+    public function tettss(){
+        $this->load->library('encrypt');
+        $uid_encrypy = $this -> encrypt -> encode(123123233);
+        echo $uid_encrypy;
+
+
+    }
+
     public function enroll()
     {
         $this->load->library('encrypt');
@@ -121,6 +130,7 @@ class Welcome extends CI_Controller {
             return;
         }
 
+        /*
         //新浪微博验证：
         $get_json = file_get_contents('https://api.weibo.com/2/users/show.json?source=392409152&uid=' . $uid);
         $re_tuen = json_decode($get_json, true);
@@ -130,6 +140,7 @@ class Welcome extends CI_Controller {
             echo json_encode($result);
             return;
         }
+        */
 
 
 
