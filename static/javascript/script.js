@@ -1,6 +1,6 @@
 $(function(){	
 	
-	$(".Div1_main div span").mouseover(function(){
+	$(".Div1_main div span").click(function(){
 		$(this).addClass("Div1_main_span1").siblings("span").removeClass("Div1_main_span1");
 	}).mouseout(function(){
 		$(this).removeClass("Div1_main_span1").siblings("span");
