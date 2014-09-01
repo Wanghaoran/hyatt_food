@@ -66,6 +66,13 @@ class Welcome extends CI_Controller {
             return;
         }
 
+        if(!is_numeric($uid)){
+            $result['status'] = 'error';
+            $result['data'] = '数据错误！请稍后再试试';
+            echo json_encode($result);
+            return;
+        }
+
         $this -> load -> model('user_model');
         if($this -> user_model -> getUser($uid)){
             $result['status'] = 'error';
@@ -102,14 +109,14 @@ class Welcome extends CI_Controller {
 
         if(!$uid || !$cid){
             $result['status'] = 'error';
-            $result['data'] = '数据错误！请稍后再试试' . $cid . '--' . $uid;
+            $result['data'] = '数据错误！请稍后再试试';
             echo json_encode($result);
             return;
         }
 
         if(!is_numeric($uid)){
             $result['status'] = 'error';
-            $result['data'] = '数据错误！请稍后再试试' . $cid . '--' . $uid;
+            $result['data'] = '数据错误！请稍后再试试';
             echo json_encode($result);
             return;
         }
