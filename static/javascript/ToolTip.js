@@ -220,6 +220,7 @@ function toolTip(msg, fg, bg)
 		else 
 		{
 		  //--图象过渡，淡出处理--
+            /*
 		  if (!endaction) {toolTipSTYLE.display = "none";}
 		  if (rT) document.all("msg1").filters[1].Apply();
 		  if (bT) document.all("msg1").filters[2].Apply();
@@ -235,6 +236,8 @@ function toolTip(msg, fg, bg)
 		  toolTipSTYLE.display = "none";}
 		  }
 		  if (!rT && !bT) toolTipSTYLE.display = "none";
+
+		  */
 		  //----------------------
 		}
 	  }
