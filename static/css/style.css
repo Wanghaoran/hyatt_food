@@ -137,7 +137,7 @@ a:active{noOutline:expression(this.onFocus=this.blur());}
 				.tplist li dl dd.ddinfo{ width:202px; height:28px; background:url(../images/infobox.jpg) no-repeat; margin:6px auto 0; padding:10px;}
 				.tplist li dl dd.ddinfo a.btn_tp{ float:left; width:82px; height:28px; background:url(../images/btn_tp.jpg) no-repeat; display:inline-block; margin:0 10px 0 0;}
 				.tplist li dl dd.ddinfo a.btn_tp:hover{opacity:0.7;filter:alpha(opacity=70);}
-				.tplist li dl dd.ddinfo span{ float:left; height:24px; line-height:24px; background:url(../images/icon_fg.jpg) left center no-repeat; padding:4px 0 0 12px; color:#fa6f57; font-size:13px;}
+				.tplist li dl dd.ddinfo span{ float:left; height:24px; line-height:24px; background:url(../images/icon_fg.jpg) left center no-repeat; padding:4px 0 0 12px; color:#fa6f57; font-size:11px;}
 				
 				/*分页*/
 				.page{ width:820px; margin:0 auto;}
