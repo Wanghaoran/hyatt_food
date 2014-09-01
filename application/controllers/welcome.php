@@ -98,8 +98,16 @@ class Welcome extends CI_Controller {
         $post_str = $this -> input -> post('key');
         $posts = str_replace(' ','+',$post_str);
         $uid = $this->encrypt->decode($posts);
+        $uid = intval($uid);
 
         if(!$uid || !$cid){
+            $result['status'] = 'error';
+            $result['data'] = '数据错误！请稍后再试试' . $cid . '--' . $uid;
+            echo json_encode($result);
+            return;
+        }
+
+        if(!is_numeric($uid)){
             $result['status'] = 'error';
             $result['data'] = '数据错误！请稍后再试试' . $cid . '--' . $uid;
             echo json_encode($result);
