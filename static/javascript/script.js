@@ -1,6 +1,6 @@
 $(function(){	
 	
-	$(".Div1_main div span").click(function(){
+	$(".Div1_main div span").mouseover(function(){
 		$(this).addClass("Div1_main_span1").siblings("span").removeClass("Div1_main_span1");
 	}).mouseout(function(){
 		$(this).removeClass("Div1_main_span1").siblings("span");
@@ -34,7 +34,7 @@ $(function(){
 		}
 		
 		$(".Div1_title span a").each(function(a){
-            $(this).mouseover(function(){
+            $(this).click(function(){
 				index = a ;
 				NextPage();
 			});
