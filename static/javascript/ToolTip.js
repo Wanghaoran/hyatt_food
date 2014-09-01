@@ -229,11 +229,11 @@ function toolTip(msg, fg, bg)
 		  if (bT) document.all("msg1").filters[2].Play();
 		  */
 		  if (rT){ 
-		  if (document.all("msg1").filters[1].status==1 || document.all("msg1").filters[1].status==0){  
+		  if (document.getElementById("msg1").filters[1].status==1 || document.getElementById("msg1").filters[1].status==0){
 		  toolTipSTYLE.display = "none";}
 		  }
 		  if (bT){
-		  if (document.all("msg1").filters[2].status==1 || document.all("msg1").filters[2].status==0){  
+		  if (document.getElementById("msg1").filters[2].status==1 || document.getElementById("msg1").filters[2].status==0){
 		  toolTipSTYLE.display = "none";}
 		  }
 		  if (!rT && !bT) toolTipSTYLE.display = "none";
