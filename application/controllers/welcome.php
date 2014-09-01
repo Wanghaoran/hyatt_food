@@ -121,6 +121,17 @@ class Welcome extends CI_Controller {
             return;
         }
 
+        //新浪微博验证：
+        $get_json = file_get_contents('https://api.weibo.com/2/users/show.json?source=392409152&uid=' . $uid);
+        $re_tuen = json_decode($get_json, true);
+        if(!empty($re_tuen['error_code'])){
+            $result['status'] = 'error';
+            $result['data'] = $re_tuen['error'];
+            echo json_encode($result);
+            return;
+        }
+
+
 
         //查询会员今日已投票数，是否超过每天10票
         $this -> load -> model('userdate_model');
