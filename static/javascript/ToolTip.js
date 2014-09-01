@@ -177,8 +177,8 @@ function getScrollLeft() {
 }
 */
 //--初始化变量--
-var rT=true;//允许图像过渡
-var bT=true;//允许图像淡入淡出
+var rT=false;//允许图像过渡
+var bT=false;//允许图像淡入淡出
 var tw=150;//提示框宽度
 var endaction=false;//结束动画
 var ns4 = document.layers;
