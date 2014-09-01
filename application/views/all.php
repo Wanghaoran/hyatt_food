@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
     <title>最佳时令菜肴投票-凯悦悦享家</title>
     <link href="<?=$this->config->base_url()?>static/css/style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.js"></script>
