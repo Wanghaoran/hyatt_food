@@ -220,13 +220,14 @@ function toolTip(msg, fg, bg)
 		else 
 		{
 		  //--图象过渡，淡出处理--
-            /*
 		  if (!endaction) {toolTipSTYLE.display = "none";}
+            /*
 		  if (rT) document.all("msg1").filters[1].Apply();
 		  if (bT) document.all("msg1").filters[2].Apply();
 		  document.all("msg1").filters[0].opacity=0;
 		  if (rT) document.all("msg1").filters[1].Play();
 		  if (bT) document.all("msg1").filters[2].Play();
+		  */
 		  if (rT){ 
 		  if (document.all("msg1").filters[1].status==1 || document.all("msg1").filters[1].status==0){  
 		  toolTipSTYLE.display = "none";}
@@ -236,8 +237,6 @@ function toolTip(msg, fg, bg)
 		  toolTipSTYLE.display = "none";}
 		  }
 		  if (!rT && !bT) toolTipSTYLE.display = "none";
-
-		  */
 		  //----------------------
 		}
 	  }
@@ -268,7 +267,7 @@ function toolTip(msg, fg, bg)
 		  document.all("toolTipLayer").innerHTML=content;
 		  toolTipSTYLE.display='block'
 		  //--图象过渡，淡入处理--
-          /*
+         /*
 		  var cssopaction=document.all("msg1").filters[0].opacity
 		  document.all("msg1").filters[0].opacity=0;
 		  if (rT) document.all("msg1").filters[1].Apply();
@@ -276,8 +275,8 @@ function toolTip(msg, fg, bg)
 		  document.all("msg1").filters[0].opacity=cssopaction;
 		  if (rT) document.all("msg1").filters[1].Play();
 		  if (bT) document.all("msg1").filters[2].Play();
-		  */
 		  //----------------------
+		  */
 		}
 	  }
 	} catch(e) {}
