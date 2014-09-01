@@ -29,14 +29,14 @@ class Welcome extends CI_Controller {
                 $uid_encrypy = 'null';
             }else{
                 $uid = $weibo_post['user_id'];
-                $uid_encrypy = $this -> encrypt -> encode($uid);
+                $uid_encrypy = urlencode($this -> encrypt -> encode($uid));
             }
         }else if(empty($_GET['key'])){
             //不是微博浏览，跳转到微博首页
             $this->load->helper('url');
             redirect('http://apps.weibo.com/2259266354/Qp1a6Ji');
         }else{
-            $uid_encrypy = $this->input->get('key');
+            $uid_encrypy = urldecode($this->input->get('key'));
         }
         $data = array(
             'hotel_data' => $new_result,
@@ -51,9 +51,15 @@ class Welcome extends CI_Controller {
 
 
     public function tettss(){
+
+        $a = rand(1000000000, 9999999999);
         $this->load->library('encrypt');
-        $uid_encrypy = $this -> encrypt -> encode(123123233);
-        echo $uid_encrypy;
+        $uid_encrypy = $this -> encrypt -> encode($a);
+        var_dump($uid_encrypy);
+        echo '<br>';
+        var_dump($b = urlencode($uid_encrypy));
+        echo '<br>';
+        var_dump(urldecode($b));
 
 
     }
@@ -64,7 +70,7 @@ class Welcome extends CI_Controller {
         $result = array();
 
         $post_str = $this -> input -> post('key');
-        $posts = str_replace(' ','+',$post_str);
+        $posts = urldecode($post_str);
         $uid = $this->encrypt->decode($posts);
 
         $email = $this -> input -> post('email');
@@ -112,9 +118,9 @@ class Welcome extends CI_Controller {
         $cid = $this -> input -> post('cid');
 
         $post_str = $this -> input -> post('key');
-        $posts = str_replace(' ','+',$post_str);
+        $posts = urldecode($post_str);
         $uid = $this->encrypt->decode($posts);
-        $uid = intval($uid);
+//        $uid = intval($uid);
 
         if(!$uid || !$cid){
             $result['status'] = 'error';
@@ -223,7 +229,7 @@ class Welcome extends CI_Controller {
 
 
         $post_str = $this -> input -> post('key');
-        $posts = str_replace(' ','+',$post_str);
+        $posts = urldecode($post_str);
         $uid = $this->encrypt->decode($posts);
 
         $this -> load -> model('user_model');
