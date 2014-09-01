@@ -71,6 +71,7 @@ class Welcome extends CI_Controller {
 
         $post_str = $this -> input -> post('key');
         $posts = urldecode($post_str);
+        $posts = str_replace(' ','+',$posts);
         $uid = $this->encrypt->decode($posts);
 
         $email = $this -> input -> post('email');
@@ -119,6 +120,7 @@ class Welcome extends CI_Controller {
 
         $post_str = $this -> input -> post('key');
         $posts = urldecode($post_str);
+        $posts = str_replace(' ','+',$posts);
         $uid = $this->encrypt->decode($posts);
 //        $uid = intval($uid);
 
@@ -230,6 +232,7 @@ class Welcome extends CI_Controller {
 
         $post_str = $this -> input -> post('key');
         $posts = urldecode($post_str);
+        $posts = str_replace(' ','+',$posts);
         $uid = $this->encrypt->decode($posts);
 
         $this -> load -> model('user_model');
