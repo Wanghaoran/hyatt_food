@@ -36,7 +36,7 @@ class Welcome extends CI_Controller {
             $this->load->helper('url');
             redirect('http://apps.weibo.com/2259266354/Qp1a6Ji');
         }else{
-            $uid_encrypy = urldecode($this->input->get('key'));
+            $uid_encrypy = urlencode($this->input->get('key'));
         }
         $data = array(
             'hotel_data' => $new_result,
