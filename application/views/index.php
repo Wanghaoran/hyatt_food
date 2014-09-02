@@ -399,6 +399,39 @@
             <div id="MarqueeDiv123" style="width:390px; height:260px;overflow:hidden; margin:20px 0 0 40px;">
                 <table width="420" border="0" cellspacing="0" cellpadding="0" align="center">
 
+
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
+                                        #凯悦悦享家#今日,为大家介绍一道@东莞松山湖凯悦酒店 松山茶居出品的特色菜——虎门港蒸水蟹饼，喜欢的朋友请记得为它投票哦！手工剁好肉饼，将水蟹处理好放在肉饼上蒸，任由蟹汁流入肉饼，而橘红色的蟹黄就镶嵌在肉饼里，吃起来清甜滑嫩，齿颊留香。搭配姜茶食用,味道更加惊艳。
+                                    </p>
+                                    <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ejxy380d3gj20ci0g4780.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/Bl6KLEbJH" target="_blank">查看详情</a></div>
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
+                                        #凯悦悦享家#由@贵阳中天凯悦酒店 出品的贵式香糯辣子鸡，烹饪手法颇具地方特色。干炒的方式让整个菜肴干香入味，经过小火焖至成熟的鸡肉香糯可口。尤其是当特制的秘方糍粑辣椒渗透到每一块鸡肉中时，便会看上去油色通红，闻起来香飘四溢,油而不腻，辣而不拒。即刻点击,为它投票！
+                                    </p>
+                                    <img alt="" src="http://ww2.sinaimg.cn/thumbnail/86a9ab32jw1ejx103439dj20ci0g4q6c.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/BkZg1D3AI" target="_blank">查看详情</a></div>
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
                     <tr>
                         <td height="120" align="center" valign="middle">
                             <ul class="wblist">

@@ -17,4 +17,15 @@ class Userdetails_model extends CI_Model {
         return $this -> db -> insert('user_details', $data);
     }
 
+    public function checkhave($uid, $hid){
+        $dayBegin = mktime(0, 0, 0, date('m'), date('d'), date('Y'));
+        $dayEnd = mktime(23, 59, 59, date('m'), date('d'), date('Y'));
+        $this -> db -> where('time <', $dayEnd);
+        $this -> db -> where('time >', $dayBegin);
+        $this -> db -> where('weiboId', $uid);
+        $this -> db -> where('toHid', $hid);
+        $query = $this -> db -> get('user_details');
+        return $query -> result_array();
+    }
+
 }

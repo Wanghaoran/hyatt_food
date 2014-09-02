@@ -52,16 +52,6 @@ class Welcome extends CI_Controller {
 
     public function tettss(){
 
-        $a = rand(1000000000, 9999999999);
-        $this->load->library('encrypt');
-        $uid_encrypy = $this -> encrypt -> encode($a);
-        var_dump($uid_encrypy);
-        echo '<br>';
-        var_dump($b = urlencode($uid_encrypy));
-        echo '<br>';
-        var_dump(urldecode($b));
-
-
     }
 
     public function enroll()
@@ -156,6 +146,17 @@ class Welcome extends CI_Controller {
         $this -> load -> model('userdate_model');
         if($this -> userdate_model -> gettodaynum($uid) < 10){
 
+
+
+            //查询会员今日是否已经投过改酒店
+            $this -> load -> model('userdetails_model');
+            if($this -> userdetails_model -> checkhave($uid, $cid)){
+                $result['status'] = 'error';
+                $result['data'] = '您今日已经投过该酒店，请勿重复投票';
+                echo json_encode($result);
+                return;
+            }
+
             //会员当日投票数＋1
             if(!$this -> userdate_model -> addtodaynum($uid)){
                 $result['status'] = 'error';
@@ -172,7 +173,6 @@ class Welcome extends CI_Controller {
             $this -> usertotal_model -> addtotal($uid);
 
             //记录投票明细
-            $this -> load -> model('userdetails_model');
             $this -> userdetails_model -> adddetails($uid, $cid);
 
 
