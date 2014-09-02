@@ -406,6 +406,22 @@
                                 <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                                 <li class="lidiv">
                                     <p>
+                                        #凯悦悦享家#适逢养生之季，@长白山凯悦酒店 蒲凡超厨师长为您献上悦庭四宝汤。将飞龙、水鱼、野猪赤肉、竹丝鸡搁置茶壶中，加入石斛、海马、人参等珍贵药材，入清鸡汤文火慢炖3小时。炖出的野猪赤肉肉质肉嫩，入口细腻；汤味浓郁鲜美，充斥着淡淡香气。快来为您喜爱的菜品投票！
+                                    </p>
+                                    <img alt="" src="http://ww1.sinaimg.cn/thumbnail/86a9ab32jw1ejy7kautfgj20ci0g441q.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/Bl8TTmvU5" target="_blank">查看详情</a></div>
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
                                         #凯悦悦享家#今日,为大家介绍一道@东莞松山湖凯悦酒店 松山茶居出品的特色菜——虎门港蒸水蟹饼，喜欢的朋友请记得为它投票哦！手工剁好肉饼，将水蟹处理好放在肉饼上蒸，任由蟹汁流入肉饼，而橘红色的蟹黄就镶嵌在肉饼里，吃起来清甜滑嫩，齿颊留香。搭配姜茶食用,味道更加惊艳。
                                     </p>
                                     <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ejxy380d3gj20ci0g4780.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
