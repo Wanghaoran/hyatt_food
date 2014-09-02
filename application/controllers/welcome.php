@@ -150,12 +150,14 @@ class Welcome extends CI_Controller {
 
             //查询会员今日是否已经投过改酒店
             $this -> load -> model('userdetails_model');
+            /*
             if($this -> userdetails_model -> checkhave($uid, $cid)){
                 $result['status'] = 'error';
                 $result['data'] = '您今日已经投过该酒店，请勿重复投票';
                 echo json_encode($result);
                 return;
             }
+            */
 
             //会员当日投票数＋1
             if(!$this -> userdate_model -> addtodaynum($uid)){
