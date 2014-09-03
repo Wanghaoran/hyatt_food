@@ -406,6 +406,38 @@
                                 <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                                 <li class="lidiv">
                                     <p>
+                                        #凯悦悦享家#吃松茸的最佳季节在于秋季，一旦错过，只有等明年秋风再起了。@青岛鲁商凯悦酒店 于东辉师傅选用上等鲜松茸，搭配芦笋和虾球，并融入日式料理的独特风味，营养均衡，味道鲜美。特别是进入口齿间的那一瞬，松茸的"鲜"味便定格在唇齿间，让人回味无穷~
+                                    </p>
+                                    <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ejzd82vrh0j20ci0g441k.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/BlikWtdTy" target="_blank">查看详情</a></div>
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
+                                        #凯悦悦享家#在东北，人参是闻名遐迩的“三宝”之一。来到长白山脚下，我们的@长白山柏悦酒店 刘林生厨师长，极力推荐一道当地创新菜肴——拔丝人参。采用拔丝烹调方法烹制的人参，其菜肴色泽金黄，减弱了人参的苦味，味道香甜，是食疗养生的上佳菜肴。你会给这道菜投出一票吗？
+                                    </p>
+                                    <img alt="" src="http://ww1.sinaimg.cn/thumbnail/86a9ab32jw1ejz3c2c9krj20ci0g4n07.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/Blg5YdxhX" target="_blank">查看详情</a></div>
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
                                         #凯悦悦享家#适逢养生之季，@长白山凯悦酒店 蒲凡超厨师长为您献上悦庭四宝汤。将飞龙、水鱼、野猪赤肉、竹丝鸡搁置茶壶中，加入石斛、海马、人参等珍贵药材，入清鸡汤文火慢炖3小时。炖出的野猪赤肉肉质肉嫩，入口细腻；汤味浓郁鲜美，充斥着淡淡香气。快来为您喜爱的菜品投票！
                                     </p>
                                     <img alt="" src="http://ww1.sinaimg.cn/thumbnail/86a9ab32jw1ejy7kautfgj20ci0g441q.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
