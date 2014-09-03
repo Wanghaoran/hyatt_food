@@ -49,7 +49,7 @@ class Welcome extends CI_Controller {
 
         $this -> load -> library('user_agent');
 
-        if($this -> agent -> is_mobile()){
+        if(!$this -> agent -> is_mobile()){
             $this -> load -> view('index', $data);
         }else{
             $this -> load -> view('mobile_index', $data);
