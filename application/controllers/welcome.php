@@ -4,6 +4,8 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
+
+        var_dump($_SERVER['HTTP_USER_AGENT']);
         $this -> load -> model('hotel_model');
         $this->load->library('encrypt');
 
