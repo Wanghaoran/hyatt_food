@@ -5,7 +5,6 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 
-        var_dump($_SERVER['HTTP_USER_AGENT']);
         $this -> load -> model('hotel_model');
         $this->load->library('encrypt');
 
@@ -48,7 +47,13 @@ class Welcome extends CI_Controller {
             'show_num' => $show_num,
         );
 
-        $this -> load -> view('index', $data);
+        $this -> load -> library('user_agent');
+
+        if($this -> agent -> is_mobile()){
+            $this -> load -> view('index', $data);
+        }else{
+            $this -> load -> view('mobile_index', $data);
+        }
     }
 
 
