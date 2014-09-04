@@ -47,6 +47,10 @@ class Welcome extends CI_Controller {
             'show_num' => $show_num,
         );
 
+        $this -> load -> view('index', $data);
+
+
+        /*
         $this -> load -> library('user_agent');
 
         if(!$this -> agent -> is_mobile()){
@@ -54,6 +58,7 @@ class Welcome extends CI_Controller {
         }else{
             $this -> load -> view('mobile_index', $data);
         }
+        */
     }
 
 
