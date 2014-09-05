@@ -400,6 +400,55 @@
                 <table width="420" border="0" cellspacing="0" cellpadding="0" align="center">
 
 
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#秋风起，蟹脚痒！又是一年吃蟹时，@广州富力君悦大酒店 司徒师傅，将岭南别具风味的“蟹中贵妃”黄油蟹肉与新鲜蛋白完美融合，烹制出比芙蓉更嫩滑的美馔佳肴。现在为您喜爱的菜肴投票，就有可能赢取双人免费餐券。快快行动起来吧！
+                                </p>
+                                <img alt="" src="http://ww4.sinaimg.cn/thumbnail/86a9ab32jw1ek1ebq14h3j20ci0g4djt.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BlyTI61pG" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#鸭皮酥脆，肉质鲜嫩，不少食客对香酥鸭的味道赞不绝口。可是你知道吗？这道菜品竟与清朝光绪皇帝颇有渊源。@上海新天地安达仕酒店 “海派”中餐厅的向师傅，以南京金陵散养小米鸭入菜，烹饪出喷香四溢的香酥小米鸭。喜欢的朋友快来为它投上一票~
+                                </p>
+                                <img alt="" src="http://ww4.sinaimg.cn/thumbnail/86a9ab32jw1ek0spc664vj20ci0g4aec.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BltZYojpg" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+
+                    <tr>
+                        <td height="120" align="center" valign="middle">
+                            <ul class="wblist">
+                                <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                                <li class="lidiv">
+                                    <p>
+                                        #凯悦悦享家#“最佳时令菜肴”评选正在火热进行中，快来点击链接http://t.cn/Rh2cxrb ，为您喜欢的菜品投上一票！参与投票更有机会嬴免费双人酒店餐券，还等什么，即刻开启“悦享家”之旅！
+                                    </p>
+                                    <img alt="" src="http://ww4.sinaimg.cn/thumbnail/86a9ab32jw1ek0hdb14mnj20j30q67b4.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                    <div class="btn_wb"><a href="http://weibo.com/2259266354/BlrqEEPHe" target="_blank">查看详情</a></div>
+                                </li>
+                            </ul>
+                            <div class="clear10"></div>
+                        </td>
+                    </tr>
+
                     <tr>
                         <td height="120" align="center" valign="middle">
                             <ul class="wblist">
