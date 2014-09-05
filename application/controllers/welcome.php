@@ -62,9 +62,47 @@ class Welcome extends CI_Controller {
     }
 
 
-    public function tettss(){
+    /*
 
+    public function tettss(){
+        $page = !empty($_GET['per_page']) ? $_GET['per_page'] : 1;
+
+        $uid = $this->input->get('key');
+
+
+        $this -> load -> model('hotel_model');
+
+        $this->load->library('pagination');
+
+        $config['base_url'] = 'http://hyatt.cnhtk.cn/welcome/all?key=' . $uid;
+        $config['total_rows'] = $this -> hotel_model -> gettotalnum();
+        $config['per_page'] = 9;
+        $config['use_page_numbers'] = TRUE;
+        $config['uri_segment'] = 5;
+        $config['page_query_string'] = TRUE;
+        //当前页
+        $config['cur_tag_open'] = '<span class="current">';
+        $config['cur_tag_close'] = '</span>';
+        //封装
+        $config['full_tag_open'] = '<div class="meneame">';
+        $config['full_tag_close'] = '</div>';
+
+
+        $this->pagination->initialize($config);
+
+        $pageshow = $this->pagination->create_links();
+
+        $new_result = $this -> hotel_model -> gethotelbylimit($page);
+
+
+        $data = array(
+            'hotel_data' => $new_result,
+            'pageshow' => $pageshow,
+            'uid' => urlencode($uid),
+        );
+        $this -> load -> view('tettss', $data);
     }
+    */
 
     public function enroll()
     {

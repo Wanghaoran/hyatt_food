@@ -19,13 +19,8 @@
         //点击投票
         var sharebutton = function(cid){
 
-            <?php if($uid == 'null'): ?>
-            App.trigger('login', {
-                // 请注意，redirect_uri 是登录成功后回调的 URL，必须传的是 *.weibo.com 下的 URL，不支持第三方的地址
-                'redirect_uri' : encodeURIComponent('http://apps.weibo.com/2259266354/Qp1a6Ji')
-            });
-            <?php else: ?>
-
+            setDivCenter(11);
+/*
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/vote',
@@ -58,7 +53,7 @@
                     }
                 }
             });
-            <?php endif; ?>
+            */
 
         }
 
@@ -234,7 +229,7 @@
                             <dt><?=$value['hotel_name']?></dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?>" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip();" width="222" height="286"/></dd>
                             <dd class="ddinfo">
-                                <a href="javascript:void(0);" onclick="sharebutton(<?=$value['id']?>);" class="btn_tp"></a><span>已有<strong id="top_num_<?=$value['id']?>"><?=$value['num']?></strong>人投票</span>
+                                <a href="javascript:void(0);" onclick="sharebutton(<?=$value['id']?>);" class="btn_tp"></a><span>已有 <strong id="top_num_<?=$value['id']?>"><?=$value['num']?></strong> 人投票</span>
                             </dd>
                         </dl>
                     </li>
