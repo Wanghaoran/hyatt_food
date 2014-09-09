@@ -48,7 +48,7 @@
                         //投票数加1
                         var top_now_num = $('#top_' + cid).html();
                         $('#top_' + cid).html(parseInt(top_now_num) + 1);
-                        
+
 
                     }
                 }
@@ -77,7 +77,7 @@
 
     <?php if($key != 21): ?>
         <li>
-            <div class="divleft"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/product/<?=$value['id']?>.jpg"/></a></div>
+            <div class="divleft"><a href="<?=$this->config->base_url()?>/welcome/mobile_content/<?=$value['id']?>"><img src="<?=$this->config->base_url()?>/static/mobile/product/<?=$value['id']?>.jpg"/></a></div>
             <div class="divright">
                 <h2><?=$value['food_name']?></h2>
                 <h3><?=$value['hotel_name']?></h3>
@@ -88,7 +88,7 @@
         </li>
     <?php else: ?>
         <li class="last">
-            <div class="divleft"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/product/<?=$value['id']?>.jpg"/></a></div>
+            <div class="divleft"><a href="<?=$this->config->base_url()?>/welcome/mobile_content/<?=$value['id']?>"><img src="<?=$this->config->base_url()?>/static/mobile/product/<?=$value['id']?>.jpg"/></a></div>
             <div class="divright">
                 <h2><?=$value['food_name']?></h2>
                 <h3><?=$value['hotel_name']?></h3>
