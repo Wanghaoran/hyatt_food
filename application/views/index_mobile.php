@@ -45,34 +45,10 @@
                     }else{
                         alert('投票成功！' + ress.data);
 
-                        /*
-
                         //投票数加1
-                        var top_num = $('#top_roll_' + cid).length;
-                        var left_num = $('#left_rank_' + cid).length;
-
-                        if(top_num){
-                            var top_now_num = $('#top_roll_' + cid).html();
-                            $('#top_roll_' + cid).html(parseInt(top_now_num) + 1);
-                        }
-
-                        if(left_num){
-                            var left_now_num = $('#left_rank_' + cid).html();
-                            $('#left_rank_' + cid).html(parseInt(left_now_num) + 1)
-
-                        }
-
-*/
-                        //设置分享URL
-                        /*
-                        url = ress.url;
-                        if(ress.isregister == 'no'){
-                            setDivCenter(11);
-                        }else{
-                            openshare();
-                        }
-
-                        */
+                        var top_now_num = $('#top_' + cid).html();
+                        $('#top_' + cid).html(parseInt(top_now_num) + 1);
+                        
 
                     }
                 }
@@ -105,7 +81,7 @@
             <div class="divright">
                 <h2><?=$value['food_name']?></h2>
                 <h3><?=$value['hotel_name']?></h3>
-                <h4>已有 <strong><?=$value['num']?></strong> 人投票</h4>
+                <h4>已有 <strong id="top_<?=$value['id']?>"><?=$value['num']?></strong> 人投票</h4>
                 <div class="btn_djtp"><a onclick="sharebutton('<?=$value['id']?>');" title="点击投票"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
             </div>
             <div class="clear"></div>
@@ -116,7 +92,7 @@
             <div class="divright">
                 <h2><?=$value['food_name']?></h2>
                 <h3><?=$value['hotel_name']?></h3>
-                <h4>已有 <strong><?=$value['num']?></strong> 人投票</h4>
+                <h4>已有 <strong id="top_<?=$value['id']?>"><?=$value['num']?></strong> 人投票</h4>
                 <div class="btn_djtp"><a onclick="sharebutton('<?=$value['id']?>');" title="点击投票"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
             </div>
             <div class="clear"></div>
