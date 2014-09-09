@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head>
+<html xmlns="http://www.w3.org/1999/html"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>凯悦悦享家</title>
     <meta http-equiv="Cache-Control" content="max-age=3600">
@@ -24,7 +24,7 @@
 
             <?php else: ?>
 
-            /*
+
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/vote',
@@ -37,6 +37,7 @@
                     }else{
                         alert('投票成功！' + ress.data);
 
+                        /*
 
                         //投票数加1
                         var top_num = $('#top_roll_' + cid).length;
@@ -53,7 +54,9 @@
 
                         }
 
+*/
                         //设置分享URL
+                        /*
                         url = ress.url;
                         if(ress.isregister == 'no'){
                             setDivCenter(11);
@@ -61,12 +64,12 @@
                             openshare();
                         }
 
+                        */
+
                     }
                 }
             });
-            */
-            alert(cid);
-            alert('<?=$uid?>');
+
             <?php endif; ?>
 
         }
@@ -94,7 +97,7 @@
             <div class="divright">
                 <h2><?=$value['food_name']?></h2>
                 <h3><?=$value['hotel_name']?></h3>
-                <h4>已有 <?=$value['num']?> 人投票</h4>
+                <h4>已有 <strong><?=$value['num']?></strong> 人投票</h4>
                 <div class="btn_djtp"><a onclick="sharebutton('<?=$value['id']?>');" title="点击投票"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
             </div>
             <div class="clear"></div>
@@ -105,7 +108,7 @@
             <div class="divright">
                 <h2><?=$value['food_name']?></h2>
                 <h3><?=$value['hotel_name']?></h3>
-                <h4>已有 <?=$value['num']?> 人投票</h4>
+                <h4>已有 <strong><?=$value['num']?></strong> 人投票</h4>
                 <div class="btn_djtp"><a onclick="sharebutton('<?=$value['id']?>');" title="点击投票"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
             </div>
             <div class="clear"></div>
