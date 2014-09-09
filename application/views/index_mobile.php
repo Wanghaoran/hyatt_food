@@ -66,6 +66,7 @@
             });
             */
             alert(cid);
+            alert('<?=$uid?>');
             <?php endif; ?>
 
         }
