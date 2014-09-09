@@ -10,6 +10,46 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="<?=$this->config->base_url()?>/static/mobile/css/common.css">
+    <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.js"></script>
+
+    <script>
+        //点击投票
+        var sharebutton = function(cid){
+
+            <?php if($uid == 'null'): ?>
+
+            WeiboJSBridge.invoke("login", {
+                "redirect_uri" : encodeURIComponent("http://apps.weibo.com/2259266354/Qp1a6Ji")
+            }, function (params, success, code) {});
+
+            <?php else: ?>
+
+
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/vote',
+                data : '&cid=' + cid + '&key=<?=$uid?>',
+                async : false,
+                dataType : 'json',
+                success : function(ress){
+                    if(ress.status == 'error'){
+                        alert('投票失败！' + ress.data);
+                    }else{
+                        alert('投票成功！' + ress.data);
+
+                        //投票数加1
+                        var top_now_num = $('#top_' + cid).html();
+                        $('#top_' + cid).html(parseInt(top_now_num) + 1);
+
+
+                    }
+                }
+            });
+
+            <?php endif; ?>
+
+        }
+    </script>
 </head>
 <body>
 <div class="container">
@@ -31,18 +71,18 @@
 
                     <?php if($key != 21): ?>
                         <li>
-                            <div class="btn_djtp"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
+                            <div class="btn_djtp"><a onclick="sharebutton('<?=$value['id']?>');"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
                             <div class="num"><img src="<?=$this->config->base_url()?>/static/mobile/num/<?=$key+1?>.png"/></div>
                             <div class="dm"><?=$value['hotel_name']?></div>
-                            <div class="tp" style="font-size: 9px;">已有 <strong><?=$value['num']?></strong> 人投票</div>
+                            <div class="tp" style="font-size: 9px;">已有 <strong id="top_<?=$value['id']?>"><?=$value['num']?></strong> 人投票</div>
                             <div class="clear"></div>
                         </li>
                     <?php else: ?>
                         <li class="last">
-                            <div class="btn_djtp"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
+                            <div class="btn_djtp"><a onclick="sharebutton('<?=$value['id']?>');" ><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
                             <div class="num"><img src="<?=$this->config->base_url()?>/static/mobile/num/<?=$key+1?>.png"/></div>
                             <div class="dm"><?=$value['hotel_name']?></div>
-                            <div class="tp" style="font-size: 9px;">已有 <strong><?=$value['num']?></strong> 人投票</div>
+                            <div class="tp" style="font-size: 9px;">已有 <strong id="top_<?=$value['id']?>"><?=$value['num']?></strong> 人投票</div>
                             <div class="clear"></div>
                         </li>
                     <?php endif; ?>
