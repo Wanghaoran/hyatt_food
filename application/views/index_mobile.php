@@ -14,10 +14,6 @@
 
     <script>
 
-        WeiboJSBridge.trigger('bottomNavigation:info', {
-            "title" : "我的分享文案，爱怎么写就怎么写，哈哈"
-        }, function(){});
-
         //点击投票
         var sharebutton = function(cid){
 
