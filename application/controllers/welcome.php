@@ -59,7 +59,6 @@ class Welcome extends CI_Controller {
             $all_result = $this -> hotel_model -> getallhotel();
             shuffle($all_result);
             $data['all_result'] = $all_result;
-            $data['uid'] = 123;
             $this -> load -> view('index_mobile', $data);
         }
 
@@ -74,6 +73,8 @@ class Welcome extends CI_Controller {
         $all_result = $this -> hotel_model -> getallhotel();
         shuffle($all_result);
         $data['all_result'] = $all_result;
+        $data['uid'] = 123;
+
         $this -> load -> view('index_mobile', $data);
     }
 
