@@ -57,7 +57,7 @@
         <img src="<?=$this->config->base_url()?>/static/mobile/images/top2.jpg"/>
         <a href="#" class="zjsltp" title="最佳时令菜肴投票"></a>
         <a href="<?=$this->config->base_url()?>?key=<?=$uid?>" class="logo" title="凯悦悦享家"></a>
-        <a href="#" class="hdsm" title="活动说明"></a>
+        <a href="<?=$this->config->base_url()?>terms?key=<?=$uid?>" class="hdsm" title="活动说明"></a>
         <a href="<?=$this->config->base_url()?>old?key=<?=$uid?>" class="dyjdhg" title="第一季度回顾"></a>
     </div>
 
