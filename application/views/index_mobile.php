@@ -13,6 +13,11 @@
     <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/pageapp/mobile/jsapi.js" charset="utf-8"></script>
 
     <script>
+
+        WeiboJSBridge.trigger('bottomNavigation:info', {
+            "title" : "我的分享文案，爱怎么写就怎么写，哈哈"
+        }, function(){});
+
         //点击投票
         var sharebutton = function(cid){
 
@@ -25,8 +30,7 @@
             <?php else: ?>
 
 
-            alert(cid);
-            alert('<?=$uid?>');
+
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/vote',
@@ -34,41 +38,7 @@
                 async : false,
                 dataType : 'json',
                 success : function(ress){
-                    if(ress.status == 'error'){
-                        alert('投票失败！' + ress.data);
-                    }else{
-                        alert('投票成功！' + ress.data);
-
-                        /*
-
-                        //投票数加1
-                        var top_num = $('#top_roll_' + cid).length;
-                        var left_num = $('#left_rank_' + cid).length;
-
-                        if(top_num){
-                            var top_now_num = $('#top_roll_' + cid).html();
-                            $('#top_roll_' + cid).html(parseInt(top_now_num) + 1);
-                        }
-
-                        if(left_num){
-                            var left_now_num = $('#left_rank_' + cid).html();
-                            $('#left_rank_' + cid).html(parseInt(left_now_num) + 1)
-
-                        }
-
-*/
-                        //设置分享URL
-                        /*
-                        url = ress.url;
-                        if(ress.isregister == 'no'){
-                            setDivCenter(11);
-                        }else{
-                            openshare();
-                        }
-
-                        */
-
-                    }
+                    alert(1234);
                 }
             });
 
