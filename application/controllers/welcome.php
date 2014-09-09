@@ -56,7 +56,9 @@ class Welcome extends CI_Controller {
         }else{
 
             //手机端获取所有数据
-            $data['all_result'] = $this -> hotel_model -> getallhotel();
+            $all_result = $this -> hotel_model -> getallhotel();
+            shuffle($all_result);
+            $data['all_result'] = $all_result;
             $this -> load -> view('index_mobile', $data);
         }
 
