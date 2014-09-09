@@ -394,7 +394,14 @@ class Welcome extends CI_Controller {
         $data = array(
             'uid' => urlencode($uid),
         );
-        $this -> load -> view('old', $data);
+
+        $this -> load -> library('user_agent');
+
+        if(!$this -> agent -> is_mobile()){
+            $this -> load -> view('old', $data);
+        }else{
+            $this -> load -> view('old_mobile', $data);
+        }
     }
 
     public function terms()
