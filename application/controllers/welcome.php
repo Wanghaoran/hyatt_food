@@ -56,9 +56,15 @@ class Welcome extends CI_Controller {
         if(!$this -> agent -> is_mobile()){
             $this -> load -> view('index', $data);
         }else{
-            $this -> load -> view('mobile_index', $data);
+            $this -> load -> view('index_mobile', $data);
         }
         */
+    }
+
+    //Mobile端首页
+    public function index_mobile(){
+        $this -> load -> view('index_mobile');
+
     }
 
 

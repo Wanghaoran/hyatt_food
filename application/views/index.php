@@ -399,6 +399,69 @@
             <div id="MarqueeDiv123" style="width:390px; height:260px;overflow:hidden; margin:20px 0 0 40px;">
                 <table width="420" border="0" cellspacing="0" cellpadding="0" align="center">
 
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#夏末渐秋，正是润养之季。哪些食物能起到健脾养胃的调理功效？@三亚太阳湾柏悦酒店Park_Hyatt 欧雪锋主厨给出了答案。一道扁豆炒虾球，不仅简单易学，营养价值高，口感更令人称赞。即刻点击大图，来学学这道菜肴的做法，回家试着做做看吧！
+                                </p>
+                                <img alt="" src="http://ww2.sinaimg.cn/thumbnail/86a9ab32jw1ek618jri6kj20ci0g4q5r.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BmaI2u7dE" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#秉承“珍馐百味不及原生之选”的粤菜精髓，@沈阳君悦酒店GrandHyattShenyang 罗贤园厨师长特采云南鲜松茸，精选大连活海参，打造出秋日进补的养生佳肴。想知道这道菜品有哪些神奇功效？不妨点击图片了解下吧~
+                                </p>
+                                <img alt="" src="http://ww2.sinaimg.cn/thumbnail/86a9ab32tw1ek54uafph7j20ci0g4n0c.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://www.weibo.com/2259266354/Bm3my27T9" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#每个季节都有健康美味的时令菜肴，在今年入秋之际，凯悦集团旗下22家酒店的大厨们各显身手，以应季食材打造佳肴美馔。活动期间，为您喜爱的菜肴投票，即有机会赢取双人免费餐券，赶快来参加吧！PS：投票次数越多，中奖几率越大噢~
+                                </p>
+                                <img alt="" src="http://ww1.sinaimg.cn/thumbnail/86a9ab32tw1ek3xl2mtp1j209g0t6jvg.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/Bm1t26hPI" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#每一道美食背后，往往隐藏着厨师们天马星空的创意，正如@杭州凯悦酒店 程郁师傅手下的这道橙香核桃脆虾球。将新鲜对虾油炸成圆润球形，淋上带有淡淡橙香的勾芡，口感清新，层次丰富。当橙子的果香在舌尖蔓延开来，幸福感岂不瞬间爆棚？
+                                </p>
+                                <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ek1n244inlj20ci0g4gqf.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BlASgFJtf?mod=weibotime" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
 
                 <tr>
                     <td height="120" align="center" valign="middle">
