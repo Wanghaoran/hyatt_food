@@ -73,6 +73,14 @@ class Welcome extends CI_Controller {
         $this -> load -> view('mobile_content', $data);
     }
 
+    //Mobile 最佳时令菜肴投票
+    public function all_mobile(){
+        $uid = $this->input->get('key');
+        $data = array();
+        $data['uid'] = urlencode($uid);
+        $this -> load -> view('all_mobile', $data);
+    }
+
 
     //Mobile端首页
 
