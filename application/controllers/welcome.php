@@ -55,8 +55,6 @@ class Welcome extends CI_Controller {
             $this -> load -> view('index', $data);
         }else{
 
-            $this -> load -> model('hotel_model');
-
             //手机端获取所有数据
             $all_result = $this -> hotel_model -> getallhotel();
             shuffle($all_result);
@@ -70,6 +68,8 @@ class Welcome extends CI_Controller {
     //Mobile端首页
 
     public function index_mobile(){
+        $this -> load -> model('hotel_model');
+
         //手机端获取所有数据
         $all_result = $this -> hotel_model -> getallhotel();
         shuffle($all_result);
