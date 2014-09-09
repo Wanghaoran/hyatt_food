@@ -55,4 +55,11 @@ class Hotel_model extends CI_Model {
         $now = $this->db->count_all_results('hotel');
         return $now;
     }
+
+    //获得所有酒店按投票数排序
+    public function getallhotelbynum(){
+        $this->db->order_by("num", "DESC");
+        $query = $this -> db -> get('hotel');
+        return $query -> result_array();
+    }
 }

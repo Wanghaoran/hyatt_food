@@ -24,182 +24,33 @@
     <div class="phb">
         <div class="phbcon">
             <ul>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="<?=$this->config->base_url()?>/static/mobile/num/1.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="<?=$this->config->base_url()?>/static/mobile/num/2.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/3.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/4.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/5.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/6.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/7.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/8.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/9.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/10.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/11.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/12.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/13.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/14.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/15.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/16.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/17.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/18.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/19.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/20.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li>
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/21.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
-                <li class="last">
-                    <div class="btn_djtp"><a href="#"><img src="images/btn_djtp.png"/></a></div>
-                    <div class="num"><img src="num/22.png"/></div>
-                    <div class="dm">上海金茂君悦大酒店</div>
-                    <div class="zz">简伟鹗</div>
-                    <div class="tp">已有XXXXX人投票</div>
-                    <div class="clear"></div>
-                </li>
+
+
+                <?php foreach($all as $key => $value): ?>
+
+
+                    <?php if($key != 21): ?>
+                        <li>
+                            <div class="btn_djtp"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
+                            <div class="num"><img src="<?=$this->config->base_url()?>/static/mobile/num/<?=$key+1?>.png"/></div>
+                            <div class="dm"><?=$value['hotel_name']?></div>
+                            <div class="tp">已有 <strong><?=$value['num']?></strong> 人投票</div>
+                            <div class="clear"></div>
+                        </li>
+                    <?php else: ?>
+                        <li class="last">
+                            <div class="btn_djtp"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
+                            <div class="num"><img src="<?=$this->config->base_url()?>/static/mobile/num/<?=$key+1?>.png"/></div>
+                            <div class="dm"><?=$value['hotel_name']?></div>
+                            <div class="tp">已有 <strong><?=$value['num']?></strong> 人投票</div>
+                            <div class="clear"></div>
+                        </li>
+                    <?php endif; ?>
+
+                <?php endforeach; ?>
+
+
+
             </ul>
             <div class="clear"></div>
         </div>

@@ -76,8 +76,13 @@ class Welcome extends CI_Controller {
     //Mobile 最佳时令菜肴投票
     public function all_mobile(){
         $uid = $this->input->get('key');
+        $this -> load -> model('hotel_model');
+        $all = $this -> hotel_model -> getallhotelbynum();
+
         $data = array();
         $data['uid'] = urlencode($uid);
+        $data['all'] = $all;
+
         $this -> load -> view('all_mobile', $data);
     }
 
