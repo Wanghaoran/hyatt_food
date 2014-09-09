@@ -34,7 +34,7 @@
                             <div class="btn_djtp"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
                             <div class="num"><img src="<?=$this->config->base_url()?>/static/mobile/num/<?=$key+1?>.png"/></div>
                             <div class="dm"><?=$value['hotel_name']?></div>
-                            <div class="tp" style="font-size: 10px;">已有 <strong><?=$value['num']?></strong> 人投票</div>
+                            <div class="tp" style="font-size: 9px;">已有 <strong><?=$value['num']?></strong> 人投票</div>
                             <div class="clear"></div>
                         </li>
                     <?php else: ?>
@@ -42,7 +42,7 @@
                             <div class="btn_djtp"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_djtp.png"/></a></div>
                             <div class="num"><img src="<?=$this->config->base_url()?>/static/mobile/num/<?=$key+1?>.png"/></div>
                             <div class="dm"><?=$value['hotel_name']?></div>
-                            <div class="tp" style="font-size: 10px;">已有 <strong><?=$value['num']?></strong> 人投票</div>
+                            <div class="tp" style="font-size: 9px;">已有 <strong><?=$value['num']?></strong> 人投票</div>
                             <div class="clear"></div>
                         </li>
                     <?php endif; ?>
