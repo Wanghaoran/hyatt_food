@@ -10,13 +10,53 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="<?=$this->config->base_url()?>/static/mobile/css/common.css">
+    <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.js"></script>
+
+    <script>
+        //点击投票
+        var sharebutton = function(cid){
+
+            <?php if($uid == 'null'): ?>
+
+            WeiboJSBridge.invoke("login", {
+                "redirect_uri" : encodeURIComponent("http://apps.weibo.com/2259266354/Qp1a6Ji")
+            }, function (params, success, code) {});
+
+            <?php else: ?>
+
+
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/vote',
+                data : '&cid=' + cid + '&key=<?=$uid?>',
+                async : false,
+                dataType : 'json',
+                success : function(ress){
+                    if(ress.status == 'error'){
+                        alert('投票失败！' + ress.data);
+                    }else{
+                        alert('投票成功！' + ress.data);
+
+                        //投票数加1
+//                        var top_now_num = $('#top_' + cid).html();
+//                        $('#top_' + cid).html(parseInt(top_now_num) + 1);
+
+
+                    }
+                }
+            });
+
+            <?php endif; ?>
+
+        }
+    </script>
 </head>
 <body>
 <div class="container">
     <div class="kapian"><img src="<?=$this->config->base_url()?>/static/mobile/card/<?=$cid?>.jpg"/></div>
     <div class="bottom3">
         <img src="<?=$this->config->base_url()?>/static/mobile/images/bottom3.jpg"/>
-        <div class="btn_toupiao"><a href="#" title="点击投票"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_toupiao.png"/></a></div>
+        <div class="btn_toupiao"><a onclick="sharebutton('<?=$cid?>');" title="点击投票"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_toupiao.png"/></a></div>
     </div>
 </div>
 </body>

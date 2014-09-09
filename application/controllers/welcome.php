@@ -66,9 +66,10 @@ class Welcome extends CI_Controller {
 
     //Mobile 厨师卡详情页
     public function mobile_content($cid){
-        var_dump($_GET);
+        $uid = $this->input->get('key');
         $data = array();
         $data['cid'] = intval($cid);
+        $data['uid'] = urlencode($uid);
         $this -> load -> view('mobile_content', $data);
     }
 
