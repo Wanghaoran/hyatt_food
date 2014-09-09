@@ -65,11 +65,15 @@ class Welcome extends CI_Controller {
     }
 
     //Mobile端首页
-    /*
+
     public function index_mobile(){
-        $this -> load -> view('index_mobile');
+        //手机端获取所有数据
+        $all_result = $this -> hotel_model -> getallhotel();
+        shuffle($all_result);
+        $data['all_result'] = $all_result;
+        $this -> load -> view('index_mobile', $data);
     }
-    */
+
 
 
     /*
