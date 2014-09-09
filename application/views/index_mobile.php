@@ -25,6 +25,8 @@
             <?php else: ?>
 
 
+            alert(cid);
+            alert('<?=$uid?>');
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/vote',
