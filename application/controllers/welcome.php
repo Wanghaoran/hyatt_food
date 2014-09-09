@@ -66,6 +66,7 @@ class Welcome extends CI_Controller {
 
     //Mobile端首页
 
+    /*
     public function index_mobile(){
         $this -> load -> model('hotel_model');
 
@@ -77,6 +78,7 @@ class Welcome extends CI_Controller {
 
         $this -> load -> view('index_mobile', $data);
     }
+    */
 
 
 
