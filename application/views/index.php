@@ -405,6 +405,38 @@
                             <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                             <li class="lidiv">
                                 <p>
+                                    #凯悦悦享家#作为杭帮菜系中的经典之作，你了解叫花鸡的由来吗？如今，@上海外滩茂悦大酒店 杜才清主厨另辟蹊径，将多种秋季食材纳入童子鸡肚，荷叶包裹后封裹陶泥，置炭火烘烤而成。鸡肉入口板酥肉嫩，透着荷叶的清香，令人唇齿回味~喜欢就请为它投上一票！
+                                </p>
+                                <img alt="" src="http://ww4.sinaimg.cn/thumbnail/86a9ab32jw1ek76rckzctj20ci0g4tbo.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/Bmk6T6RCO" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#精致的美味，不仅能带给食客舌尖上的享受，更能引起情感上的共鸣。@北京东方君悦大酒店 佟歆师傅以鸡鸭肘等熬制的高汤为基础，煲出味道浓郁、营养丰富的白菜豆腐汤，用平凡经典表达心意，简单却有家的味道。喜欢这道菜的朋友，别忘了投票支持它哦~
+                                </p>
+                                <img alt="" src="http://ww2.sinaimg.cn/thumbnail/86a9ab32jw1ek69vtd8vej20ci0g4whg.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BmcEY1ivo" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
                                     #凯悦悦享家#夏末渐秋，正是润养之季。哪些食物能起到健脾养胃的调理功效？@三亚太阳湾柏悦酒店Park_Hyatt 欧雪锋主厨给出了答案。一道扁豆炒虾球，不仅简单易学，营养价值高，口感更令人称赞。即刻点击大图，来学学这道菜肴的做法，回家试着做做看吧！
                                 </p>
                                 <img alt="" src="http://ww2.sinaimg.cn/thumbnail/86a9ab32jw1ek618jri6kj20ci0g4q5r.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
