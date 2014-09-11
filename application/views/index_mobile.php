@@ -88,14 +88,39 @@
                     if(ress.status == 'error'){
                         alert('注册失败！' + ress.data);
                     }else{
-//                        getnum();
+                        getnum();
                         alert('注册成功！' + ress.data);
-//                        tosendemail();
+                        tosendemail();
                     }
                 }
             });
 
             <?php endif; ?>
+        }
+
+        //获取总人数
+        var getnum = function(){
+            $.ajax({
+                type : 'GET',
+                url : '<?=$this -> config -> base_url()?>welcome/ajaxgetusernum',
+                async : false,
+                success : function(ress){
+                    $('#user_num_total').html(ress);
+                }
+            });
+        }
+
+        //sendemail
+        var tosendemail = function(){
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/sendenrollemail',
+                data : '&key=<?=$uid?>',
+                async : false,
+                success : function(){
+                    return;
+                }
+            });
         }
     </script>
 </head>
@@ -117,7 +142,7 @@
 
     <div class="num">
         <img src="<?=$this->config->base_url()?>/static/mobile/images/num.jpg"/>
-        <div class="num_tj"><?=$show_num?></div>
+        <div class="num_tj" id="user_num_total"><?=$show_num?></div>
     </div>
 
 
