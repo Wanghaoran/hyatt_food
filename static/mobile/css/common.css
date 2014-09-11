@@ -91,3 +91,17 @@ html, body {height: 100%;}
 			
 		.slide{ position:absolute; width:80%; left:10%; top:2.5%;}
 			.slide img{ width:100%; vertical-align:bottom;}
+			
+		.search{ position:relative}
+			.search img{ width:100%; vertical-align:bottom;}
+			.search a img{ border:0;}
+			.search a:hover img{opacity:0.8;filter:alpha(opacity=80);}
+			.search .input_search{ position:absolute; left:11%; top:85%; width:41.3%;}
+			.search .serchclass{ position:absolute; width:82%; left:15%; top: border:none; height:100%; line-height:100%; font-size:12px; color:#8b8b8b;}
+			.search .btn_jiaru{ position:absolute; right:11%; top:85%; width:35.8%;}
+			
+		.num{ position:relative}
+			.num img{ width:100%; vertical-align:bottom;}
+			.num .num_tj{ position:absolute; width:29.3%; left:37.4%; top:2%; height:36.6%; text-align:center; height:36.6%; font-size:20px; color:#000; font-weight:800;}
+			
+		

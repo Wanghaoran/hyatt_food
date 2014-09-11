@@ -68,7 +68,20 @@
     <a href="<?=$this->config->base_url()?>terms?key=<?=$uid?>" class="hdsm" title="活动说明"></a>
     <a href="<?=$this->config->base_url()?>old?key=<?=$uid?>" class="dyjdhg" title="第一季度回顾"></a>
 </div>
-<div class="banner"><img src="<?=$this->config->base_url()?>/static/mobile/images/banner1.jpg"/></div>
+
+    <div class="search">
+        <img src="<?=$this->config->base_url()?>/static/mobile/images/banner5.jpg"/>
+        <div class="input_search"><img src="<?=$this->config->base_url()?>/static/mobile/images/input_search.png"/><input id="kw" class="serchclass" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}"></div>
+        <div class="btn_jiaru"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_jiaru.png"/></a></div>
+    </div>
+
+    <div class="num">
+        <img src="<?=$this->config->base_url()?>/static/mobile/images/num.jpg"/>
+        <div class="num_tj"><?=$show_num?></div>
+    </div>
+
+
+
 <div class="product">
 <ul>
 
