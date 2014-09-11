@@ -57,6 +57,46 @@
             <?php endif; ?>
 
         }
+
+        //加入悦享受家
+        var joinhyatt = function(){
+            <?php if($uid == 'null'): ?>
+            WeiboJSBridge.invoke("login", {
+                "redirect_uri" : encodeURIComponent("http://apps.weibo.com/2259266354/Qp1a6Ji")
+            }, function (params, success, code) {});
+            <?php else: ?>
+            var emailString = $('#emailString').val();
+            //验证
+            if(emailString == '请输入您的邮箱'){
+                alert('请您输入电子邮件地址！');
+                $('#emailString').focus();
+                return;
+            }
+            var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+            if(!reg.test(emailString)){
+                alert('邮件格式不正确，请您重新输入！');
+                return;
+            }
+
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/enroll',
+                data : '&email=' + emailString + '&key=<?=$uid?>',
+                async : false,
+                dataType : 'json',
+                success : function(ress){
+                    if(ress.status == 'error'){
+                        alert('注册失败！' + ress.data);
+                    }else{
+//                        getnum();
+                        alert('注册成功！' + ress.data);
+//                        tosendemail();
+                    }
+                }
+            });
+
+            <?php endif; ?>
+        }
     </script>
 </head>
 <body>
@@ -71,7 +111,7 @@
 
     <div class="search">
         <img src="<?=$this->config->base_url()?>/static/mobile/images/banner5.jpg"/>
-        <div class="input_search"><img src="<?=$this->config->base_url()?>/static/mobile/images/input_search.png"/><input id="kw" class="serchclass" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}"></div>
+        <div class="input_search"><img src="<?=$this->config->base_url()?>/static/mobile/images/input_search.png"/><input id="emailString" class="serchclass" name="keyword" value="请输入您的邮箱" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}"></div>
         <div class="btn_jiaru"><a href="#"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_jiaru.png"/></a></div>
     </div>
 
