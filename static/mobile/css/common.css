@@ -97,7 +97,7 @@ html, body {height: 100%;}
 			.search a img{ border:0;}
 			.search a:hover img{opacity:0.8;filter:alpha(opacity=80);}
 			.search .input_search{ position:absolute; left:11%; top:85%; width:41.3%;}
-			.search .serchclass{ position:absolute; width:82%; left:15%; top: border:none; height:100%; line-height:100%; font-size:12px; color:#8b8b8b;}
+			.search .serchclass{ position:absolute; width:82%; left:15%; top: border:none; height:90%; top:5%; font-size:12px; color:#8b8b8b;}
 			.search .btn_jiaru{ position:absolute; right:11%; top:85%; width:35.8%;}
 			
 		.num{ position:relative}
