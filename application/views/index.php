@@ -405,6 +405,39 @@
                             <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                             <li class="lidiv">
                                 <p>
+                                    #凯悦悦享家#秋日进补，营养美味的滋补汤必不可少。@天津帝旺凯悦酒店 打造的这款靓汤，用料极为丰富。其中有劲道爽口的特色独面筋，混合肉馅和鳕鱼的狮子头，以及野生鲜松茸，为慢炖八小时之久的靓汤注入更多营养，口感鲜美加倍。你会给这道菜投票吗？
+                                </p>
+                                <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ek8c65qf5ej20ci0g4adk.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BmtujmvNG" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#品尝过不少滋补营养的汤品，但你喝过特有男女之分的汤吗？@深圳君悦酒店 徐师傅打造的主厨功夫汤，便分为男汤、女汤两款，因放入不同食材而使得汤效各异。想知道这味醇香浓的汤里包含了哪些食材？答案就藏在图片里哦~
+                                </p>
+                                <img alt="" src="http://ww1.sinaimg.cn/thumbnail/86a9ab32jw1ek7f2rx2ibj20ci0g4goj.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BmlZuBgFC" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
                                     #凯悦悦享家#作为杭帮菜系中的经典之作，你了解叫花鸡的由来吗？如今，@上海外滩茂悦大酒店 杜才清主厨另辟蹊径，将多种秋季食材纳入童子鸡肚，荷叶包裹后封裹陶泥，置炭火烘烤而成。鸡肉入口板酥肉嫩，透着荷叶的清香，令人唇齿回味~喜欢就请为它投上一票！
                                 </p>
                                 <img alt="" src="http://ww4.sinaimg.cn/thumbnail/86a9ab32jw1ek76rckzctj20ci0g4tbo.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
