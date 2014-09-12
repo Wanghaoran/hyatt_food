@@ -59,6 +59,9 @@
         <div class="btn_toupiao"><a onclick="sharebutton('<?=$cid?>');" title="点击投票"><img src="<?=$this->config->base_url()?>/static/mobile/images/btn_toupiao.png"/></a></div>
     </div>
 </div>
+<div style="display: none;">
+    <script src="http://s95.cnzz.com/stat.php?id=1253168334&web_id=1253168334" language="JavaScript"></script>
+</div>
 </body>
 
 </html>
