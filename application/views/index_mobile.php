@@ -21,6 +21,8 @@
         }, function(){});
         */
 
+        var url = '';
+
         //点击投票
         var sharebutton = function(cid){
 
@@ -48,6 +50,10 @@
                         //投票数加1
                         var top_now_num = $('#top_' + cid).html();
                         $('#top_' + cid).html(parseInt(top_now_num) + 1);
+
+                        //设置分享URL
+                        url = ress.url;
+                        openshare();
 
 
                     }
@@ -122,6 +128,11 @@
                 }
             });
         }
+
+        var openshare = function(){
+            window.open (url, '分享到新浪微博', 'height=200, width=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=yes, resizable=no,location=n o, status=no');
+        }
+
     </script>
 </head>
 <body>

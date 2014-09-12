@@ -405,6 +405,54 @@
                             <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                             <li class="lidiv">
                                 <p>
+                                    #凯悦悦享家#美味不在于豪华盛大，只在于贴心贴胃；有时一粥一饭，胜过一燕一鲍。在本季评选“最佳时令菜肴”的活动中，多家酒店的厨师团队，将看似简单的食材，烹调出不平凡的人间美味。这其中，你最欣赏哪家酒店出品的菜肴？现在参与投票活动，还有机会赢取双人餐券！
+                                </p>
+                                <img alt="" src="http://ww1.sinaimg.cn/thumbnail/86a9ab32jw1ek9rpyey9lj209g0t6773.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BmFadDMSI" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#@北京柏悦酒店 欧阳总厨倾情奉上历经十年才创作而出的冬瓜盅。汤中不仅加入阿拉斯加帝王蟹腿肉、海螺、花胶，还有香菇和枸杞将鲜味调至更佳。一盅一人份的冬瓜汤，不仅味美健康，更灌入厨师对烹饪的一份热爱与坚持。赶快为它投上宝贵的一票吧~
+                                </p>
+                                <img alt="" src="http://ww4.sinaimg.cn/thumbnail/86a9ab32jw1ek9jyi0ik0j20ci0g4778.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BmDpeDuna" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#本季，@济南万达凯悦酒店 王长亮师傅别具匠心，将传统地锅菜与新颖的秋葵合烹，打造出此道秋葵地锅斗鸡。王师傅的精湛厨艺，更好的将齐韵鲁味演绎成“每一道菜，都是一个故事”。热爱美食的朋友，快来点击图片，了解更多美食背后的故事。
+                                </p>
+                                <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ek8mz2ebafj20ci0g4adm.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BmvWdhm0A" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
                                     #凯悦悦享家#秋日进补，营养美味的滋补汤必不可少。@天津帝旺凯悦酒店 打造的这款靓汤，用料极为丰富。其中有劲道爽口的特色独面筋，混合肉馅和鳕鱼的狮子头，以及野生鲜松茸，为慢炖八小时之久的靓汤注入更多营养，口感鲜美加倍。你会给这道菜投票吗？
                                 </p>
                                 <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ek8c65qf5ej20ci0g4adk.jpg" node-type="feed_list_media_bgimg" class="bigcursor">

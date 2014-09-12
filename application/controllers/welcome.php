@@ -47,10 +47,9 @@ class Welcome extends CI_Controller {
             'show_num' => $show_num,
         );
 
-        $this -> load -> view('index', $data);
+//        $this -> load -> view('index', $data);
 
 
-/*
         $this -> load -> library('user_agent');
 
 
@@ -66,7 +65,6 @@ class Welcome extends CI_Controller {
             $this -> load -> view('index_mobile', $data);
         }
 
-*/
 
     }
 
@@ -93,21 +91,17 @@ class Welcome extends CI_Controller {
     }
 
 
-    //Mobile端首页
+    //Mobile端测试页
 
-    /*
+
     public function index_mobile(){
-        $this -> load -> model('hotel_model');
+        $data = array(
+            'uid' => 123,
+        );
+        $this -> load -> view('terms_mobile', $data);
 
-        //手机端获取所有数据
-        $all_result = $this -> hotel_model -> getallhotel();
-        shuffle($all_result);
-        $data['all_result'] = $all_result;
-        $data['uid'] = 123;
-
-        $this -> load -> view('index_mobile', $data);
     }
-    */
+
 
 
 
