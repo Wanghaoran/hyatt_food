@@ -47,10 +47,10 @@ class Welcome extends CI_Controller {
             'show_num' => $show_num,
         );
 
-//        $this -> load -> view('index', $data);
+        $this -> load -> view('index', $data);
 
 
-
+/*
         $this -> load -> library('user_agent');
 
 
@@ -66,6 +66,7 @@ class Welcome extends CI_Controller {
             $this -> load -> view('index_mobile', $data);
         }
 
+*/
 
     }
 
