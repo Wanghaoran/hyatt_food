@@ -98,7 +98,7 @@ class Welcome extends CI_Controller {
         $data = array(
             'uid' => 123,
         );
-        $this -> load -> view('terms_mobile', $data);
+        $this -> load -> view('old_mobile', $data);
 
     }
 
