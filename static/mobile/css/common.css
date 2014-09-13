@@ -80,14 +80,14 @@ html, body {height: 100%;}
 			.bottom3 .btn_toupiao a:hover img{opacity:0.8;filter:alpha(opacity=80);}
 		.time{ width:100%; position:relative;}
 			.time img{ width:100%; vertical-align:bottom;}
-			.ultime{ width:93%; position:absolute; left:11%; top:25%;}
-			.ultime li{ float:left; width:8%; margin-right:17.5%;}
+			.ultime{ width:90%; position:absolute; left:10%; top:25%;}
+			.ultime li{ float:left; width:9%; margin:0 14.7% 0 1.8%;}
 			.ultime li a img{ width:100%; vertical-align:middle; border:0;}
 			.ultime li a:hover img{opacity:0.8;filter:alpha(opacity=80);}
-			.ultime li.last{ margin-right:0}
+			.ultime li.last{margin:0 0 0 1.5%;}
 		.shipin{ width:100%; position:relative}
 			.shipin img{ width:100%; vertical-align:bottom;}
-			.spcon{position:absolute; width:80%; height:90%; left:10%; top:5%;}
+			.spcon{position:absolute; width:80%; height:90%; left:10%; top:5%; overflow:hidden}
 			
 		.slide{ position:absolute; width:80%; left:10%; top:2.5%;}
 			.slide img{ width:100%; vertical-align:bottom;}
