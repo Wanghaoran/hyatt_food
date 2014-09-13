@@ -38,7 +38,7 @@
         <img src="<?=$this->config->base_url()?>/static/mobile/images/shipin.jpg"/>
         <div class="spcon">
             <!--<embed src="http://player.youku.com/player.php/sid/XNjQ2NzE3ODU2/v.swf" quality="high" width="100%" height="100%" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed>-->
-            <iframe height="512" width="345" src="http://player.youku.com/embed/XNjQ2NzE3ODU2" frameborder=0 allowfullscreen></iframe>
+            <iframe height=512 width=345 src="http://player.youku.com/embed/XNjQ2NzE3ODU2" frameborder=0 allowfullscreen></iframe>
         </div>
     </div>
     <div class="banner"><img src="<?=$this->config->base_url()?>/static/mobile/images/banner4.jpg"/></div>
