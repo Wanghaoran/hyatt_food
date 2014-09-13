@@ -87,7 +87,7 @@ html, body {height: 100%;}
 			.ultime li.last{margin:0 0 0 1.5%;}
 		.shipin{ width:100%; position:relative}
 			.shipin img{ width:100%; vertical-align:bottom;}
-			.spcon{position:absolute; width:80%; height:90%; left:10%; top:5%; overflow:hidden}
+			.spcon{position:absolute; width:80%; height:auto; left:10%; top:5%; bottom:5%;}
 			
 		.slide{ position:absolute; width:80%; left:10%; top:2.5%;}
 			.slide img{ width:100%; vertical-align:bottom;}
