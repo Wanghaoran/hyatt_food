@@ -399,6 +399,39 @@
             <div id="MarqueeDiv123" style="width:390px; height:260px;overflow:hidden; margin:20px 0 0 40px;">
                 <table width="420" border="0" cellspacing="0" cellpadding="0" align="center">
 
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#又到了海鲜最肥美的季节，@上海金茂君悦大酒店 厨师长简伟鹗为您推介宫府龙虾汤泡饭，软糯松滑的口感,使游走于舌尖的美味发挥到极致。现在为这道菜肴投票，就有机会赢双人酒店餐券，你还在等什么？
+                                </p>
+                                <img alt="" src="http://ww2.sinaimg.cn/thumbnail/86a9ab32jw1ekfjmjaoe3j20ci0g4q67.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BnqfX6Cxy" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#本季，@上海崇明金茂凯悦酒店 出品的黑毛猪煨鲜鲍，精选黑毛猪五花肉，邂逅崇明江边时鲜小鲍鱼，融入黄豆酱油入罐煨制数小时；辅以秘制浓汁有机南瓜饼，香糯酥烂，清香解腻。又是一道让人垂涎的崇明美味，快来为它投票吧！
+                                </p>
+                                <img alt="" src="http://ww4.sinaimg.cn/thumbnail/86a9ab32jw1ekf9rdhih5j20ci0g441w.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/Bno1thm0I" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
                 <tr>
                     <td height="120" align="center" valign="middle">
                         <ul class="wblist">
