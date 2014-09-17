@@ -405,6 +405,70 @@
                             <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
                             <li class="lidiv">
                                 <p>
+                                    #凯悦悦享家#奉化芋艿个大皮薄，口感绵密。@宁波柏悦酒店 钱湖渔港俞师傅，将这道淳朴食材打造出了软滑香糯的质朴风味。搭配秘制海鲜酱、糖桂花食用，再嘬上一口地道陈酿黄酒，“才下舌头，便上心头”的美好感觉油然而生。喜欢这道菜品？快来投票支持它吧~
+                                </p>
+                                <img alt="" src="http://ww2.sinaimg.cn/thumbnail/86a9ab32jw1ekec4112s9j20ci0g477n.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BngoYcIEV" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#在许多食客的心中，重庆是中国美食地图中最“麻辣“的存在。正如@重庆富力凯悦酒店 侯师傅推荐的这道双椒兔丁，将青红辣椒与细嫩兔肉搭配烹炒，色彩绚丽，麻辣喷香，绝对是视觉与味觉上的双重诱惑。喜欢重庆美食的朋友，快来为它投上一票~
+                                </p>
+                                <img alt="" src="http://ww4.sinaimg.cn/thumbnail/86a9ab32jw1eke3vcnqujj20ci0g4jv1.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BnexdBn1F" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#还有几天，“最佳时令菜肴”评选活动就要结束啦！各位热爱美食的达人们，你最欣赏哪家酒店的创意菜肴？哪道菜品又令你念念不忘？抓紧时间为喜爱的菜肴投票，就有机会赢取双人免费餐券！还等什么，快来参加~
+                                </p>
+                                <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ekd6qurg6lj209g0t60wp.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/Bn71X5ixH" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#金秋九月，@上海柏悦酒店 李伟民师傅将美食赋予秋意，打造出“秋之意，沪之味”的别致韵味。此次，他选用富含膳食纤维的五谷，再配以产自阳澄湖的母蟹蟹粉，烹制出香浓味美的黄金蟹粉五谷饭。即刻为它投上一票，双人餐券等你来赢！
+                                </p>
+                                <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ekcyou51pqj20ci0g4goh.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/Bn5cPzhO9" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
                                     #凯悦悦享家#美味不在于豪华盛大，只在于贴心贴胃；有时一粥一饭，胜过一燕一鲍。在本季评选“最佳时令菜肴”的活动中，多家酒店的厨师团队，将看似简单的食材，烹调出不平凡的人间美味。这其中，你最欣赏哪家酒店出品的菜肴？现在参与投票活动，还有机会赢取双人餐券！
                                 </p>
                                 <img alt="" src="http://ww1.sinaimg.cn/thumbnail/86a9ab32jw1ek9rpyey9lj209g0t6773.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
