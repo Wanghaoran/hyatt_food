@@ -399,6 +399,37 @@
             <div id="MarqueeDiv123" style="width:390px; height:260px;overflow:hidden; margin:20px 0 0 40px;">
                 <table width="420" border="0" cellspacing="0" cellpadding="0" align="center">
 
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#温暖明媚的秋日，@京津新城凯悦酒店 张昭君师傅，向您推荐一道特色佳肴：酸辣菊花茄子。菜品的原材料采摘于酒店的阳光菜园，吃起来清香可口，仿佛踏上一场味蕾与心灵的清新旅行。现在点击凯悦悦享家 为它投票，还有机会赢双人酒店餐券哦！
+                                </p>
+                                <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ekgfmb5ly8j20ci0g4diy.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/BnxvexOAH" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="120" align="center" valign="middle">
+                        <ul class="wblist">
+                            <li class="liimg"><img src="<?=$this->config->base_url()?>static/images/logosmall.jpg"/></li>
+                            <li class="lidiv">
+                                <p>
+                                    #凯悦悦享家#截止到今晚12点，“最佳时令菜肴”投票活动就要结束了。最受欢迎的时令菜肴究竟花落谁家？让我们拭目以待~同时，我们也将在9月23日公布幸运获奖名单。抓紧这最后几小时，为喜爱的菜肴投票吧，也许中奖的人就！是！你！
+                                </p>
+                                <img alt="" src="http://ww3.sinaimg.cn/thumbnail/86a9ab32jw1ekgmv00533j20j30q6jye.jpg" node-type="feed_list_media_bgimg" class="bigcursor">
+                                <div class="btn_wb"><a href="http://weibo.com/2259266354/Bnz8WlUSD" target="_blank">查看详情</a></div>
+                            </li>
+                        </ul>
+                        <div class="clear10"></div>
+                    </td>
+                </tr>
 
                 <tr>
                     <td height="120" align="center" valign="middle">
