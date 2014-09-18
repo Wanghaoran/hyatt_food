@@ -196,6 +196,13 @@ class Welcome extends CI_Controller {
 
     public function vote(){
 
+        //投票结束
+        $result = array();
+        $result['status'] = 'error';
+        $result['data'] = '投票已结束';
+        echo json_encode($result);
+        exit;
+
         $this->load->library('encrypt');
 
 
