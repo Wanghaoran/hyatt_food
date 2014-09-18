@@ -43,6 +43,7 @@
                 success : function(ress){
                     if(ress.status == 'error'){
                         alert('投票失败！' + ress.data);
+                        return;
                     }else{
                         alert('投票成功！' + ress.data);
 
@@ -113,6 +114,7 @@
                 success : function(ress){
                     if(ress.status == 'error'){
                         alert('注册失败！' + ress.data);
+                        return;
                     }else{
                         getnum();
                         alert('注册成功！' + ress.data);
