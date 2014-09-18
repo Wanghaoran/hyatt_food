@@ -234,7 +234,7 @@
                             <dt><?=$value['hotel_name']?></dt>
                             <dd class="ddimg"><img src="<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?>" onMouseOver="toolTip('<img src=<?=$this->config->base_url()?>static/cook/<?=$value['big_pic']?> width=375>')" onMouseOut="toolTip();" width="222" height="286"/></dd>
                             <dd class="ddinfo">
-                                <a href="javascript:void(0);" onclick="sharebutton(<?=$value['id']?>);" class="btn_tp"></a><span>已有<strong id="top_num_<?=$value['id']?>"><?=$value['num']?></strong>人投票</span>
+                                <a href="javascript:void(0);" onclick="sharebutton(<?=$value['id']?>);" class="btn_tp" style="margin: 0 5px 0 0;"></a><span style="padding: 4px 0 0 7px;">已有<strong id="top_num_<?=$value['id']?>"><?=$value['num']?></strong>人投票</span>
                             </dd>
                         </dl>
                     </li>
