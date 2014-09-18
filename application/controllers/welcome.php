@@ -199,7 +199,7 @@ class Welcome extends CI_Controller {
         //投票结束
         $result = array();
         $result['status'] = 'error';
-        $result['data'] = '投票已结束';
+        $result['data'] = '投票已结束!';
         echo json_encode($result);
         exit;
 
