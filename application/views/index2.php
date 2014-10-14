@@ -5,6 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>凯悦悦享家</title>
     <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=392409152" type="text/javascript" charset="utf-8"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/thirdpart/js/frame/appclient.js" charset="utf-8"></script>
+
     <link href="<?=$this->config->base_url()?>static/css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.js"></script>
 <script type="text/javascript">
