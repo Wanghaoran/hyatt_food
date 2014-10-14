@@ -339,3 +339,67 @@ a.btn_del:hover{opacity:0.7;filter:alpha(opacity=70);}
 .btn_wb{ text-align:right; margin:10px 0 0 0;}
 	.btn_wb a{color:#03F}
 	.btn_wb a:hover{ text-decoration:underline; color:#03F}
+
+
+	/*2014-10-14*/
+.hd2{ width:940px; height:129px; background:url(../images/top2.jpg) no-repeat;}
+.hd2 .hd_home{ float:left; width:200px;}
+.hd2 .hd_home a{ margin:77px 0 0 110px; width:90px; height:15px;}
+	
+.hd2 .hd_left{ float:left; width:187px;}
+.hd2 .hd_left a{ margin:77px 0 0 24px; width:140px; height:15px;}
+
+.banner4{ width:940px; height:243px; background:url(../images/banner4.jpg) no-repeat;}
+
+.videobox{ width:940px; height:614px; background:url(../images/videobg.jpg) no-repeat;}
+
+ul.tabs {width:710px; height:134px; overflow:hidden; margin:0 auto; text-align:center;list-style: none;}
+ul.tabs li {float:left; width:132px; height:93px; margin:10px 12px 0 0;}
+ul.tabs li a {text-decoration: none;display: block;outline: none; width:132px;height:93px;}
+ul.tabs li a:hover { height:93px;}	
+ul.tabs li.one a.a1{ background:url(../images/img_jd1.png) no-repeat;}
+ul.tabs li.one a.a1:hover{opacity:0.7;filter:alpha(opacity=70);}
+ul.tabs li.two a.a2{background:url(../images/img_jd2.png) no-repeat;}
+ul.tabs li.two a.a2:hover{opacity:0.7;filter:alpha(opacity=70);}
+ul.tabs li.three a.a3{ background:url(../images/img_jd3.png) no-repeat;}
+ul.tabs li.three a.a3:hover{opacity:0.7;filter:alpha(opacity=70);}
+ul.tabs li.four a.a4{ background:url(../images/img_jd4.png) no-repeat;}
+ul.tabs li.four a.a4:hover{opacity:0.7;filter:alpha(opacity=70);}
+ul.tabs li.five{ margin:7px 0 0 0;}
+ul.tabs li.five a.a5{ background:url(../images/img_jd5.png) no-repeat;}
+ul.tabs li.five a.a5:hover{opacity:0.7;filter:alpha(opacity=70);}
+
+ul.tabs li.active a,ul.tabs li.active a:hover{ width:132px; height:93px; display:block;}
+ul.tabs li.active a.a1{opacity:0.7;filter:alpha(opacity=70);}
+ul.tabs li.active a.a2{opacity:0.7;filter:alpha(opacity=70);}
+ul.tabs li.active a.a3{opacity:0.7;filter:alpha(opacity=70);}
+ul.tabs li.active a.a4{opacity:0.7;filter:alpha(opacity=70);}
+ul.tabs li.active a.a5{opacity:0.7;filter:alpha(opacity=70);}
+
+.tab_container{clear:both;width:766px; height:480px; margin:0 auto;}
+.tab_content{width:766px; height:480px;}
+.tab_title{ padding:23px 0 0 33px; height:35px;}
+.tab_info{ width:754px; height:408px; margin:0 auto;}
+
+.pinglun{ padding:150px 185px 0 185px; width:570px; height:130px; background:url(../images/pinglun.jpg) center no-repeat;}
+.pinglun textarea{width:566px; height:80px; border:none; background:none; line-height:20px; color:#bdbdbd; font-size:14px;}
+.pinglun div.icon_share{ width:81px; height:30px; float:right; margin:10px 0 0 0;}
+.pinglun div.icon_share a{ display:inline-block; width:81px; height:30px; cursor:pointer;background:url(../images/icon_share.png) center no-repeat;}
+.pinglun div.icon_share a:hover{opacity:0.7;filter:alpha(opacity=70);}
+
+.tlbox{ width:940px; background:url(../images/plbg1.jpg) center repeat-y;}
+.taolun{ width:940px; padding:198px 0 0 0; background:url(../images/taolun.jpg) top center no-repeat;}
+
+/* clearfix */
+.clearfix{clear:both;}
+
+/* wrapper */
+#wrapper{width:808px; padding:0 66px 300px 66px; margin:0 auto; background:url(../images/plbg2.jpg) center bottom no-repeat;}
+#container{position:relative;width:808px;margin:0 auto 25px;padding-bottom:10px;}
+.grid{width:218px;min-height:100px;padding:15px;background:#fff;margin:8px;font-size:12px;float:left;box-shadow:0 1px 3px rgba(34,25,25,0.4);-moz-box-shadow:0 1px 3px rgba(34,25,25,0.4);-webkit-box-shadow:0 1px 3px rgba(34,25,25,0.4);-webkit-transition:top 1s ease, left 1s ease;-moz-transition:top 1s ease, left 1s ease;-o-transition:top 1s ease, left 1s ease;-ms-transition:top 1s ease, left 1s ease;}
+.grid strong{border-bottom:1px solid #ccc;margin:10px 0;display:block;padding:0 0 5px;font-size:17px;}
+.grid h3{ color:#ff9701; font-weight:400; font-size:14px; text-align:right; height:30px; line-height:30px;}
+.grid h3 a{color:#ff9701;}
+.grid p{ color:#444444; font-size:12px; line-height:20px;}
+.grid .meta{text-align:right;color:#777;font-style:italic;}
+.grid .imgholder img{max-width:100%;background:#ccc;display:block;background:url(images/loding.gif) no-repeat center;}
