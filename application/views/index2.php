@@ -45,10 +45,16 @@ $(document).ready(function() {
 
 });
 </script>
+
+    <script>
+        var sendWeibo = function(){
+            alert('还发不了呢！');
+        }
+    </script>
 <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.lazyload.min.js"></script>
 <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/blocksit.min.js"></script>
 </head>
-<body>
+<body style="background: #FFFFFF;">
 <div class="contain">
 	<!--头部 start-->
 	<div class="header hd2">
@@ -103,8 +109,8 @@ $(document).ready(function() {
     <!--视频 end-->
     <!--评论 start-->
 	<div class="pinglun">
-    	<textarea>写下您的点评并分享，赢取美馔线下活动入场券</textarea>
-        <div class="icon_share"><a href="#" title="分享"></a></div>
+    	<textarea onclick="$(this).html('#凯悦悦享家#');">写下您的点评并分享，赢取美馔线下活动入场券</textarea>
+        <div class="icon_share"><a onclick="sendWeibo();" title="分享"></a></div>
     </div>
     <!--评论 end-->
     <!--讨论 start-->
