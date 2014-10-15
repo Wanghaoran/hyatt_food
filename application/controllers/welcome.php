@@ -466,7 +466,11 @@ class Welcome extends CI_Controller {
         $status = $this -> input -> post('cid');
         $v_id = $this -> input -> post('vedioID');
         $access_token = $this -> input -> post('key');
-        $status = '#凯悦悦享家#' . $status;
+
+        if(strpos($status, '#凯悦悦享家#') === false){
+            $status = '#凯悦悦享家#' . $status;
+        }
+
         $status = $status . $vodie_arr[$v_id];
 
         $data = array("access_token" => $access_token, "status" => $status, "visible" => 0,);
