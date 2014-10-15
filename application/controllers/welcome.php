@@ -31,6 +31,7 @@ class Welcome extends CI_Controller {
             }else{
                 $uid = $weibo_post['user_id'];
                 $oauth_token = $weibo_post['oauth_token'];
+                var_dump($oauth_token);
                 $uid_encrypy = urlencode($this -> encrypt -> encode($uid));
             }
         }else if(empty($_GET['key'])){
@@ -446,7 +447,7 @@ class Welcome extends CI_Controller {
         $status = urlencode($this -> input -> post('cid'));
         $access_token = $this -> input -> post('uid');
 
-        $data = array("source" => 392409152, "status" => $status, "visible" => 0,);
+        $data = array("access_token" => $access_token, "status" => $status, "visible" => 0,);
         $data_url = http_build_query($data);
 
 //        $data_string = json_encode($data, JSON_UNESCAPED_UNICODE);
