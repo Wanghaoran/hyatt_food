@@ -50,13 +50,12 @@ $(document).ready(function() {
         var sendWeibo = function(){
 
             var cid = $('#weiboContent').val();
-            var vedioID = $('#vedioID').val();
-            console.log($(".tab_content:first"));
+            var vedioID = $(".tab_content:first").attr('id');
 
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/execsend',
-                data : '&cid=' + cid +'&key=<?=$ass_token?>',
+                data : '&vedioID=' + vedioID + '&cid=' + cid +'&key=<?=$ass_token?>',
                 async : false,
                 dataType : 'json',
                 success : function(ress){
