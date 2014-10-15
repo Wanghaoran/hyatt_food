@@ -39,6 +39,8 @@ class Welcome extends CI_Controller {
             redirect('http://apps.weibo.com/2259266354/Qp1a6Ji');
         }else{
             $uid_encrypy = urlencode($this->input->get('key'));
+            $oauth_token = $this->input->get('to');
+
         }
         $data = array(
             'hotel_data' => $new_result,
@@ -375,6 +377,7 @@ class Welcome extends CI_Controller {
         $page = !empty($_GET['per_page']) ? $_GET['per_page'] : 1;
 
         $uid = $this->input->get('key');
+        $ass_token = $this->input->get('to');
 
 
         $this -> load -> model('hotel_model');
@@ -406,6 +409,7 @@ class Welcome extends CI_Controller {
             'hotel_data' => $new_result,
             'pageshow' => $pageshow,
             'uid' => urlencode($uid),
+            'ass_token' => $ass_token,
         );
         $this -> load -> view('all', $data);
     }
@@ -413,8 +417,12 @@ class Welcome extends CI_Controller {
     public function old()
     {
         $uid = $this->input->get('key');
+        $ass_token = $this->input->get('to');
+
         $data = array(
             'uid' => urlencode($uid),
+            'ass_token' => $ass_token,
+
         );
 
         $this -> load -> library('user_agent');
@@ -428,9 +436,11 @@ class Welcome extends CI_Controller {
 
     public function terms()
     {
+        $ass_token = $this->input->get('to');
         $uid = $this->input->get('key');
         $data = array(
             'uid' => urlencode($uid),
+            'ass_token' => $ass_token,
         );
 
         $this -> load -> library('user_agent');

@@ -12,10 +12,10 @@
 <div class="contain">
     <!--头部 start-->
     <div class="header">
-        <div class="hd_home"><a href="<?=$this->config->base_url()?>?key=<?=$uid?>" title="首页"></a></div>
-        <div class="hd_left"><a href="<?=$this->config->base_url()?>all?key=<?=$uid?>" title="最佳时令菜肴投票"></a></div>
-        <div class="hd_logo"><a href="<?=$this->config->base_url()?>?key=<?=$uid?>" title="凯悦悦享家"></a></div>
-        <div class="hd_first"><a href="<?=$this->config->base_url()?>old?key=<?=$uid?>" title="第一季回顾"></a></div>
+        <div class="hd_home"><a href="<?=$this->config->base_url()?>?key=<?=$uid?>&to=<?=$ass_token?>" title="首页"></a></div>
+        <div class="hd_left"><a href="<?=$this->config->base_url()?>all?key=<?=$uid?>&to=<?=$ass_token?>" title="最佳时令菜肴投票"></a></div>
+        <div class="hd_logo"><a href="<?=$this->config->base_url()?>?key=<?=$uid?>&to=<?=$ass_token?>" title="凯悦悦享家"></a></div>
+        <div class="hd_first"><a href="<?=$this->config->base_url()?>old?key=<?=$uid?>&to=<?=$ass_token?>" title="第一季回顾"></a></div>
         <div class="hd_right"><a href="http://www.hyatt.com/hyatt/?language=zh-Hans&src=hic_nplk_hyatt_sina_weibo_20140901" target="_blank" title="了解凯悦集团酒店"></a></div>
     </div>
     <!--头部 end-->
