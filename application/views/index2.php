@@ -54,7 +54,7 @@ $(document).ready(function() {
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/execsend',
-                data : '&cid=' + cid + '&key=<?=$oauth_token?>',
+                data : '&cid=' + cid +'&key=<?=$ass_token?>',
                 async : false,
                 dataType : 'json',
                 success : function(ress){
