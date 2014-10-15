@@ -138,8 +138,8 @@ $(document).ready(function() {
             </div>
         </div>
         <ul class="tabs">
-            <li class="one active"><a href="#tab1" class="a1">&nbsp;</a></li>
             <li class="two"><a href="#tab2" class="a2">&nbsp;</a></li>
+            <li class="one active"><a href="#tab1" class="a1">&nbsp;</a></li>
             <li class="three"><a href="#tab3" class="a3">&nbsp;</a></li>
             <li class="four"><a href="#tab4" class="a4">&nbsp;</a></li>
             <li class="five"><a href="#tab5" class="a5">&nbsp;</a></li>
