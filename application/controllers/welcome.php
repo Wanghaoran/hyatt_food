@@ -31,7 +31,6 @@ class Welcome extends CI_Controller {
             }else{
                 $uid = $weibo_post['user_id'];
                 $oauth_token = $weibo_post['oauth_token'];
-                var_dump($oauth_token);
                 $uid_encrypy = urlencode($this -> encrypt -> encode($uid));
             }
         }else if(empty($_GET['key'])){
@@ -444,7 +443,7 @@ class Welcome extends CI_Controller {
     }
 
     public function execsend(){
-        $status = urlencode($this -> input -> post('cid'));
+        $status = $this -> input -> post('cid');
         $access_token = $this -> input -> post('key');
 
         $data = array("access_token" => $access_token, "status" => $status, "visible" => 0,);
@@ -461,8 +460,7 @@ class Welcome extends CI_Controller {
 
         $result = curl_exec($ch);
         curl_close($ch);
-
-        var_dump($result);
+        echo $result;
 
     }
 }
