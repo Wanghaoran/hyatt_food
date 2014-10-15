@@ -130,7 +130,7 @@ $(document).ready(function() {
     <!--视频 end-->
     <!--评论 start-->
 	<div class="pinglun">
-    	<textarea onclick="$(this).val('');" id="weiboContent">写下您的点评并分享，赢取美馔线下活动入场券</textarea>
+    	<textarea onclick="$(this).val('#凯悦悦享家#');" id="weiboContent">写下您的点评并分享，赢取美馔线下活动入场券</textarea>
         <div class="icon_share"><a onclick="sendWeibo();" title="分享"></a></div>
     </div>
     <!--评论 end-->
