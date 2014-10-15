@@ -443,9 +443,21 @@ class Welcome extends CI_Controller {
     }
 
     public function execsend(){
+
+        $vodie_arr = array(
+            'v_1' => 'http://v.youku.com/v_show/id_XODAzOTAwOTk2.html',
+            'v_2' => 'http://v.youku.com/v_show/id_XODAzODYxMzYw.html',
+            'v_3' => 'http://v.youku.com/v_show/id_XODAzODY4Mzc2.html',
+            'v_4' => 'http://v.youku.com/v_show/id_XODAzODYxNTky.html',
+            'v_5' => 'http://v.youku.com/v_show/id_XODAzOTcxMTA4.html',
+        );
+
+
         $status = $this -> input -> post('cid');
+        $v_id = $this -> input -> post('vedioID');
         $access_token = $this -> input -> post('key');
         $status = '#凯悦悦享家#' . $status;
+        $status = $status . $vodie_arr[$v_id];
 
         $data = array("access_token" => $access_token, "status" => $status, "visible" => 0,);
         $data_url = http_build_query($data);
