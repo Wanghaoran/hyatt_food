@@ -25,6 +25,7 @@ class Welcome extends CI_Controller {
         //微博POST的数据
         if(!empty($_POST['signed_request'])){
             $weibo_post = parseSignedRequest($_POST['signed_request']);
+            var_dump($weibo_post);
             //未登录
             if(empty($weibo_post['user_id'])){
                 $uid_encrypy = 'null';
