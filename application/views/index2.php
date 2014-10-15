@@ -156,6 +156,7 @@ $(document).ready(function() {
     <div class="tlbox">
         <div class="taolun">
 
+            <!--
             <div class="qx_list" id="container">
                 <ul>
                     <li class="box">
@@ -223,7 +224,7 @@ $(document).ready(function() {
                 </ul>
                 <div class="clear"></div>
             </div>
-
+            -->
 
             <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.masonry.min.js"></script>
             <script type="text/javascript">
