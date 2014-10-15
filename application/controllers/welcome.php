@@ -439,6 +439,10 @@ class Welcome extends CI_Controller {
             $this -> load -> view('terms_mobile', $data);
         }
     }
+
+    public function execsend(){
+
+    }
 }
 
 /* End of file welcome.php */

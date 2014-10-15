@@ -48,11 +48,50 @@ $(document).ready(function() {
 
     <script>
         var sendWeibo = function(){
-            alert('还发不了呢！');
+            /*
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/execsend',
+                data : '&cid=' + cid + '&key=<?=$uid?>',
+                async : false,
+                dataType : 'json',
+                success : function(ress){
+                    if(ress.status == 'error'){
+                        alert('投票失败！' + ress.data);
+                        return;
+                    }else{
+                        alert('投票成功！' + ress.data);
+
+
+                        //投票数加1
+                        var top_num = $('#top_roll_' + cid).length;
+                        var left_num = $('#left_rank_' + cid).length;
+
+                        if(top_num){
+                            var top_now_num = $('#top_roll_' + cid).html();
+                            $('#top_roll_' + cid).html(parseInt(top_now_num) + 1);
+                        }
+
+                        if(left_num){
+                            var left_now_num = $('#left_rank_' + cid).html();
+                            $('#left_rank_' + cid).html(parseInt(left_now_num) + 1)
+
+                        }
+
+                        //设置分享URL
+                        url = ress.url;
+                        if(ress.isregister == 'no'){
+                            setDivCenter(11);
+                        }else{
+                            openshare();
+                        }
+
+                    }
+                }
+            });
+            */
         }
     </script>
-<script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.lazyload.min.js"></script>
-<script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/blocksit.min.js"></script>
 </head>
 <body style="background: #FFFFFF;">
 <div class="contain">
@@ -73,14 +112,14 @@ $(document).ready(function() {
     <!--视频 start-->
     <div class="videobox">
         <div class="tab_container">
+            <div id="tab2" class=" tab_content" style="display: none; ">
+                <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd2.png"/></p>
+                <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTg2OTg0/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+            </div>
             <div id="tab1" class="tab_content" style="display: block; ">
               <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd1.png"/></p>
               <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTkwMTQ0/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
               
-            </div>
-            <div id="tab2" class=" tab_content" style="display: none; ">
-              <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd2.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTg2OTg0/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
             </div>
             <div id="tab3" class="tab_content" style="display: none; ">
                <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd3.png"/></p>
@@ -94,7 +133,7 @@ $(document).ready(function() {
             </div>
             <div id="tab5" class="tab_content" style="display: none; ">
                <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd5.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XNjQ2NzE3ODU2/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzODU5NjIw/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
                
             </div>
         </div>
@@ -115,136 +154,90 @@ $(document).ready(function() {
     <!--评论 end-->
     <!--讨论 start-->
     <div class="tlbox">
-        <div class="taolun">   	
-            <div id="wrapper">
-            
-                <div id="container">
-                    <div class="grid">
-                        <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl1.jpg"/></div>
+        <div class="taolun">
+
+            <div class="qx_list" id="container">
+                <ul>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl1.jpg"/></div>
                         <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
                         <p>十一全家来度假，自助晚餐超值哦！@天津帝旺凯悦酒店 [good][good][good] http://t.cn/RPgL6YK</p>
-                    </div>
-                    <div class="grid">
-                        <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl2.jpg"/></div>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl2.jpg"/></div>
                         <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
                         <p>@天津帝旺凯悦酒店 一直爱凯悦家的餐品，终于盼来了下午茶，168+15%服务费的双人下午茶，在五星级酒店中算是价位便宜的了，但品质却能排进前三，必须大赞！下午茶在添一个好去处[鼓掌]</p>
-                    </div>
-                    <div class="grid">
-                        <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl3.jpg"/></div>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl3.jpg"/></div>
                         <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
                         <p>#爱犬计划# 毛毛是一只金毛犬，今年十岁了。这是它第一次住酒店，充满了兴奋和好奇。毛毛入住的是@天津帝旺凯悦酒店专门为带宠物旅行的客人而准备的特色客房，也是酒店在天津市内首度引进凯悦酒店集团『爱犬计划』。http://t.cn/R7PJmMk</p>
-                    </div>
-                    <div class="grid">
-                        <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl4.jpg"/></div>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl4.jpg"/></div>
                         <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
                         <p>我上传了一张天津帝旺凯悦酒店的图片， http://t.cn/RvjgeKY @大众点评</p>
-                    </div>
-                    <div class="grid">
-                        <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl5.jpg" /></div>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl5.jpg"/></div>
                         <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
                         <p>@天津帝旺凯悦酒店 悦园中餐厅，绿意萦绕，大片大片的绿植，喜欢这里的安静惬意~旁边是露天就餐区和小酒吧~烤鸭作为特色菜，会按照客人的预定就餐
-时间上桌，烤制后现场制作，鸭皮酥脆入口即化，鸭胸肉略酸，鸭腿肉质够细嫩，配上薄荷小黄瓜口感清爽不腻~八珍豆腐煲食材新鲜口感略酸~</p>
-                    </div>
-                    <div class="grid">
-                        <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl6.jpg"/></div>
+                            时间上桌，烤制后现场制作，鸭皮酥脆入口即化，鸭胸肉略酸，鸭腿肉质够细嫩，配上薄荷小黄瓜口感清爽不腻~八珍豆腐煲食材新鲜口感略酸~</p>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl6.jpg"/></div>
                         <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
                         <p>十一全家来度假，自助晚餐超值哦！@天津帝旺凯悦酒店 [good][good][good] http://t.cn/RPgL6YK</p>
-                    </div>
-                </div>
-            
-            </div>
-
-            <!--
-            <div id="test" style="display:none;">
-                <div class="grid">
-                    <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl1.jpg"/></div>
-                    <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
-                    <p>十一全家来度假，自助晚餐超值哦！@天津帝旺凯悦酒店 [good][good][good] http://t.cn/RPgL6YK</p>
-                </div>
-                <div class="grid">
-                    <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl2.jpg"/></div>
-                    <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl1.jpg"/></div>
+                        <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
                         <p>十一全家来度假，自助晚餐超值哦！@天津帝旺凯悦酒店 [good][good][good] http://t.cn/RPgL6YK</p>
-                </div>
-                <div class="grid">
-                    <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl3.jpg"/></div>
-                    <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
-                    <p>十一全家来度假，自助晚餐超值哦！@天津帝旺凯悦酒店 [good][good][good] http://t.cn/RPgL6YK</p>
-                </div>
-                <div class="grid">
-                    <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl4.jpg"/></div>
-                    <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
-                    <p>十一全家来度假，自助晚餐超值哦！@天津帝旺凯悦酒店 [good][good][good] http://t.cn/RPgL6YK</p>
-                </div>
-                <div class="grid">
-                    <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl5.jpg"/></div>
-                    <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
-                    <p>十一全家来度假，自助晚餐超值哦！@天津帝旺凯悦酒店 [good][good][good] http://t.cn/RPgL6YK</p>
-                </div>
-                <div class="grid">
-                    <div class="imgholder"><img class="lazy" src="<?=$this->config->base_url()?>static/images/pixel.gif" data-original="<?=$this->config->base_url()?>static/images/img_pbl6.jpg"/></div>
-                    <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
-                    <p>十一全家来度假，自助晚餐超值哦！@天津帝旺凯悦酒店 [good][good][good] http://t.cn/RPgL6YK</p>
-                </div>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl2.jpg"/></div>
+                        <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
+                        <p>@天津帝旺凯悦酒店 一直爱凯悦家的餐品，终于盼来了下午茶，168+15%服务费的双人下午茶，在五星级酒店中算是价位便宜的了，但品质却能排进前三，必须大赞！下午茶在添一个好去处[鼓掌]</p>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl3.jpg"/></div>
+                        <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
+                        <p>#爱犬计划# 毛毛是一只金毛犬，今年十岁了。这是它第一次住酒店，充满了兴奋和好奇。毛毛入住的是@天津帝旺凯悦酒店专门为带宠物旅行的客人而准备的特色客房，也是酒店在天津市内首度引进凯悦酒店集团『爱犬计划』。http://t.cn/R7PJmMk</p>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl4.jpg"/></div>
+                        <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
+                        <p>我上传了一张天津帝旺凯悦酒店的图片， http://t.cn/RvjgeKY @大众点评</p>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl5.jpg"/></div>
+                        <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
+                        <p>@天津帝旺凯悦酒店 悦园中餐厅，绿意萦绕，大片大片的绿植，喜欢这里的安静惬意~旁边是露天就餐区和小酒吧~烤鸭作为特色菜，会按照客人的预定就餐
+                            时间上桌，烤制后现场制作，鸭皮酥脆入口即化，鸭胸肉略酸，鸭腿肉质够细嫩，配上薄荷小黄瓜口感清爽不腻~八珍豆腐煲食材新鲜口感略酸~</p>
+                    </li>
+                    <li class="box">
+                        <div class="qx_picBox"><img src="<?=$this->config->base_url()?>static/images/img_pbl6.jpg"/></div>
+                        <h3><a href="#">评论(1)</a>&nbsp;&nbsp;<a href="#">转发(19)</a></h3>
+                        <p>十一全家来度假，自助晚餐超值哦！@天津帝旺凯悦酒店 [good][good][good] http://t.cn/RPgL6YK</p>
+                    </li>
+                </ul>
+                <div class="clear"></div>
             </div>
 
-                        -->
 
+            <script type="text/javascript" src="<?=$this->config->base_url()?>static/javascript/jquery.masonry.min.js"></script>
             <script type="text/javascript">
-            $(function(){
-                $("img.lazy").lazyload({		
-                    load:function(){
-                        $('#container').BlocksIt({
-                            numOfCol:3,
-                            offsetX: 8,
-                            offsetY: 8
+                $(document).ready(function(){
+                    var $container = $('#container');
+                    $container.imagesLoaded(function(){
+                        $container.masonry({
+                            itemSelector: '.box',
+                            columnWidth: 12 //每两列之间的间隙为5像素
                         });
-                    }
-                });	
-                $(window).scroll(function(){
-                        // 当滚动到最底部以上50像素时， 加载新内容
-                    if ($(document).height() - $(this).scrollTop() - $(this).height()<50){
-                        $('#container').append($("#test").html());		
-                        $('#container').BlocksIt({
-                            numOfCol:3,
-                            offsetX: 8,
-                            offsetY: 8
-                        });
-                        $("img.lazy").lazyload();
-                    }
+                    });
                 });
-                
-                //window resize
-                var currentWidth = 1100;
-                $(window).resize(function() {
-                    var winWidth = $(window).width();
-                    var conWidth;
-                    if(winWidth < 660) {
-                        conWidth = 440;
-                        col = 2
-                    } else if(winWidth < 880) {
-                        conWidth = 660;
-                        col = 3
-                    } else if(winWidth < 1100) {
-                        conWidth = 880;
-                        col = 4;
-                    } else {
-                        conWidth = 1100;
-                        col = 5;
-                    }
-                    
-                    if(conWidth != currentWidth) {
-                        currentWidth = conWidth;
-                        $('#container').width(conWidth);
-                        $('#container').BlocksIt({
-                            numOfCol: col,
-                            offsetX: 8,
-                            offsetY: 8
-                        });
-                    }
-                });
-            });
             </script>
+
 
         </div>
     </div>
