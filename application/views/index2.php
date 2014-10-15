@@ -48,7 +48,9 @@ $(document).ready(function() {
 
     <script>
         var sendWeibo = function(){
-            /*
+
+            var cid = $('#weiboContent').val();
+
             $.ajax({
                 type : 'POST',
                 url : '<?=$this -> config -> base_url()?>welcome/execsend',
@@ -56,40 +58,10 @@ $(document).ready(function() {
                 async : false,
                 dataType : 'json',
                 success : function(ress){
-                    if(ress.status == 'error'){
-                        alert('投票失败！' + ress.data);
-                        return;
-                    }else{
-                        alert('投票成功！' + ress.data);
-
-
-                        //投票数加1
-                        var top_num = $('#top_roll_' + cid).length;
-                        var left_num = $('#left_rank_' + cid).length;
-
-                        if(top_num){
-                            var top_now_num = $('#top_roll_' + cid).html();
-                            $('#top_roll_' + cid).html(parseInt(top_now_num) + 1);
-                        }
-
-                        if(left_num){
-                            var left_now_num = $('#left_rank_' + cid).html();
-                            $('#left_rank_' + cid).html(parseInt(left_now_num) + 1)
-
-                        }
-
-                        //设置分享URL
-                        url = ress.url;
-                        if(ress.isregister == 'no'){
-                            setDivCenter(11);
-                        }else{
-                            openshare();
-                        }
-
-                    }
+                    console.log(ress);
                 }
             });
-            */
+
         }
     </script>
 </head>
@@ -148,7 +120,7 @@ $(document).ready(function() {
     <!--视频 end-->
     <!--评论 start-->
 	<div class="pinglun">
-    	<textarea onclick="$(this).html('#凯悦悦享家#');">写下您的点评并分享，赢取美馔线下活动入场券</textarea>
+    	<textarea onclick="$(this).val('');" id="weiboContent">写下您的点评并分享，赢取美馔线下活动入场券</textarea>
         <div class="icon_share"><a onclick="sendWeibo();" title="分享"></a></div>
     </div>
     <!--评论 end-->

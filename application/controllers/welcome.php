@@ -441,6 +441,7 @@ class Welcome extends CI_Controller {
     }
 
     public function execsend(){
+        var_dump($_POST);
 
     }
 }

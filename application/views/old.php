@@ -36,7 +36,7 @@
 <body style="background: #FFFFFF;">
 <div class="contain">
     <!--头部 start-->
-    <div class="header">
+    <div class="header hd2">
         <div class="hd_home"><a href="<?=$this->config->base_url()?>?key=<?=$uid?>" title="首页"></a></div>
         <div class="hd_left"><a href="<?=$this->config->base_url()?>all?key=<?=$uid?>" title="最佳时令菜肴投票"></a></div>
         <div class="hd_logo"><a href="<?=$this->config->base_url()?>?key=<?=$uid?>" title="凯悦悦享家"></a></div>
