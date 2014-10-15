@@ -32,6 +32,8 @@ $(document).ready(function() {
 	
 	//On Click Event
 	$("ul.tabs li").click(function() {
+
+        $('#v_id').val($(this).attr('id'));
 			window.clearInterval(set);
 			o=$(this).index();
 		$("ul.tabs li").removeClass("active"); //Remove any "active" class
@@ -50,7 +52,7 @@ $(document).ready(function() {
         var sendWeibo = function(){
 
             var cid = $('#weiboContent').val();
-            var vedioID = $(".tab_content:first").attr('id');
+            var vedioID = $('#v_id').val();
 
             $.ajax({
                 type : 'POST',
@@ -111,12 +113,14 @@ $(document).ready(function() {
             </div>
         </div>
         <ul class="tabs">
-            <li class="two"><a href="#tab2" class="a2">&nbsp;</a></li>
-            <li class="one active"><a href="#tab1" class="a1">&nbsp;</a></li>
-            <li class="three"><a href="#tab3" class="a3">&nbsp;</a></li>
-            <li class="four"><a href="#tab4" class="a4">&nbsp;</a></li>
-            <li class="five"><a href="#tab5" class="a5">&nbsp;</a></li>
+            <li class="two"><a id="v_1" href="#tab2" class="a2">&nbsp;</a></li>
+            <li class="one active"><a id="v_2" href="#tab1" class="a1">&nbsp;</a></li>
+            <li class="three"><a id="v_3" href="#tab3" class="a3">&nbsp;</a></li>
+            <li class="four"><a id="v_4" href="#tab4" class="a4">&nbsp;</a></li>
+            <li class="five"><a id="v_5" href="#tab5" class="a5">&nbsp;</a></li>
         </ul>
+
+        <input type="hidden" id="v_id" value="v_1"/>
 
     </div>
     <!--视频 end-->
