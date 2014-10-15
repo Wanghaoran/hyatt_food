@@ -446,7 +446,7 @@ class Welcome extends CI_Controller {
         $status = urlencode($this -> input -> post('cid'));
         $access_token = $this -> input -> post('uid');
 
-        $data = array("access_token" => $access_token, "status" => $status, "visible" => 0,);
+        $data = array("source" => 392409152, "status" => $status, "visible" => 0,);
         $data_url = http_build_query($data);
 
 //        $data_string = json_encode($data, JSON_UNESCAPED_UNICODE);
