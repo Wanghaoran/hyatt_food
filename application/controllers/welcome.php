@@ -441,19 +441,20 @@ class Welcome extends CI_Controller {
     }
 
     public function execsend(){
-        var_dump($_POST);
         $status = urlencode($this -> input -> post('cid'));
 
         $data = array("source" => 392409152, "status" => $status, "visible" => 0,);
 
-        $data_string = json_encode($data, JSON_UNESCAPED_UNICODE);
+//        $data_string = json_encode($data, JSON_UNESCAPED_UNICODE);
+
+
         $ch = curl_init('https://api.weibo.com/2/statuses/update.json');
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-        curl_setopt($ch, CURLOPT_POSTFIELDS,$data_string);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-            'Content-Type: application/json',
-            'Content-Length: ' . strlen($data_string)));
+        curl_setopt ($ch, CURLOPT_POST, 1 );
+        curl_setopt ( $ch, CURLOPT_POST, 1 );
+        curl_setopt ( $ch, CURLOPT_HEADER, 0 );
+        curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, 1 );
+        curl_setopt ( $ch, CURLOPT_POSTFIELDS, $data );
+
         $result = curl_exec($ch);
         curl_close($ch);
 
