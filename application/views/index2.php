@@ -243,6 +243,9 @@ $(document).ready(function() {
         </div>
     </div>
     <!--讨论 end-->
+    <!--底部 start-->
+    <div class="footer"></div>
+
 </div>
 </body>
 </html>
