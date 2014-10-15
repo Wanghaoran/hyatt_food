@@ -50,6 +50,8 @@ $(document).ready(function() {
         var sendWeibo = function(){
 
             var cid = $('#weiboContent').val();
+            var vedioID = $('#vedioID').val();
+            console.log($(".tab_content:first"));
 
             $.ajax({
                 type : 'POST',
@@ -84,28 +86,28 @@ $(document).ready(function() {
     <!--视频 start-->
     <div class="videobox">
         <div class="tab_container">
-            <div id="tab2" class=" tab_content" style="display: none; ">
+            <div id="tab2" class="tab_content" style="display: none; ">
                 <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd2.png"/></p>
-                <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTg2OTg0/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+                <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzOTAwOTk2/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
             </div>
             <div id="tab1" class="tab_content" style="display: block; ">
               <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd1.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTkwMTQ0/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzODYxMzYw/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
               
             </div>
             <div id="tab3" class="tab_content" style="display: none; ">
                <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd3.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTkyMjcy/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzODY4Mzc2/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
                
             </div>
             <div id="tab4" class="tab_content" style="display: none; ">
                <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd4.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTkxNzI4/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzODYxNTky/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
                
             </div>
             <div id="tab5" class="tab_content" style="display: none; ">
                <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd5.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzODU5NjIw/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzOTcxMTA4/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
                
             </div>
         </div>
@@ -116,6 +118,7 @@ $(document).ready(function() {
             <li class="four"><a href="#tab4" class="a4">&nbsp;</a></li>
             <li class="five"><a href="#tab5" class="a5">&nbsp;</a></li>
         </ul>
+
     </div>
     <!--视频 end-->
     <!--评论 start-->
