@@ -61,7 +61,11 @@ $(document).ready(function() {
                 async : false,
                 dataType : 'json',
                 success : function(ress){
-                    console.log(ress);
+                    if(ress.id){
+                        alert('分享成功！感谢您的参与！');
+                    }else{
+                        alert('分享失败！' + ress.error);
+                    }
                 }
             });
 
