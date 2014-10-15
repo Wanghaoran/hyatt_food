@@ -55,7 +55,7 @@ class Welcome extends CI_Controller {
 
 
         if(!$this -> agent -> is_mobile()){
-            $this -> load -> view('index', $data);
+            $this -> load -> view('index2', $data);
         }else{
 
             //手机端获取所有数据

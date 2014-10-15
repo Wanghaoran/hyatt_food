@@ -75,21 +75,21 @@ $(document).ready(function() {
         <div class="tab_container">
             <div id="tab1" class="tab_content" style="display: block; ">
               <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd1.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XNjQ2NzE3ODU2/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTg2OTg0/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
               
             </div>
             <div id="tab2" class=" tab_content" style="display: none; ">
               <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd2.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XNjQ2NzE3ODU2/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTkwMTQ0/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
             </div>
             <div id="tab3" class="tab_content" style="display: none; ">
                <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd3.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XNjQ2NzE3ODU2/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTkyMjcy/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
                
             </div>
             <div id="tab4" class="tab_content" style="display: none; ">
                <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd4.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XNjQ2NzE3ODU2/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzNTkxNzI4/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
                
             </div>
             <div id="tab5" class="tab_content" style="display: none; ">
@@ -185,6 +185,7 @@ $(document).ready(function() {
                     <p>十一全家来度假，自助晚餐超值哦！@天津帝旺凯悦酒店 [good][good][good] http://t.cn/RPgL6YK</p>
                 </div>
             </div>
+            <!--
             <script type="text/javascript">
             $(function(){
                 $("img.lazy").lazyload({		
@@ -240,6 +241,8 @@ $(document).ready(function() {
                 });
             });
             </script>
+            -->
+
         </div>
     </div>
     <!--讨论 end-->
