@@ -445,7 +445,7 @@ class Welcome extends CI_Controller {
 
     public function execsend(){
         $status = urlencode($this -> input -> post('cid'));
-        $access_token = $this -> input -> post('uid');
+        $access_token = $this -> input -> post('key');
 
         $data = array("access_token" => $access_token, "status" => $status, "visible" => 0,);
         $data_url = http_build_query($data);
