@@ -33,7 +33,8 @@ $(document).ready(function() {
 	//On Click Event
 	$("ul.tabs li").click(function() {
 
-        $('#v_id').val($(this).attr('id'));
+        console.log($(this).attr('id'));
+        $('#v_id').val();
 			window.clearInterval(set);
 			o=$(this).index();
 		$("ul.tabs li").removeClass("active"); //Remove any "active" class
