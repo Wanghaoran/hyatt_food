@@ -447,16 +447,16 @@ class Welcome extends CI_Controller {
         $access_token = $this -> input -> post('uid');
 
         $data = array("access_token" => $access_token, "status" => $status, "visible" => 0,);
+        $data_url = http_build_query($data);
 
 //        $data_string = json_encode($data, JSON_UNESCAPED_UNICODE);
 
 
-        $ch = curl_init('https://api.weibo.com/2/statuses/update.json');
-        curl_setopt ($ch, CURLOPT_POST, 1 );
+        $ch = curl_init('https://api.weibo.com/2/statuses/update.json?' . $data_url);
         curl_setopt ( $ch, CURLOPT_POST, 1 );
         curl_setopt ( $ch, CURLOPT_HEADER, 0 );
         curl_setopt ( $ch, CURLOPT_RETURNTRANSFER, 1 );
-        curl_setopt ( $ch, CURLOPT_POSTFIELDS, $data );
+//        curl_setopt ( $ch, CURLOPT_POSTFIELDS, $data );
 
         $result = curl_exec($ch);
         curl_close($ch);
