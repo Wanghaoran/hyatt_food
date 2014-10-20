@@ -30,7 +30,11 @@ class Welcome extends CI_Controller {
                 $uid_encrypy = 'null';
             }else{
                 $uid = $weibo_post['user_id'];
-                $oauth_token = $weibo_post['oauth_token'];
+                if(!empty($weibo_post['oauth_token'])){
+                    $oauth_token = $weibo_post['oauth_token'];
+                }else{
+                    $oauth_token = '';
+                }
                 $uid_encrypy = urlencode($this -> encrypt -> encode($uid));
             }
         }else if(empty($_GET['key'])){
