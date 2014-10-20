@@ -28,6 +28,7 @@ class Welcome extends CI_Controller {
             //未登录
             if(empty($weibo_post['user_id'])){
                 $uid_encrypy = 'null';
+                $oauth_token = '';
             }else{
                 $uid = $weibo_post['user_id'];
                 if(!empty($weibo_post['oauth_token'])){
