@@ -105,9 +105,8 @@ $(document).ready(function() {
                         alert('注册失败！' + ress.data);
                         return;
                     }else{
-                        getnum();
                         alert('注册成功！' + ress.data);
-                        tosendemail();
+                        return;
                     }
                 }
             });
