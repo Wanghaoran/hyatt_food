@@ -14,6 +14,7 @@ class User_model extends CI_Model {
             'weiboId' => $uid,
             'email' => $email,
             'addTime' => time(),
+            'status' => 2,
         );
 
         return $this -> db -> insert('user', $data);
