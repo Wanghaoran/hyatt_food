@@ -134,6 +134,16 @@ $(document).ready(function() {
         <div class="icon_share"><a onclick="sendWeibo();" title="分享"></a></div>
     </div>
     <!--评论 end-->
+
+    <!--邮件 start-->
+    <div class="youjian">
+        <div class="yjbox">
+            <input type="text" value="请输入您的邮箱"/>
+            <div class="yj_btn"><a href="#" title="完成"></a></div>
+        </div>
+    </div>
+    <!--邮件 end-->
+
     <!--讨论 start-->
     <div class="tlbox">
         <div class="taolun">
