@@ -71,6 +71,50 @@ $(document).ready(function() {
 
         }
     </script>
+
+    <script>
+        //加入悦享受家
+        var joinhyatt = function(){
+            <?php if($uid == 'null'): ?>
+            App.trigger('login', {
+                // 请注意，redirect_uri 是登录成功后回调的 URL，必须传的是 *.weibo.com 下的 URL，不支持第三方的地址
+                'redirect_uri' : encodeURIComponent('http://apps.weibo.com/2259266354/Qp1a6Ji')
+            });
+            <?php else: ?>
+            var emailString = $('#emailString').val();
+            //验证
+            if(emailString == '请输入您的邮箱'){
+                alert('请您输入电子邮件地址！');
+                $('#emailString').focus();
+                return;
+            }
+            var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+            if(!reg.test(emailString)){
+                alert('邮件格式不正确，请您重新输入！');
+                return;
+            }
+
+            $.ajax({
+                type : 'POST',
+                url : '<?=$this -> config -> base_url()?>welcome/enroll',
+                data : '&email=' + emailString + '&key=<?=$uid?>',
+                async : false,
+                dataType : 'json',
+                success : function(ress){
+                    if(ress.status == 'error'){
+                        alert('注册失败！' + ress.data);
+                        return;
+                    }else{
+                        getnum();
+                        alert('注册成功！' + ress.data);
+                        tosendemail();
+                    }
+                }
+            });
+
+            <?php endif; ?>
+        }
+    </script>
 </head>
 <body style="background: #FFFFFF;">
 <div class="contain">
@@ -138,8 +182,8 @@ $(document).ready(function() {
     <!--邮件 start-->
     <div class="youjian">
         <div class="yjbox">
-            <input type="text" value="请输入您的邮箱"/>
-            <div class="yj_btn"><a href="#" title="完成"></a></div>
+            <input type="text" value="请输入您的邮箱" id="emailString" onfocus="this.value='';this.style.color='#333'" onblur="if(this.value==''){this.value='请输入您的邮箱';this.style.color='#8b8b8b'}"/>
+            <div class="yj_btn"><a href="javascript:joinhyatt();" title="完成"></a></div>
         </div>
     </div>
     <!--邮件 end-->
