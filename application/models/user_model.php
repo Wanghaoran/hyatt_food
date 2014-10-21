@@ -21,7 +21,7 @@ class User_model extends CI_Model {
     }
 
     public function getUser($uid){
-        $query = $this -> db -> get_where('user', array('weiboId' => $uid), 1);
+        $query = $this -> db -> get_where('user', array('weiboId' => $uid, 'status' => 2), 1);
         return $query -> result_array();
     }
 
