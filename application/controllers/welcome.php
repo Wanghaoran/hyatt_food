@@ -197,14 +197,14 @@ class Welcome extends CI_Controller {
         $this -> load -> model('user_model');
         if($this -> user_model -> getUser($uid)){
             $result['status'] = 'error';
-            $result['data'] = '您已注册成为凯悦悦享家，请勿重复申请！';
+            $result['data'] = '您已成功申请，请勿重复申请！';
             echo json_encode($result);
             return;
         }
 
         if($this -> user_model -> insertUser($uid, $email)){
             $result['status'] = 'success';
-            $result['data'] = '恭喜您成功注册凯悦悦享家！';
+            $result['data'] = '若您获得了美食入场券，我们将在第一时间与您取得联系哦！';
             echo json_encode($result);
             return;
         }else{
