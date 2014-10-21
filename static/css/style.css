@@ -381,8 +381,8 @@ ul.tabs li.active a.a5{opacity:0.7;filter:alpha(opacity=70);}
 .tab_title{ padding:23px 0 0 33px; height:35px;}
 .tab_info{ width:754px; height:408px; margin:0 auto;}
 
-.pinglun{ padding:150px 185px 0 185px; width:570px; height:130px; background:url(../images/pinglun.jpg) center no-repeat;}
-.pinglun textarea{width:566px; height:80px; border:none; background:none; line-height:20px; color:#bdbdbd; font-size:14px;}
+.pinglun{ padding:150px 185px 0 185px; width:570px; height:241px; background:url(../images/pinglun.jpg) center no-repeat;}
+.pinglun textarea{width:566px; height:191px; border:none; background:none; line-height:20px; color:#bdbdbd; font-size:14px;}
 .pinglun div.icon_share{ width:81px; height:30px; float:right; margin:10px 0 0 0;}
 .pinglun div.icon_share a{ display:inline-block; width:81px; height:30px; cursor:pointer;background:url(../images/icon_share.png) center no-repeat;}
 .pinglun div.icon_share a:hover{opacity:0.7;filter:alpha(opacity=70);}
