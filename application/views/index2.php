@@ -135,6 +135,13 @@ $(document).ready(function() {
     <div class="videobox">
         <div class="tab_container">
 
+
+            <div id="tab4" class="tab_content" style="display: none; ">
+                <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd4.png"/></p>
+                <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzODYxNTky/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
+
+            </div>
+
             <div id="tab3" class="tab_content" style="display: none; ">
                 <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd3.png"/></p>
                 <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzODY4Mzc2/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
@@ -153,11 +160,7 @@ $(document).ready(function() {
             </div>
 
 
-            <div id="tab4" class="tab_content" style="display: none; ">
-               <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd4.png"/></p>
-              <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzODYxNTky/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
-               
-            </div>
+
             <div id="tab5" class="tab_content" style="display: none; ">
                <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd5.png"/></p>
               <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzOTcxMTA4/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
@@ -165,10 +168,10 @@ $(document).ready(function() {
             </div>
         </div>
         <ul class="tabs">
-            <li id="v_3" class="three active"><a href="#tab3" class="a3">&nbsp;</a></li>
+            <li id="v_4" class="four active"><a href="#tab4" class="a4">&nbsp;</a></li>
+            <li id="v_3" class="three"><a href="#tab3" class="a3">&nbsp;</a></li>
             <li id="v_2" class="one"><a href="#tab1" class="a1">&nbsp;</a></li>
             <li id="v_1" class="two"><a href="#tab2" class="a2">&nbsp;</a></li>
-            <li id="v_4" class="four"><a href="#tab4" class="a4">&nbsp;</a></li>
             <li id="v_5" class="five"><a href="#tab5" class="a5">&nbsp;</a></li>
         </ul>
 
