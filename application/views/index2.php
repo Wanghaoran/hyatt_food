@@ -136,7 +136,7 @@ $(document).ready(function() {
         <div class="tab_container">
 
 
-            <div id="tab5" class="tab_content" style="display: none; ">
+            <div id="tab5" class="tab_content" style="display: block; ">
                 <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd5.png"/></p>
                 <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzOTcxMTA4/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
             </div>
@@ -153,7 +153,7 @@ $(document).ready(function() {
 
             </div>
 
-            <div id="tab1" class="tab_content" style="display: block; ">
+            <div id="tab1" class="tab_content" style="display: none; ">
                 <p class="tab_title"><img src="<?=$this->config->base_url()?>static/images/text_jd1.png"/></p>
                 <P class="tab_info"><embed src="http://player.youku.com/player.php/sid/XODAzODYxMzYw/v.swf" quality="high" width="754" height="408" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"></embed></P>
 
