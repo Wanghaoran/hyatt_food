@@ -169,11 +169,11 @@ $(document).ready(function() {
 
         </div>
         <ul class="tabs">
-            <li id="v_5" class="five active"><a href="#tab5" class="a5">&nbsp;</a></li>
+            <li id="v_5" class="five active" style="margin: 10px 12px 0 0;"><a href="#tab5" class="a5">&nbsp;</a></li>
             <li id="v_4" class="four"><a href="#tab4" class="a4">&nbsp;</a></li>
             <li id="v_3" class="three"><a href="#tab3" class="a3">&nbsp;</a></li>
             <li id="v_2" class="one"><a href="#tab1" class="a1">&nbsp;</a></li>
-            <li id="v_1" class="two"><a href="#tab2" class="a2">&nbsp;</a></li>
+            <li id="v_1" class="two" style="margin: 7px 0 0;"><a href="#tab2" class="a2">&nbsp;</a></li>
         </ul>
 
         <input type="hidden" id="v_id" value="v_1"/>
