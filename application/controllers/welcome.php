@@ -53,7 +53,7 @@ class Welcome extends CI_Controller {
             'show_num' => $show_num,
         );
 
-        $this -> load -> view('index', $data);
+        $this -> load -> view('index2', $data);
 
 
         /*
